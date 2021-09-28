@@ -12,6 +12,8 @@ TFG microprocessor benchmark
 
    chapter1.rst
 
+   chapter2.rst
+
 ..   acknowledgments.rst
    bibliography.rst
    appendices.rst
