@@ -3,18 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to TFG microprocessor benchmark's documentation!
-========================================================
+TFG microprocessor benchmark
+============================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 3
+   :caption: Table of Contents
 
+   chapter1.rst
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+..   acknowledgments.rst
+   bibliography.rst
+   appendices.rst
