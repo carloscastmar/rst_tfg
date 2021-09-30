@@ -2,18 +2,24 @@
 Unfolding cylinders and cones's documentation
 =========================================================
 
-This is a document describing the needed functionality for unfolding plates located on cylinders and cones **using analytical algorithms instead of numerical ones**.
+This is a document describing the needed functionality for unfolding plates
+located on cylinders and cones **using analytical algorithms instead of
+numerical ones**.
 
-The output geometry must be exact, for instance the development of a cone must be two straight line segment and one arc of circle. 
+The output geometry must be exact, for instance the development of a cone must
+be two straight line segment and one arc of circle. 
 
-On the development geometry the unfolding geometry of ``TopoDS_Wire`` located total or partially inside the plate must be included.
+On the development geometry the unfolding geometry of ``TopoDS_Wire`` located
+total or partially inside the plate must be included.
 
 Also is needed a method to convert from the 2D to the 3D geometry for wires.
 
 Input
 -----
 
-The input will be a ``TopoDS_Face`` with holes and set of ``TopoDS_Wire`` located on the same surface. The wires can be total or partially located outside the plate (see images).
+The input will be a ``TopoDS_Face`` with holes and set of ``TopoDS_Wire``
+located on the same surface. The wires can be total or partially located outside
+the plate (see images).
 
 .. figure:: images/2017-12-19_15_57_14.png
     :width: 150px
@@ -56,7 +62,8 @@ One example of the desired API will be the following:
 
 Output
 ------
-The output will be the unfolded geometry of the faces and the part of the unfolded wires contained inside the face.
+The output will be the unfolded geometry of the faces and the part of the
+unfolded wires contained inside the face.
 
 .. note:: On the attached images the marking wires are not included.
 
