@@ -8,12 +8,14 @@ TFG microprocessor benchmark
 
 .. toctree::
    :maxdepth: 3
-   :caption: Table of Contents
+   :caption: Índice
 
    chapter1.rst
 
    chapter2.rst
 
-..   acknowledgments.rst
-   bibliography.rst
-   appendices.rst
+.. raw:: latex
+  
+  \renewcommand{\listtablename}{Índice de tablas}
+  \listoffigures
+  \listoftables   
