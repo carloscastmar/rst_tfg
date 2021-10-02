@@ -1,6 +1,8 @@
 ROS
+===
 
 DEFINICIÓN
+----------
 
 El ROS o Robot Operating System (sistema operativo de robots), es una
 colección de frameworks para el desarrollo de software de robots. Un
@@ -36,6 +38,7 @@ implementan numerosas funcionalidades como la localización y el mapeo
 simultáneo, la planificación, la percepción, la simulación, etc.
 
 HISTORIA
+--------
 
 ROS se desarrolló en 2007 bajo el nombre de switchyard por el
 Laboratorio de Inteligencia Artificial de Stanford para dar soporte al
@@ -83,6 +86,7 @@ cual participan universidades españolas o el robot limpiador HERB de
 Intel.
 
 PROYECCIÓN FUTURA
+-----------------
 
 El sistema operativo de robots ya cuenta hoy en día con una estructura
 muy completa que proporciona al usuario múltiples posibilidades. Algunas

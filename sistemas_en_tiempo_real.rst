@@ -1,4 +1,5 @@
 Sistemas en tiempo real
+=======================
 
 Se dice que un sistema opera en tiempo real cuándo el tiempo que tarda
 en efectuarse la salida es significativo. El tiempo de respuesta puede
@@ -70,6 +71,7 @@ siguientes:
    sistemas.
 
 Sistemas embebidos
+------------------
 
 La mayoría de sistemas utilizados en tiempo real son sistemas embebidos.
 Estos son aquellos en los que el computador se encuentra integrado en el
@@ -86,6 +88,7 @@ convertidores de señales analógicas y digitales, y canales de
 comunicación en serie.
 
 Sistemas en tiempo real distribuido
+-----------------------------------
 
 Un sistema que trabaja en tiempo real distribuido está formado por unos
 nodos autónomos que se comunican entre sí a través de una red que

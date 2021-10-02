@@ -1,4 +1,5 @@
 Software
+========
 
 Como ya se ha comentado anteriormente, el foco principal de este trabajo
 reside en analizar las características en tiempo real de ROS2 y
@@ -16,6 +17,7 @@ análisis es la siguiente.
 |image0|
 
 ROS 2
+-----
 
 Desde que ROS comenzó en 2007, ha cambiado mucho la robótica y la propia
 comunidad de ROS. Con el objetivo de adaptar esos cambios, recientemente
@@ -52,6 +54,7 @@ distribución de Linux ya que originariamente ROS fue creada para este
 sistema operativo y está más optimizada.
 
 Conceptos
+---------
 
 Para comprender el análisis llevado a cabo en este trabajo es necesario
 conocer de una manera básica como funciona ROS 2. El sistema operativo
@@ -93,6 +96,7 @@ pueden ser modificadas por los servidores de ROS 2.
 https://docs.ros.org/en/foxy/Tutorials.html
 
 Instalación
+-----------
 
 El proceso de instalación de ROS 2 se encuentra perfectamente explicado
 en la documentación oficial, en la pagina web
@@ -128,6 +132,7 @@ que efectuar en cada paso.
 https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html
 
 Micro-ROS
+---------
 
 Micro-ROS es un framework que acerca las aplicaciones robóticas
 diseñadas para infraestructuras de gran tamaño a dispositivos con
@@ -155,6 +160,7 @@ inteligente con el mundo que les rodea.
 https://www.youtube.com/watch?v=slMhPRnBVwM
 
 Características principales
++++++++++++++++++++++++++++
 
 Micro-ROS posee siete características claves que lo convierten en un
 software optimizado para microcontroladores:
@@ -226,6 +232,7 @@ software optimizado para microcontroladores:
 https://micro.ros.org/docs/overview/features/
 
 Instalación
++++++++++++
 
 Una vez instalado ROS 2, es necesario crear un espacio de trabajo para
 micro-ROS. Una vez creado, se clona el repositorio de github que
@@ -233,39 +240,40 @@ contiene las herramientas y los ficheros para instalar micro-ROS.
 Finalmente, se compilan todos los ficheros y se obtendrían las
 herramientas principales de micro-ROS.
 
-*# Source the ROS 2 installation*
+:: 
+ 
+ # Source the ROS 2 installation
 
-*source\ /opt/ros/\ $ROS_DISTRO\ /setup.bash*
+ source /opt/ros/ $ROS_DISTRO /setup.bash
 
-*# Create a workspace and download the micro-ROS tools*
+ # Create a workspace and download the micro-ROS tools
 
-*mkdir\ microros_ws*
+ mkdir microros_ws
 
-*cd\ microros_ws*
+ cd microros_ws
 
-*git
-clone\ -b\ $ROS_DISTRO\ https://github.com/micro-ROS/micro_ros_setup.git
-src/micro_ros_setup*
+ git clone -b $ROS_DISTRO https://github.com/micro-ROS/micro_ros_setup.git src/micro_ros_setup
 
-*# Update dependencies using rosdep*
+ # Update dependencies using rosdep
 
-*sudo\ apt update\ *\ **&&**\ *\ rosdep update*
+ sudo apt update  && rosdep update
 
-*rosdep\ install\ --from-path\ src\ --ignore-src\ -y*
+ rosdep install --from-path src --ignore-src -y
 
-*# Install pip*
+ # Install pip
 
-*sudo\ apt-get\ install\ python3-pip*
+ sudo apt-get install python3-pip
 
-*# Build micro-ROS tools and source them*
+ # Build micro-ROS tools and source them
 
-*colcon build*
+ colcon build
 
-*source install\ /local_setup.bash*
+ source install /local_setup.bash
 
 https://micro.ros.org/docs/tutorials/core/first_application_linux/
 
 Arquitectura modular
+++++++++++++++++++++
 
 Micro-ROS sigue la arquitectura de ROS 2, y aprovecha su capacidad de
 conexión del middleware para utilizar el DDS para microcontroladores
@@ -276,7 +284,8 @@ A continuación se procederá a explicar los componentes que forman la
 arquitectura de Micro-ROS divididos en tres grupos: librería del
 cliente, middleware y RTOS.
 
-**Librería del cliente**
+Librería del cliente
+++++++++++++++++++++
 
 El objetivo general de esta librería es proporcionar todos los conceptos
 relevantes de ROS 2 en implementaciones adecuadas para
@@ -347,6 +356,7 @@ siguientes:
 |image7|\ https://www.fiware.org/2020/06/02/two-layered-api-introducing-the-micro-ros-client-library/
 
 Middleware
+++++++++++
 
 La principal característica de los softwares de robots es la
 comunicación entre distintos nodos que permita el intercambio de
