@@ -117,7 +117,7 @@ Existen varios tipos de sistemas en tiempo real distribuido, sin
 embargo, la arquitectura general de todos ellos es similar a la
 siguiente:
 
-.. figure:: Fotos/distributed real-time system structure.png
+.. figure:: Fotos/distributed real-time-system-structure.png
     :width: 150px
     :align: center
     
@@ -131,7 +131,7 @@ con el sistema.
 ROS
 ---
 
-DEFINICIÓN
+Definición
 ++++++++++
 
 El ROS o Robot Operating System (sistema operativo de robots), es una
@@ -171,7 +171,7 @@ paquetes desarrollados por una comunidad de usuarios. Estos paquetes
 implementan numerosas funcionalidades como la localización y el mapeo
 simultáneo, la planificación, la percepción, la simulación, etc.
 
-HISTORIA
+Historia
 ++++++++
 
 ROS se desarrolló en 2007 bajo el nombre de switchyard por el
@@ -223,7 +223,7 @@ Garage (PR2), el Baxter de Rethink Robotics, el Robot de Shadow en el
 cual participan universidades españolas o el robot limpiador HERB de
 Intel.
 
-PROYECCIÓN FUTURA
+Proyección futura
 +++++++++++++++++
 
 El sistema operativo de robots ya cuenta hoy en día con una estructura

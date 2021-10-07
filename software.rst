@@ -62,7 +62,7 @@ distribución de Linux ya que originariamente ROS fue creada para este
 sistema operativo y está más optimizada.
 
 Conceptos
----------
++++++++++
 
 Para comprender el análisis llevado a cabo en este trabajo es necesario
 conocer de una manera básica como funciona ROS 2. El sistema operativo
@@ -116,7 +116,7 @@ pueden ser modificadas por los servidores de ROS 2.
 https://docs.ros.org/en/foxy/Tutorials.html
 
 Instalación
------------
++++++++++++
 
 El proceso de instalación de ROS 2 se encuentra perfectamente explicado
 en la documentación oficial, en la pagina web

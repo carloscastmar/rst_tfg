@@ -4,6 +4,12 @@ Diseño del análisis
 Preparación previa
 ------------------
 
+Para realizar todas las mediciones de este trabajo, ha sido preciso
+un estudio previo del entorno y una extensa preparación para la utilización
+del software a probar.
+
+
+
 Estructura principal del análisis
 ---------------------------------
 
@@ -31,7 +37,7 @@ entonces el siguiente comando para depurar el problema:
 
 Obteniendo la siguiente información relevante:
 
-.. code-block:: console
+.. code-block:: bash
 
     I (642) wifi station: ESP_WIFI_MODE_STA
     I (662) wifi:wifi driver task: 3ffc4398, prio:23, stack:6656, core=0
