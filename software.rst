@@ -1,20 +1,24 @@
 Software
 ========
 
-Como ya se ha comentado anteriormente, el foco principal de este trabajo
-reside en analizar las características en tiempo real de ROS2 y
-micro-ROS. Sin embargo, la comunicación entre estos sistemas operativos
-y los sistemas reales requiere de la participación de otros softwares
-intermedios o “middlewares” que facilitan la comunicación con el mundo
-real.
+Como ya se ha comentado anteriormente, el foco principal de
+este trabajo reside en analizar las características en tiempo
+real de ROS2 y micro-ROS. Sin embargo, la comunicación entre estos
+sistemas operativos y los sistemas reales requiere de la
+participación de otros softwares intermedios o “middlewares”
+que facilitan la comunicación con el mundo real.
 
-En este capitulo se va a explicar el software empleado para la
-realización del trabajo y la instalación del mismo.
+En este capitulo se va a explicar el software empleado para
+la realización del trabajo y la instalación del mismo.
 
 La estructura de software que más se asemeja a la empleada en el
 análisis es la siguiente.
 
-|image0|
+.. figure:: Fotos/estructura_software_editada.png
+    :width: 150px
+    :align: center
+    
+    Comparación de la estructura de ROS 2 y micro-ROS
 
 ROS 2
 -----
@@ -46,7 +50,11 @@ Foxy, ya que, a pesar de no ser la más novedosa, es la distribución que
 da soporte al software de micro-ROS, el cual se explicará en el
 siguiente apartado.
 
-|image1|
+.. figure:: Fotos/Foxy.png
+    :width: 150px
+    :align: center
+    
+    Logotipo de la distribución "Foxy fitzroy"
 
 Se pueden instalar los paquetes de ROS 2 Foxy Fitzroy tanto para Linux
 (Ubuntu), Windows o MacOS. En nuestro caso se ha escogido la
@@ -67,7 +75,11 @@ publicadores (publisher) o como suscriptores (subscribers). Los
 publicadores son los encargados de publicar mensajes al topic y los
 suscriptores son los que reciben esos mensajes del topic.
 
-|image2|
+.. figure:: Fotos/topic_description-0.jpg
+    :width: 150px
+    :align: center
+    
+    Funcionamiento de un topic
 
 Otra forma de comunicación entre nodos es mediante servicios. Estos
 están basados en un modelo de solicitud y servicio. En este caso existe
@@ -77,7 +89,11 @@ servidor responde con un mensaje. A diferencia de la comunicación
 mediante topics, en este caso los clientes solo envían información
 cuando esta ha sido pedida por otro nodo o cliente.
 
-|image3|
+.. figure:: Fotos/Service-MultipleServiceClient-0.jpg
+    :width: 150px
+    :align: center
+    
+    Funcionamiento de un servicio
 
 Finalmente, los nodos también pueden comunicarse mediante acciones.
 Estas están constituidas por topics y servicios. El modelo de
@@ -87,7 +103,11 @@ cliente, y dos servicios, uno para el objetivo que quiere cumplir el
 cliente (goal service) y otro para los resultados obtenidos (result
 service).
 
-|image4|
+.. figure:: Fotos/Action-SingleActionClient-0.jpg
+    :width: 150px
+    :align: center
+    
+    Funcionamiento de una acción
 
 Por otro lado, también es posible modificar el estado de un nodo
 mediante parámetros. Estos son características propias del nodo que
@@ -124,11 +144,36 @@ las herramientas de la linea de comandos.
 Por último, es importante añadir que cada vez que se vaya a utilizar ROS
 2 es necesario añadir el fichero “setup.bash” a la lista fuente.
 
-En el link
-“\ https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html\ ”
-se encuentra esta información detallada con todos los comandos que hay
-que efectuar en cada paso.
+Se muestran a continuación los comandos necesarios para ejecutar dichas acciones.
 
+::
+ # Set locale
+
+ locale  # check for UTF-8
+ sudo apt update && sudo apt install locales
+ sudo locale-gen en_US en_US.UTF-8
+ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+ export LANG=en_US.UTF-8
+ locale  # verify settings
+
+
+ # Setup Sources
+
+ sudo apt update && sudo apt install curl gnupg2 lsb-release
+ sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
+ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+
+
+ # Install ROS 2 packages
+
+ sudo apt update
+ sudo apt install ros-foxy-desktop
+ sudo apt install ros-foxy-ros-base
+
+
+ #Environment setup
+ 
+ source /opt/ros/foxy/setup.bash
 https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html
 
 Micro-ROS
@@ -143,7 +188,11 @@ y micro-ROS da como resultado un marco robótico que reduce las barreras
 de entrada al mercado, reduciendo costes y acelerando el desarrollo de
 robots.
 
-|image5|
+.. figure:: Fotos/micro_ros.jpeg
+    :width: 100px
+    :align: center
+    
+    Logotipo de micro-ROS
 
 La contribución de micro-ROS al mundo de la robótica va más allá. El
 poder adaptar el sistema operativo de robots a sistemas embebidos
@@ -196,8 +245,7 @@ software optimizado para microcontroladores:
    Micro-ROS soporta tres populares sistemas operativos en tiempo real
    (a partir de ahora RTOS) de código abierto: FreeRTOS, Zephyr y Nuttx.
    Además puede ser portado a cualquier RTOS que tenga una interfaz
-   POSIX.
-
+   POSIX. 
    Los sistemas de compilación específicos de RTOS están integrados en
    algunos scripts de configuración genéricos, que se proporcionan como
    un paquete de ROS 2. Además, micro-ROS proporciona herramientas
@@ -234,7 +282,7 @@ https://micro.ros.org/docs/overview/features/
 Instalación
 +++++++++++
 
-Una vez instalado ROS 2, es necesario crear un espacio de trabajo para
+Después de instalar ROS 2, es necesario crear un espacio de trabajo para
 micro-ROS. Una vez creado, se clona el repositorio de github que
 contiene las herramientas y los ficheros para instalar micro-ROS.
 Finalmente, se compilan todos los ficheros y se obtendrían las
@@ -278,7 +326,13 @@ Arquitectura modular
 Micro-ROS sigue la arquitectura de ROS 2, y aprovecha su capacidad de
 conexión del middleware para utilizar el DDS para microcontroladores
 (DDS-XRCE). Además utiliza los RTOS basados en POSIX en lugar
-|image6|\ de Linux.
+de Linux.
+
+.. figure:: Fotos/estructura_micro_ros.png
+    :width: 150px
+    :align: center
+    
+    Estructura de micro-ROS
 
 A continuación se procederá a explicar los componentes que forman la
 arquitectura de Micro-ROS divididos en tres grupos: librería del
@@ -353,7 +407,13 @@ siguientes:
    uso de recursos al mínimo, basándose en un análisis de los detalles
    espaciales y temporales que realmente necesitan.
 
-|image7|\ https://www.fiware.org/2020/06/02/two-layered-api-introducing-the-micro-ros-client-library/
+\ https://www.fiware.org/2020/06/02/two-layered-api-introducing-the-micro-ros-client-library/
+
+.. figure:: Fotos/micro-ROS_stack.png
+    :width: 150px
+    :align: center
+    
+    Arquitectura de la librería del cliente
 
 Middleware
 ++++++++++
@@ -367,6 +427,12 @@ decidió hacer uso de un middleware ya existente llamado DDS. De esta
 forma, ROS 2 puede aprovechar una implementación enfocada en ese sector
 ya existente y bien desarrollada.
 
+.. figure:: Fotos/micro-ROS_stack.png
+    :width: 150px
+    :align: center
+    
+    Arquitectura del middleware
+
 https://design.ros2.org/articles/ros_middleware_interface.html
 
 DDS son las siglas de Data Distribution Service. Es un servicio de
@@ -375,7 +441,7 @@ sistemas en tiempo real para los middlewares de tipo publish/subscribe,
 como puede ser ROS. Fue creado debido a la necesidad de estandarizar los
 sistemas centrados en datos.
 
-`https://es.wikipedia.org/wiki/Data_Distribution_Servic <https://es.wikipedia.org/wiki/Data_Distribution_Service>`__\ e
+`https://es.wikipedia.org/wiki/Data_Distribution_Servic <https://es.wikipedia.org/wiki/Data_Distribution_Service>`__
 
 Existen numerosas implementaciones distintas de DDS y cada una tiene sus
 ventajas y sus desventajas en términos de plataformas soportadas,
@@ -409,37 +475,124 @@ agente de Micro XRCE-DDS actúa como un puente entre el cliente y el
 espacio de datos de DDS y permite a estos dispositivos actuar como
 publicadores y suscriptores o como clientes y servidores.
 
-|image8|
+.. figure:: Fotos/xrcedds_architecture.png
+    :width: 150px
+    :align: center
+    
+    Arquitectura de Micro XRCDE-DDS
 
-|image9|
+Dentro de las características principales de Micro XCRE-DDS, caben
+destacar las siguientes: 
+      
+-  Alto rendimiento: El cliente utiliza una librería de serialización
+   de bajo nivel que codifica en XCDR.
+      
+-  Bajo consumo de recursos: La librería del cliente está libre de memoria
+   XRCDE-DDS dinámica y estática, por lo que la única huella de memoria se
+   debe al crecimiento de la pila. Puede gestionar un emisor/suscriptor simple
+   con menos de 2 kB de RAM. Además el cliente está construido según un
+   concepto de perfiles, lo que permite añadir o eliminar funcionalidades a la
+   librería al mismo tiempo que modifica su tamaño.
+      
+   Multiplataforma: Las dependencias del sistema operativo son módulos aditivos,
+   por lo que los usuarios pueden implementar los módulos específicos de cada
+   plataforma a la librería del cliente. Por defecto, el sistema permite
+   trabajar con los sistemas operativos estándar Windows y Linux, y con los
+   RTOS Nuttx, FreeRTOS y Zephyr.
+      
+-  Multitransporte: A diferencia de otros middlewares de transferencia de datos,
+   XRCE-DDS soporta múltiples protocolos de transporte de forma nativa. En
+   concreto, es posible utilizar los protocolos UDP, TCP o un protocolo de
+   transporte en serie personalizado.
+      
+-  De código abierto: La librería del cliente, el ejecutable del agente,
+   la herramienta de compilación y otras dependencias internas son libres y de
+   código abierto.
 
-.. |image0| image:: Pictures/1000020100000400000002403CD969EAF83497A6.png
-   :width: 6.6382in
-   :height: 3.7638in
-.. |image1| image:: Pictures/10000000000000CE000000F5CAD8DA84064858EC.png
-   :width: 2.1457in
-   :height: 2.552in
-.. |image2| image:: Pictures/1000000000000356000001E095140ED6806EC2C7.jpg
-   :width: 4.3547in
-   :height: 2.448in
-.. |image3| image:: Pictures/1000000000000356000001E0F6537FBD7E2CB4E5.jpg
-   :width: 4.9429in
-   :height: 2.7783in
-.. |image4| image:: Pictures/1000000000000356000001E002D51E5293900E58.jpg
-   :width: 5.2382in
-   :height: 2.9445in
-.. |image5| image:: Pictures/100000000000018200000082C524CFB91BF3B441.jpg
-   :width: 4.0209in
-   :height: 1.3543in
-.. |image6| image:: Pictures/10000201000003BB000002633965ECBEC1A361BA.png
-   :width: 4.4307in
-   :height: 2.8346in
-.. |image7| image:: Pictures/1000000000000500000002D0F98E3AABF666B026.png
-   :width: 6.1618in
-   :height: 1.5543in
-.. |image8| image:: Pictures/1000020100000290000000E2C82B7AF29F6BF366.png
-   :width: 6.6929in
-   :height: 2.3055in
-.. |image9| image:: Pictures/1000000000000500000002D0F98E3AABF666B026.png
-   :width: 6.302in
-   :height: 0.7898in
+-  Dos modos de funcionamiento: Micro XRCE-DDS soporta dos modos de 
+   funcionamiento. El modo “best-effort” implementa una comunicación
+   rápida y ligera, mientras que el modo “reliable” asegura la fiabilidad
+   independientemente de la capa de transporte utilizada.
+
+RTOS
+++++
+
+Como ya se ha explicado previamente, RTOS significa sistema operativo en
+tiempo real. Esto es un sistema operativo ligero que se emplea para facilitar
+la multitarea y la integración de tareas en sistemas con recursos y tiempo
+limitados. La clave de un RTOS es la previsibilidad y el determinismo en el
+tiempo de ejecución más que la inmediatez, ya que lo fundamental en un
+sistema que opera de este modo es que realice una serie de tareas en un tiempo
+determinado, y no necesariamente lo más rápido posible.
+
+https://www.digikey.es/es/articles/real-time-operating-systems-and-their-applications
+
+.. figure:: Fotos/xrcedds_architecture.png
+    :width: 150px
+    :align: center
+    
+    Arquitectura del RTOS
+
+Un sistema operativo de este tipo cuenta con las siguientes características:
+no utiliza gran cantidad de memoria, es susceptible de actuar tras eventos
+realizados en el soporte físico, un tiempo de respuesta predecible, fiabilidad
+y multi-arquitectura, esto es la posibilidad de portar el código a cualquier
+tipo de CPU.
+
+https://es.wikipedia.org/wiki/Sistema_operativo_de_tiempo_real
+
+Los RTOS suelen utilizar capas de abstracción de hardware que facilitan
+el uso de recursos del hardware, como temporizadores y buses de comunicación,
+aligerando el desarrollo y permitiendo la reutilización de código.
+Además, ofrecen entidades de hilos y tareas que proporcionan las
+herramientas necesarias para implementar el determinismo en las aplicaciones.
+La programación consta de diferentes algoritmos, entre los que mejor se adapten
+a sus aplicaciones.
+
+Debido a todos los beneficios que ofrecen estos sistemas operativos,
+micro-ROS los integra en su pila de software. Esto mejora las capacidades
+de micro-ROS Y permite reutilizar todas las herramientas y funciones
+proporcionadas por estos.
+
+Al igual que los sistemas operativos convencionales, los RTOS también
+tienen diferentes soportes para las interfaces estándar. Esto se establece
+en una familia de estándares denominada POSIX. Este  está basado en Linux,
+el sistema operativo nativo de ROS 2, por lo que la portabilidad de gran parte
+del código de este a micro-ROS se facilita empleando los RTOS de este grupo.
+Tanto NuttX como Zephyr cumplen en buena medida con los estándares POSIX,
+haciendo que el esfuerzo de portabilidad sea mínimo, mientras que FreeRTOS
+proporciona un plugin, FreeRTOS+POSIX, gracias al cual una aplicación
+existente que cumpla con POSIX puede ser fácilmente portada al ecosistema
+FreeRTOS.
+
+https://micro.ros.org/docs/concepts/rtos/
+
+A pesar de que todos utilizan el mismo código base de micro-ROS y que
+sus herramientas han sido integradas en el sistema de compilación de ROS 2,
+existen notables diferencias en sus características.
+
+https://micro.ros.org/docs/tutorials/core/first_application_rtos/
+
+A la hora de escoger un RTOS aparecen varios factores a tener en cuenta.
+La responsabilidad y exposición legal, el rendimiento, las características
+técnicas, el coste, el ecosistema, el middleware a emplear, el proveedor
+y la preferencia de ingeniería.
+
+https://www.digikey.com/en/articles/how-to-select-the-right-rtos-and-microcontroller-platform-for-the-iot
+
+FreeRTOS ha sido el sistema operativo en tiempo real escogido para la
+realización de este análisis, debido a que es el que mejor se adapta a la placa
+que se usará en el mismo. Este es distribuido bajo la licencia MIT. Las
+propiedades clave de este RTOS son las herramientas de gestión de memoria
+que contiene, los recursos de transporte que ofrece, TCP/IP y IwIP, las tareas
+estándar y ociosas disponibles con prioridades asignables, la disponibilidad
+de la extensión POSIX y el tamaño tan reducido que ocupa, permitiendo ser
+utilizada en prácticamente cualquier microcontrolador.
+
+https://micro.ros.org/docs/overview/rtos/#freertos
+
+.. figure:: Fotos/freertos.jpeg
+    :width: 150px
+    :align: center
+    
+    Logotipo de FreeRTOS

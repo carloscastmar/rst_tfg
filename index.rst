@@ -10,11 +10,21 @@ TFG microprocessor benchmark
    :maxdepth: 3
    :caption: Índice
 
-   sistemas_en_tiempo_real.rst
-   
-   ROS.rst
+   introduccion.rst
+
+   marco_teorico_y_estado_del_arte.rst
 
    software.rst
+
+   hardware.rst
+
+   diseño_del_analisis.rst
+
+   resultados.rst
+
+   conclusiones_y_lineas_futuras.rst
+
+   planificacion_temporal_y_presupuesto.rst
 
 .. raw:: latex
   

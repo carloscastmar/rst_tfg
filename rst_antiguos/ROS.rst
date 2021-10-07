@@ -10,7 +10,11 @@ framework es un entorno de trabajo tecnológico que se basa en módulos
 concretos que sirve de base para la organización y el desarrollo de
 software.
 
-|image0|
+.. figure:: Fotos/ROS.jpg
+    :width: 150px
+    :align: center
+    
+    Logotipo de ROS
 
 ROS no llega a ser considerado un sistema operativo como tal, ya que
 necesita de un software de nivel superior para ser utilizado. Sin
@@ -46,7 +50,11 @@ proyecto del Robot con Inteligencia Artificial de Stanford (STAIR) y al
 programa de robots personales (PR), en los cuales se crearon prototipos
 internos de sistemas de software destinados a la robótica.
 
-|image1|
+.. figure:: Fotos/STAIR.jpg
+    :width: 150px
+    :align: center
+    
+    Robot con Inteligencia Artificial de Stanford (STAIR)
 
 Desde 2008, el proyecto continuó principalmente en Willow Garage, un
 instituto de investigación con más de veinte instituciones colaborando
@@ -106,10 +114,3 @@ Como se ha podido comprobar, esta tecnología ha avanzado enormemente
 durante los últimos años, y se prevé que este auge se maximice en los
 próximos años, desempeñando un papel fundamental en la revolución de la
 industria 4.0 y el fenómeno conocido como “el internet de las cosas”.
-
-.. |image0| image:: Pictures/1000000000000500000002D0AAEF59E49B5D52B7.jpg
-   :width: 3.8071in
-   :height: 2.122in
-.. |image1| image:: Pictures/10000000000001FE000000BF42B5D43A7A577040.jpg
-   :width: 3.9492in
-   :height: 1.9909in
