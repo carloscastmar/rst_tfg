@@ -75,7 +75,7 @@ publicadores (publisher) o como suscriptores (subscribers). Los
 publicadores son los encargados de publicar mensajes al topic y los
 suscriptores son los que reciben esos mensajes del topic.
 
-.. figure:: Fotos/topic_description-0.jpg
+.. figure:: Fotos/topic_description-0.png
     :width: 150px
     :align: center
     
@@ -89,7 +89,7 @@ servidor responde con un mensaje. A diferencia de la comunicación
 mediante topics, en este caso los clientes solo envían información
 cuando esta ha sido pedida por otro nodo o cliente.
 
-.. figure:: Fotos/Service-MultipleServiceClient-0.jpg
+.. figure:: Fotos/Service-MultipleServiceClient-0.png
     :width: 150px
     :align: center
     
@@ -103,7 +103,7 @@ cliente, y dos servicios, uno para el objetivo que quiere cumplir el
 cliente (goal service) y otro para los resultados obtenidos (result
 service).
 
-.. figure:: Fotos/Action-SingleActionClient-0.jpg
+.. figure:: Fotos/Action-SingleActionClient-0.png
     :width: 150px
     :align: center
     
@@ -147,6 +147,7 @@ Por último, es importante añadir que cada vez que se vaya a utilizar ROS
 Se muestran a continuación los comandos necesarios para ejecutar dichas acciones.
 
 ::
+   
  # Set locale
 
  locale  # check for UTF-8
@@ -409,7 +410,7 @@ siguientes:
 
 \ https://www.fiware.org/2020/06/02/two-layered-api-introducing-the-micro-ros-client-library/
 
-.. figure:: Fotos/micro-ROS_stack.png
+.. figure:: Fotos/micro-ROS_client_library.png
     :width: 150px
     :align: center
     
@@ -427,7 +428,7 @@ decidió hacer uso de un middleware ya existente llamado DDS. De esta
 forma, ROS 2 puede aprovechar una implementación enfocada en ese sector
 ya existente y bien desarrollada.
 
-.. figure:: Fotos/micro-ROS_stack.png
+.. figure:: Fotos/micro-ROS_middleware.png
     :width: 150px
     :align: center
     
@@ -527,7 +528,7 @@ determinado, y no necesariamente lo más rápido posible.
 
 https://www.digikey.es/es/articles/real-time-operating-systems-and-their-applications
 
-.. figure:: Fotos/xrcedds_architecture.png
+.. figure:: Fotos/micro-ROS_RTOS.png
     :width: 150px
     :align: center
     
