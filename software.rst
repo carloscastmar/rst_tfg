@@ -15,7 +15,7 @@ La estructura de software que más se asemeja a la empleada en el
 análisis es la siguiente.
 
 .. figure:: Fotos/estructura_software_editada.png
-    :width: 150px
+    :width: 300px
     :align: center
     
     Comparación de la estructura de ROS 2 y micro-ROS
@@ -76,7 +76,7 @@ publicadores son los encargados de publicar mensajes al topic y los
 suscriptores son los que reciben esos mensajes del topic.
 
 .. figure:: Fotos/topic_description-0.png
-    :width: 150px
+    :width: 300px
     :align: center
     
     Funcionamiento de un topic
@@ -90,7 +90,7 @@ mediante topics, en este caso los clientes solo envían información
 cuando esta ha sido pedida por otro nodo o cliente.
 
 .. figure:: Fotos/Service-MultipleServiceClient-0.png
-    :width: 150px
+    :width: 300px
     :align: center
     
     Funcionamiento de un servicio
@@ -104,7 +104,7 @@ cliente (goal service) y otro para los resultados obtenidos (result
 service).
 
 .. figure:: Fotos/Action-SingleActionClient-0.png
-    :width: 150px
+    :width: 300px
     :align: center
     
     Funcionamiento de una acción
@@ -330,7 +330,7 @@ conexión del middleware para utilizar el DDS para microcontroladores
 de Linux.
 
 .. figure:: Fotos/estructura_micro_ros.png
-    :width: 150px
+    :width: 300px
     :align: center
     
     Estructura de micro-ROS
@@ -411,7 +411,7 @@ siguientes:
 \ https://www.fiware.org/2020/06/02/two-layered-api-introducing-the-micro-ros-client-library/
 
 .. figure:: Fotos/micro-ROS_client_library.png
-    :width: 150px
+    :width: 300px
     :align: center
     
     Arquitectura de la librería del cliente
@@ -429,7 +429,7 @@ forma, ROS 2 puede aprovechar una implementación enfocada en ese sector
 ya existente y bien desarrollada.
 
 .. figure:: Fotos/micro-ROS_middleware.png
-    :width: 150px
+    :width: 300px
     :align: center
     
     Arquitectura del middleware
@@ -477,7 +477,7 @@ espacio de datos de DDS y permite a estos dispositivos actuar como
 publicadores y suscriptores o como clientes y servidores.
 
 .. figure:: Fotos/xrcedds_architecture.png
-    :width: 150px
+    :width: 300px
     :align: center
     
     Arquitectura de Micro XRCDE-DDS
@@ -529,7 +529,7 @@ determinado, y no necesariamente lo más rápido posible.
 https://www.digikey.es/es/articles/real-time-operating-systems-and-their-applications
 
 .. figure:: Fotos/micro-ROS_RTOS.png
-    :width: 150px
+    :width: 300px
     :align: center
     
     Arquitectura del RTOS

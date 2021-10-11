@@ -5,10 +5,60 @@ Preparación previa
 ------------------
 
 Para realizar todas las mediciones de este trabajo, ha sido preciso
-un estudio previo del entorno y una extensa preparación para la utilización
+un estudio previo del entorno y una preparación para la utilización
 del software a probar.
 
+En primer lugar, es necesario conocer el funcionamiento de la placa.
+Desde la propia página de Espressif es posible encontrar un documento
+con todos los pasos detallados para iniciarse en la programación de la
+placa.
 
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html#what-you-need
+
+En primer lugar es necesario instalar los requisítos de la aplicación en
+función del sistema operativo en el que se opere. Después, hay que instalar
+una serie de librerías proporcionadas por Espressif denominadas ESP-IDF.
+Posteriormente se instalará una serie de herramientas y se configurarán las
+variables de entorno. Una vez realizados estos pasos, ya será posible crear
+un proyecto para la placa para comprobar que funciona correctamente.
+
+Una vez comprobado el correcto funcionamiento de la placa, es necesario
+instalar el software de micro-ros y realizar una serie de pruebas. 
+Es posible realizar primero una serie de prácticas primero con clientes
+creados dentro del propio Linux. Para ello hay que instalar y compilar
+el firmware adecuado, crear un agente de micro-ROS y ejecutar la aplicación.
+Si todo funciona correctamente, será posible observar una serie de mensajes
+publicados en el topic en cuestión.
+
+https://micro.ros.org/docs/tutorials/core/first_application_linux/
+
+Después de realizar unas primeras prácticas tanto con el software como con
+el hardware que se quiere probar, es el momento de juntarlos y realizar
+las primeras pruebas de micro-ROS en la placa esp32.
+
+Para ello hay que seguir un tutorial similar al anterior en el que se explica
+como realizar una primera aplicación de micro-ROS con conexión vía Wi-Fi.
+
+https://link.medium.com/JFof42RUwib
+
+En primer lugar hay que crear y configurar un nuevo firmware de trabajo.
+En este momento hay que escoger el RTOS sobre el que se va a trabajar y
+descargar sus herramientas y librerías propias. Posteriormente es necesario
+configurar dicho firmware, especificando la aplciación que se quiere probar
+y el tipo de conexión que se quiere establecer con la placa. Además, es necesario
+operar sobre un menu de la propia placa en el que se pueden modificar numerosos
+aspectos de la misma, como las variables de entorno o las especificaciones
+de la conexión (p.e. SSID y contraseña Wi-Fi).
+
+Una vez configurado, se compilará y se flasheará a la placa. En este momento
+se envía la aplicación a la placa vía USB y esta se ejecuta. Sin embargo, es
+necesario crear un agente en Linux para que la placa pueda conectarse a un
+espacio de datos y publicar los mensajes. Tras realizar dicha acción, podrá
+observarse cierta información en el agente creado, confirmando el establecimiento
+de conexión entre el agente y el cliente. Este será el momento en el que podremos
+comprobar que todo funciona correctamente. Mediante el comando "ros2 topic list"
+se mostrará el topic creado y con "ros2 topic echo /[project name]" podremos
+suscribirnos y observar los mensajes enviados por el cliente.
 
 Estructura principal del análisis
 ---------------------------------

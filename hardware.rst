@@ -41,7 +41,7 @@ principalmente en el mercado de placas, cajas OTT
 https://www.digikey.es/es/supplier-centers/espressif-systems
 
 .. figure:: Fotos/esp32.jpg
-    :width: 150px
+    :width: 300px
     :align: center
     
     Placa ESP32
@@ -85,7 +85,7 @@ La DevKitc V4 que se ha utilizado cuenta con los siguientes componentes:
     programar múltiples funciones como PWM, ADC, DAC, I2C, I2S, SPI, etc.
 
 .. figure:: Fotos/esp32-devkitc-functional-overview.jpg
-    :width: 150px
+    :width: 300px
     :align: center
     
     Componentes de la placa ESP32
@@ -122,7 +122,7 @@ El sistema operativo elegido para ESP32 es freeRTOS con LwIP,
 aunque también se ha incorporado TLS 1.2 con aceleración por hardware.
 
 .. figure:: Fotos/WROOM32D.jpg
-    :width: 150px
+    :width: 300px
     :align: center
     
     Módulo ESP32-WROOM-32D

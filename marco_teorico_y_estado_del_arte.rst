@@ -122,7 +122,7 @@ embargo, la arquitectura general de todos ellos es similar a la
 siguiente:
 
 .. figure:: Fotos/distributed_real-time_system_structure.png
-    :width: 150px
+    :width: 300px
     :align: center
     
     Arquitectura general de un sistema en tiempo real distribuido
