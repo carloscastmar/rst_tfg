@@ -85,7 +85,7 @@ La DevKitc V4 que se ha utilizado cuenta con los siguientes componentes:
     programar múltiples funciones como PWM, ADC, DAC, I2C, I2S, SPI, etc.
 
 .. figure:: Fotos/esp32-devkitc-functional-overview.jpg
-    :width: 300px
+    :width: 500px
     :align: center
     
     Componentes de la placa ESP32

@@ -30,4 +30,4 @@ TFG microprocessor benchmark
   
   \renewcommand{\listtablename}{Índice de tablas}
   \listoffigures
-  \listoftables   
+  \listoftables
