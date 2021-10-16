@@ -7,7 +7,7 @@ Sistemas en tiempo real
 Se dice que un sistema opera en tiempo real cuándo el tiempo que tarda
 en efectuarse la salida es significativo. El tiempo de respuesta puede
 ser relativamente flexible (tiempo real suave) o más estricto (tiempo
-real duro), lo que se denomina software crítico.
+real duro), lo que se denomina software crítico. :footcite:t:`tiempo_real`
 
 https://es.wikipedia.org/wiki/Sistema_de_tiempo_real
 
@@ -256,3 +256,5 @@ próximos años, desempeñando un papel fundamental en la revolución de la
 industria 4.0 y el fenómeno conocido como “el internet de las cosas”.
 
 http://docs.ros.org/en/rolling/
+
+.. footbibliography::
