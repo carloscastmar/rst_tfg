@@ -329,7 +329,7 @@ conexión del middleware para utilizar el DDS para microcontroladores
 (DDS-XRCE). Además utiliza los RTOS basados en POSIX en lugar
 de Linux.
 
-.. figure:: Fotos/estructura_micro_ros.jpg
+.. figure:: Fotos/estructura_micro_ros.png
     :width: 500px
     :align: center
     
