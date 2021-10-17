@@ -142,7 +142,7 @@ El ROS o Robot Operating System (sistema operativo de robots), es una
 colección de frameworks para el desarrollo de software de robots. Un
 framework es un entorno de trabajo tecnológico que se basa en módulos
 concretos que sirve de base para la organización y el desarrollo de
-software. :cite:t:`robot_operating_system`
+software. :cite:`robot_operating_system`
 
 
 https://es.wikipedia.org/wiki/Robot_Operating_System
@@ -261,3 +261,4 @@ http://docs.ros.org/en/rolling/
 .. footbibliography::
 
 .. bibliography::
+   :style: plain
