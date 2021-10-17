@@ -7,7 +7,7 @@ Sistemas en tiempo real
 Se dice que un sistema opera en tiempo real cuándo el tiempo que tarda
 en efectuarse la salida es significativo. El tiempo de respuesta puede
 ser relativamente flexible (tiempo real suave) o más estricto (tiempo
-real duro), lo que se denomina software crítico.
+real duro), lo que se denomina software crítico. :footcite:p:`tiempo_real`
 
 https://es.wikipedia.org/wiki/Sistema_de_tiempo_real
 
@@ -142,7 +142,8 @@ El ROS o Robot Operating System (sistema operativo de robots), es una
 colección de frameworks para el desarrollo de software de robots. Un
 framework es un entorno de trabajo tecnológico que se basa en módulos
 concretos que sirve de base para la organización y el desarrollo de
-software.
+software. :cite:t:`robot_operating_system`
+
 
 https://es.wikipedia.org/wiki/Robot_Operating_System
 
@@ -256,3 +257,7 @@ próximos años, desempeñando un papel fundamental en la revolución de la
 industria 4.0 y el fenómeno conocido como “el internet de las cosas”.
 
 http://docs.ros.org/en/rolling/
+
+.. footbibliography::
+
+.. bibliography::
