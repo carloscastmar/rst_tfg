@@ -65,6 +65,29 @@ html_static_path = ['_static']
 
 # -- Options for LaTeX output ---------------------------------------------
 
+latex_custom = r'''
+\makeatletter
+
+   \fancypagestyle{normal}{
+    \fancyhf{}
+    \fancyfoot[RO]{{\py@HeaderFamily ETS Ingenieros Industriales \thepage}}
+    \fancyfoot[LO]{{\py@HeaderFamily\nouppercase{\rightmark}}}
+    \fancyhead[RO]{{\py@HeaderFamily \@title\sphinxheadercomma\py@release}}
+    \if@twoside
+     \fancyfoot[LE]{{\py@HeaderFamily\thepage}}
+     \fancyfoot[RE]{{\py@HeaderFamily\nouppercase{\leftmark}}}
+     \fancyhead[LE]{{\py@HeaderFamily \@title\sphinxheadercomma\py@release}}
+    \fi
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+    % define chaptermark with \@chappos when \@chappos is available for Japanese
+    \ltx@ifundefined{@chappos}{}
+      {\def\chaptermark##1{\markboth{\@chapapp\space\thechapter\space\@chappos\space ##1}{}}}
+
+    }
+\makeatother
+'''
+
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
@@ -76,10 +99,7 @@ latex_elements = {
 
     # Additional stuff for the LaTeX preamble.
     #
-#     'preamble': '''%
-#       \pagestyle{plain}
-#       \pagenumbering{arabic}
-#     ''',
+     'preamble': latex_custom,
 
     # Latex figure (float) alignment
     #
