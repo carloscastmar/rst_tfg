@@ -7,9 +7,7 @@ Sistemas en tiempo real
 Se dice que un sistema opera en tiempo real cuándo el tiempo que tarda
 en efectuarse la salida es significativo. El tiempo de respuesta puede
 ser relativamente flexible (tiempo real suave) o más estricto (tiempo
-real duro), lo que se denomina software crítico. :footcite:p:`tiempo_real`
-
-https://es.wikipedia.org/wiki/Sistema_de_tiempo_real
+real duro), lo que se denomina software crítico. :cite:`tiempo_real`
 
 La falta de respuesta en el tiempo establecido puede ocasionar graves
 consecuencias para el entorno del sistema, llegando a producir daños a
@@ -144,9 +142,6 @@ framework es un entorno de trabajo tecnológico que se basa en módulos
 concretos que sirve de base para la organización y el desarrollo de
 software. :cite:`robot_operating_system`
 
-
-https://es.wikipedia.org/wiki/Robot_Operating_System
-
 .. figure:: Fotos/ROS.jpg
     :width: 300px
     :align: center
@@ -158,9 +153,7 @@ necesita de un software de nivel superior para ser utilizado. Sin
 embargo, ROS provee los servicios básicos de uno, como son la
 abstracción del hardware, el control de dispositivos de bajo nivel, la
 implementación de funcionalidad de uso común, el paso de mensajes entre
-procesos y el mantenimiento de paquetes.
-
-https://openwebinars.net/blog/que-es-ros/
+procesos y el mantenimiento de paquetes. :cite:`que-es-ros`
 
 Está basado en una arquitectura de grafos, esto es, una estructura
 formada por nodos, o extremos del sistema, y un conjunto de arcos que
@@ -187,9 +180,7 @@ ROS se desarrolló en 2007 bajo el nombre de switchyard por el
 Laboratorio de Inteligencia Artificial de Stanford para dar soporte al
 proyecto del Robot con Inteligencia Artificial de Stanford (STAIR) y al
 programa de robots personales (PR), en los cuales se crearon prototipos
-internos de sistemas de software destinados a la robótica.
-
-https://www.ros.org/history/
+internos de sistemas de software destinados a la robótica. :cite:`ros_history`
 
 .. figure:: Fotos/STAIR.png
     :width: 150px
@@ -255,10 +246,7 @@ Como se ha podido comprobar, esta tecnología ha avanzado enormemente
 durante los últimos años, y se prevé que este auge se maximice en los
 próximos años, desempeñando un papel fundamental en la revolución de la
 industria 4.0 y el fenómeno conocido como “el internet de las cosas”.
-
-http://docs.ros.org/en/rolling/
-
-.. footbibliography::
+:cite:`ros_rolling`
 
 .. bibliography::
    :style: plain
