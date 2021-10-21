@@ -39,8 +39,6 @@ vez que se libera una distribución, se trata de limitar los cambios a la
 corrección de errores y a las mejoras que no rompan el núcleo de los
 paquetes. :cite:`ros_rolling`
 
-https://docs.ros.org/en/rolling/
-
 Las dos distribuciones que están activas actualmente son “Foxy fitzroy”,
 que fue lanzada en junio de 2020, y “Galactic Geochelone”, que es la más
 reciente, lanzada en mayo de 2021.
@@ -113,15 +111,11 @@ Por otro lado, también es posible modificar el estado de un nodo
 mediante parámetros. Estos son características propias del nodo que
 pueden ser modificadas por los servidores de ROS. :cite:`ros_tutorial`
 
-https://docs.ros.org/en/foxy/Tutorials.html
-
 Instalación
 +++++++++++
 
 El proceso de instalación de ROS 2 se encuentra perfectamente explicado
-en la documentación oficial, en la pagina web 
-
-https://docs.ros.org/en/foxy/Installation.html.
+en la documentación oficial, en la pagina web  :cite:`ros_installation`
 
 Hay dos formas de instalar los paquetes de ROS 2 para Ubuntu. A
 continuación se explicará de forma resumida la instalación llevada acabo
@@ -146,6 +140,7 @@ Por último, es importante añadir que cada vez que se vaya a utilizar ROS
 2 es necesario añadir el fichero “setup.bash” a la lista fuente.
 
 Se muestran a continuación los comandos necesarios para ejecutar dichas acciones.
+:cite:`ros_install_ubuntu`
 
 ::
    
@@ -176,7 +171,6 @@ Se muestran a continuación los comandos necesarios para ejecutar dichas accione
  #Environment setup
  
  source /opt/ros/foxy/setup.bash
-https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html
 
 Micro-ROS
 ---------
@@ -206,15 +200,13 @@ tamaño, pudiendo dividirse estos en sistemas aislados más pequeños y
 sencillos capaces de conectarse entre si, dotando al sistema general de
 más información acerca del entorno, permitiendo que los sistemas
 robóticos verdaderamente distribuidos interactúen de forma aún más
-inteligente con el mundo que les rodea.
-
-https://www.youtube.com/watch?v=slMhPRnBVwM
+inteligente con el mundo que les rodea. :cite:`micro_ros_video`
 
 Características principales
 +++++++++++++++++++++++++++
 
 Micro-ROS posee siete características claves que lo convierten en un
-software optimizado para microcontroladores:
+software optimizado para microcontroladores: :cite:`micro_ros_features`
 
 -  Una API adaptada para microcontroladores que incluye todos los
    conceptos principales de ROS: este framework adaptado cuenta con las
@@ -279,8 +271,6 @@ software optimizado para microcontroladores:
    garantizar un buen mantenimiento, sino que está respaldado por otros
    componentes con más soporte detrás y que podrían ser sustituibles.
 
-https://micro.ros.org/docs/overview/features/
-
 Instalación
 +++++++++++
 
@@ -288,7 +278,7 @@ Después de instalar ROS 2, es necesario crear un espacio de trabajo para
 micro-ROS. Una vez creado, se clona el repositorio de github que
 contiene las herramientas y los ficheros para instalar micro-ROS.
 Finalmente, se compilan todos los ficheros y se obtendrían las
-herramientas principales de micro-ROS.
+herramientas principales de micro-ROS. :cite:`first_application_linux`
 
 :: 
  
@@ -319,8 +309,6 @@ herramientas principales de micro-ROS.
  colcon build
 
  source install /local_setup.bash
-
-https://micro.ros.org/docs/tutorials/core/first_application_linux/
 
 Arquitectura modular
 ++++++++++++++++++++
@@ -381,7 +369,7 @@ Además de estas aplicaciones, se han desarrollado varios conceptos
 avanzados en el contexto de la librería del cliente. En general, estos
 conceptos se desarrollan primero para el rclcpp estándar antes de
 implementar una versión en C adaptada. Estas funciones son las
-siguientes:
+siguientes: :cite:`ros_client_library`
 
 -  Ejecutor en tiempo real: El objetivo de este módulo consiste en
    aportar mecanismos de tiempo real prácticos y fáciles de usar que
@@ -409,8 +397,6 @@ siguientes:
    uso de recursos al mínimo, basándose en un análisis de los detalles
    espaciales y temporales que realmente necesitan.
 
-\ https://www.fiware.org/2020/06/02/two-layered-api-introducing-the-micro-ros-client-library/
-
 .. figure:: Fotos/micro-ROS_client_library.png
     :width: 500px
     :align: center
@@ -427,7 +413,7 @@ información con unas características determinadas.
 Para implementar todos esos conceptos de comunicación, en ROS 2 se
 decidió hacer uso de un middleware ya existente llamado DDS. De esta
 forma, ROS 2 puede aprovechar una implementación enfocada en ese sector
-ya existente y bien desarrollada.
+ya existente y bien desarrollada. :cite:`ros_middleware_interface`
 
 .. figure:: Fotos/micro-ROS_middleware.png
     :width: 500px
@@ -435,15 +421,11 @@ ya existente y bien desarrollada.
     
     Arquitectura del middleware
 
-https://design.ros2.org/articles/ros_middleware_interface.html
-
 DDS son las siglas de Data Distribution Service. Es un servicio de
 distribución de datos que sirve como estándar de comunicación de
 sistemas en tiempo real para los middlewares de tipo publish/subscribe,
 como puede ser ROS. Fue creado debido a la necesidad de estandarizar los
-sistemas centrados en datos.
-
-`https://es.wikipedia.org/wiki/Data_Distribution_Servic <https://es.wikipedia.org/wiki/Data_Distribution_Service>`__
+sistemas centrados en datos. :cite:`data_distribution_service`
 
 Existen numerosas implementaciones distintas de DDS y cada una tiene sus
 ventajas y sus desventajas en términos de plataformas soportadas,
@@ -457,15 +439,12 @@ implementación específica.
 
 Como ya se ha comentado en el anterior párrafo, ROS 2 da soporte a
 varias DDS. La más utilizada y considerada la DDS por defecto es la
-“Fast DDS” de eProsima. Esta implementación está diseñada en C++ e
+“Fast DDS” de eProsima. :cite:`eprosima_fast_dds`
+Esta implementación está diseñada en C++ e
 implementa el protocolo RTPS (Real Time Publish Subscribe), el cual
 permite comunicaciones a través de distintos medios como el protocolo de
 datagrama de usuario (UDP), un protocolo ligero de transporte de datos
-que funciona sobre IP.
-
-https://www.eprosima.com/index.php/products-all/eprosima-fast-dds
-
-https://es.khanacademy.org/computing/ap-computer-science-principles/the-internet/x2d2f703b37b450a3:transporting-packets/a/user-datagram-protocol-udp#:~:text=El%20Protocolo%20de%20datagrama%20de,o%20llegan%20fuera%20de%20orden.
+que funciona sobre IP. :cite:`protocolo_datagrama_usuario` 
 
 Para adaptar todo este mecanismo de comunicación a Micro-ROS, eProsima
 ha desarrollado “Micro XRCE-DDS”. Esta adaptación permite comunicar
@@ -525,9 +504,7 @@ la multitarea y la integración de tareas en sistemas con recursos y tiempo
 limitados. La clave de un RTOS es la previsibilidad y el determinismo en el
 tiempo de ejecución más que la inmediatez, ya que lo fundamental en un
 sistema que opera de este modo es que realice una serie de tareas en un tiempo
-determinado, y no necesariamente lo más rápido posible.
-
-https://www.digikey.es/es/articles/real-time-operating-systems-and-their-applications
+determinado, y no necesariamente lo más rápido posible. :cite:`real_time_os_applications`
 
 .. figure:: Fotos/micro-ROS_RTOS.png
     :width: 500px
@@ -539,9 +516,7 @@ Un sistema operativo de este tipo cuenta con las siguientes características:
 no utiliza gran cantidad de memoria, es susceptible de actuar tras eventos
 realizados en el soporte físico, un tiempo de respuesta predecible, fiabilidad
 y multi-arquitectura, esto es la posibilidad de portar el código a cualquier
-tipo de CPU.
-
-https://es.wikipedia.org/wiki/Sistema_operativo_de_tiempo_real
+tipo de CPU. :cite:`sistema_operativo_tiempo_real`
 
 Los RTOS suelen utilizar capas de abstracción de hardware que facilitan
 el uso de recursos del hardware, como temporizadores y buses de comunicación,
@@ -565,22 +540,16 @@ Tanto NuttX como Zephyr cumplen en buena medida con los estándares POSIX,
 haciendo que el esfuerzo de portabilidad sea mínimo, mientras que FreeRTOS
 proporciona un plugin, FreeRTOS+POSIX, gracias al cual una aplicación
 existente que cumpla con POSIX puede ser fácilmente portada al ecosistema
-FreeRTOS.
-
-https://micro.ros.org/docs/concepts/rtos/
+FreeRTOS. :cite:`why_a_real_time_os`
 
 A pesar de que todos utilizan el mismo código base de micro-ROS y que
 sus herramientas han sido integradas en el sistema de compilación de ROS 2,
-existen notables diferencias en sus características.
-
-https://micro.ros.org/docs/tutorials/core/first_application_rtos/
+existen notables diferencias en sus características. :cite:`first_application_rtos`
 
 A la hora de escoger un RTOS aparecen varios factores a tener en cuenta.
 La responsabilidad y exposición legal, el rendimiento, las características
 técnicas, el coste, el ecosistema, el middleware a emplear, el proveedor
-y la preferencia de ingeniería.
-
-https://www.digikey.com/en/articles/how-to-select-the-right-rtos-and-microcontroller-platform-for-the-iot
+y la preferencia de ingeniería. :site:`select_rtos_micro_for_iot`
 
 FreeRTOS ha sido el sistema operativo en tiempo real escogido para la
 realización de este análisis, debido a que es el que mejor se adapta a la placa
@@ -589,9 +558,7 @@ propiedades clave de este RTOS son las herramientas de gestión de memoria
 que contiene, los recursos de transporte que ofrece, TCP/IP y IwIP, las tareas
 estándar y ociosas disponibles con prioridades asignables, la disponibilidad
 de la extensión POSIX y el tamaño tan reducido que ocupa, permitiendo ser
-utilizada en prácticamente cualquier microcontrolador.
-
-https://micro.ros.org/docs/overview/rtos/#freertos
+utilizada en prácticamente cualquier microcontrolador. :site:`freertos`
 
 .. figure:: Fotos/freertos.jpeg
     :width: 200px
