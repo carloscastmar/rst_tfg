@@ -549,7 +549,7 @@ existen notables diferencias en sus características. :cite:`first_application_r
 A la hora de escoger un RTOS aparecen varios factores a tener en cuenta.
 La responsabilidad y exposición legal, el rendimiento, las características
 técnicas, el coste, el ecosistema, el middleware a emplear, el proveedor
-y la preferencia de ingeniería. :site:`select_rtos_micro_for_iot`
+y la preferencia de ingeniería. :cite:`select_rtos_micro_for_iot`
 
 FreeRTOS ha sido el sistema operativo en tiempo real escogido para la
 realización de este análisis, debido a que es el que mejor se adapta a la placa
@@ -558,7 +558,7 @@ propiedades clave de este RTOS son las herramientas de gestión de memoria
 que contiene, los recursos de transporte que ofrece, TCP/IP y IwIP, las tareas
 estándar y ociosas disponibles con prioridades asignables, la disponibilidad
 de la extensión POSIX y el tamaño tan reducido que ocupa, permitiendo ser
-utilizada en prácticamente cualquier microcontrolador. :site:`freertos`
+utilizada en prácticamente cualquier microcontrolador. :cite:`freertos`
 
 .. figure:: Fotos/freertos.jpeg
     :width: 200px
