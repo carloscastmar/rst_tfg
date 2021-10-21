@@ -37,7 +37,7 @@ código relativamente estable hasta que estén preparados para hacer
 avanzar todo su trabajo a la siguiente distribución. Por lo tanto, una
 vez que se libera una distribución, se trata de limitar los cambios a la
 corrección de errores y a las mejoras que no rompan el núcleo de los
-paquetes.
+paquetes. :cite:`ros_rolling`
 
 https://docs.ros.org/en/rolling/
 
@@ -111,7 +111,7 @@ service).
 
 Por otro lado, también es posible modificar el estado de un nodo
 mediante parámetros. Estos son características propias del nodo que
-pueden ser modificadas por los servidores de ROS 2.
+pueden ser modificadas por los servidores de ROS. :cite:`ros_tutorial`
 
 https://docs.ros.org/en/foxy/Tutorials.html
 
@@ -119,7 +119,8 @@ Instalación
 +++++++++++
 
 El proceso de instalación de ROS 2 se encuentra perfectamente explicado
-en la documentación oficial, en la pagina web
+en la documentación oficial, en la pagina web 
+
 https://docs.ros.org/en/foxy/Installation.html.
 
 Hay dos formas de instalar los paquetes de ROS 2 para Ubuntu. A
