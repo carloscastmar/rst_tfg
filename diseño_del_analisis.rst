@@ -246,74 +246,31 @@ En el agente se observa la siguiente salida:
 .. code-block:: console
 
     carlos@carlos-UX430UA:~/microros_ws$ ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888 -v6
+
     [1633603125.726950] info     | UDPv4AgentLinux.cpp | init                     | running...             | port: 8888
+
     [1633603125.727267] info     | Root.cpp           | set_verbose_level        | logger setup           | verbose_level: 6
+
     [1633603131.602949] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x00000000, len: 24, data: 
     0000: 80 00 00 00 00 01 10 00 58 52 43 45 01 00 01 0F 1E A5 3D F9 81 00 FC 01
+
     [1633603131.603248] info     | Root.cpp           | create_client            | create                 | client_key: 0x1EA53DF9, session_id: 0x81
+
     [1633603131.603400] info     | SessionManager.hpp | establish_session        | session established    | client_key: 0x1EA53DF9, address: 172.20.10.12:26313
+
     [1633603131.603645] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 19, data: 
     0000: 81 00 00 00 04 01 0B 00 00 00 58 52 43 45 01 00 01 0F 00
-    [1633603131.807073] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x1EA53DF9, len: 56, data: 
-    0000: 81 80 00 00 01 07 30 00 00 0A 00 01 01 03 00 00 21 00 00 00 00 01 A5 A5 19 00 00 00 66 72 65 65
-    0020: 72 74 6F 73 5F 69 6E 74 33 32 5F 70 75 62 6C 69 73 68 65 72 00 00 00 00
+
     [1633603131.934983] info     | ProxyClient.cpp    | create_participant       | participant created    | client_key: 0x1EA53DF9, participant_id: 0x000(1)
-    [1633603131.935244] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 14, data: 
     0000: 81 80 00 00 05 01 06 00 00 0A 00 01 00 00
-    [1633603131.935307] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0A 01 05 00 01 00 00 00 80
-    [1633603132.132584] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0B 01 05 00 00 00 00 00 80
-    [1633603132.132919] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0A 01 05 00 01 00 00 00 80
-    [1633603132.133873] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0B 01 05 00 00 00 00 00 80
-    [1633603132.149265] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0B 01 05 00 00 00 00 00 80
-    [1633603132.149349] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0A 01 05 00 01 00 00 00 80
-    [1633603132.149621] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0A 01 05 00 01 00 00 00 80
-    [1633603132.191649] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x1EA53DF9, len: 92, data: 
-    0000: 81 80 01 00 01 07 52 00 00 0B 00 02 02 03 00 00 44 00 00 00 1C 00 00 00 72 74 2F 66 72 65 65 72
-    0020: 74 6F 73 5F 69 6E 74 33 32 5F 70 75 62 6C 69 73 68 65 72 00 00 01 0E 80 1C 00 00 00 73 74 64 5F
-    0040: 6D 73 67 73 3A 3A 6D 73 67 3A 3A 64 64 73 5F 3A 3A 49 6E 74 33 32 5F 00 00 01 00 00
+
     [1633603132.191877] info     | ProxyClient.cpp    | create_topic             | topic created          | client_key: 0x1EA53DF9, topic_id: 0x000(2), participant_id: 0x000(1)
-    [1633603132.191992] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 14, data: 
-    0000: 81 80 01 00 05 01 06 00 00 0B 00 02 00 00
-    [1633603132.192054] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0A 01 05 00 02 00 00 00 80
-    [1633603132.220081] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0B 01 05 00 01 00 01 00 80
-    [1633603132.220254] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0A 01 05 00 02 00 00 00 80
-    [1633603132.230947] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0A 01 05 00 01 00 00 00 80
-    [1633603132.287495] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0A 01 05 00 02 00 00 00 80
-    [1633603132.287570] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x1EA53DF9, len: 24, data: 
-    0000: 81 80 02 00 01 07 10 00 00 0C 00 03 03 03 00 00 02 00 00 00 00 00 00 01
+
     [1633603132.287776] info     | ProxyClient.cpp    | create_publisher         | publisher created      | client_key: 0x1EA53DF9, publisher_id: 0x000(3), participant_id: 0x000(1)
-    [1633603132.287923] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 14, data: 
-    0000: 81 80 02 00 05 01 06 00 00 0C 00 03 00 00
-    [1633603132.287978] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0A 01 05 00 03 00 00 00 80
-    [1633603132.327156] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0A 01 05 00 03 00 00 00 80
-    [1633603132.349746] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x1EA53DF9, len: 36, data: 
-    0000: 81 80 03 00 01 07 19 00 00 0D 00 05 05 03 00 00 0B 00 00 00 00 02 01 00 03 00 00 00 00 00 00 00
-    0020: 03 00 00 00
+
     [1633603132.350367] info     | ProxyClient.cpp    | create_datawriter        | datawriter created     | client_key: 0x1EA53DF9, datawriter_id: 0x000(5), publisher_id: 0x000(3)
-    [1633603132.350530] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 14, data: 
-    0000: 81 80 03 00 05 01 06 00 00 0D 00 05 00 00
-    [1633603132.350618] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0A 01 05 00 04 00 00 00 80
-    [1633603132.358801] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x1EA53DF9, len: 13, data: 
-    0000: 81 00 00 00 0A 01 05 00 04 00 00 00 80
-    [1633603133.465127] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x1EA53DF9, len: 16, data: 
-    0000: 81 80 04 00 07 01 08 00 00 0E 00 05 00 00 00 00
-    [1633603133.465362] debug    | DataWriter.cpp     | write                    | [** <<DDS>> **]        | client_key: 0x00000000, len: 4, data: 
-    0000: 00 00 00 00
+    
+    [1633603133.465362] debug    | DataWriter.cpp     | write                    | [** <<DDS>> **]        | client_key: 0x00000000, len: 4, data: 0000: 00 00 00 00
 
 La información más relevante reside en comprobar que el agente y el cliente
 establecen una conexión y, aun más importante, que el agente de micro-ROS
