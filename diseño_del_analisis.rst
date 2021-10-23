@@ -11,9 +11,7 @@ del software a probar.
 En primer lugar, es necesario conocer el funcionamiento de la placa.
 Desde la propia página de Espressif es posible encontrar un documento
 con todos los pasos detallados para iniciarse en la programación de la
-placa.
-
-https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html#what-you-need
+placa. :cite:`ESP32_get_started`
 
 En primer lugar es necesario instalar los requisítos de la aplicación en
 función del sistema operativo en el que se opere. Después, hay que instalar
@@ -28,18 +26,15 @@ Es posible realizar primero una serie de prácticas primero con clientes
 creados dentro del propio Linux. Para ello hay que instalar y compilar
 el firmware adecuado, crear un agente de micro-ROS y ejecutar la aplicación.
 Si todo funciona correctamente, será posible observar una serie de mensajes
-publicados en el topic en cuestión.
-
-https://micro.ros.org/docs/tutorials/core/first_application_linux/
+publicados en el topic en cuestión. :cite:`first_micro_ros_linux_app`
 
 Después de realizar unas primeras prácticas tanto con el software como con
 el hardware que se quiere probar, es el momento de juntarlos y realizar
 las primeras pruebas de micro-ROS en la placa esp32.
 
 Para ello hay que seguir un tutorial similar al anterior en el que se explica
-como realizar una primera aplicación de micro-ROS con conexión vía Wi-Fi.
-
-https://link.medium.com/JFof42RUwib
+como realizar una primera aplicación de micro-ROS con conexión vía Wi-Fi. 
+:cite:`connect_esp32_to_ros2`
 
 En primer lugar hay que crear y configurar un nuevo firmware de trabajo.
 En este momento hay que escoger el RTOS sobre el que se va a trabajar y
