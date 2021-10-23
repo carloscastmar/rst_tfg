@@ -16,9 +16,7 @@ las placas con soporte oficial y las placas soportadas por la comunidad.
 Dentro de la gran cantidad de gamas de placas que poseen soporte directo
 de micro-ROS, encontramos dispositivos de proveedores con cierto renombre
 como Renesas, Espressif, Arduino, Raspberry, ROBOTICS, Teensy, ST, Olimex,
-etc.
-
-https://micro.ros.org/docs/overview/hardware/
+etc. :cite:`micro_ros_hardhare`
 
 ESP-32
 ------
@@ -36,9 +34,7 @@ de software. Una particularidad de esta empresa es el apoyo que proporcionan
 a sus clientes para construir sus propias soluciones y conectar con otros
 socios del mundo IoT. Los productos de Espressif se han implementado
 principalmente en el mercado de placas, cajas OTT
-(servicios de libre transmisión), cámaras e IoT.
-
-https://www.digikey.es/es/supplier-centers/espressif-systems
+(servicios de libre transmisión), cámaras e IoT. :cite:`expressif_systems`
 
 .. figure:: Fotos/esp32.jpg
     :width: 300px
@@ -57,9 +53,7 @@ o montar la DevkitC en una protoboard. Una de las particularidades que
 más destacan de estos modelos son la posibilidad de conexión vía Wi-Fi
 y Bluetooth. Esto permite realizar prototipos inalámbricos que simulan
 un entorno con muchas posibilidades que se asemeja más a la idea original
-del IoT.
-
-https://www.espressif.com/en/products/devkits/esp32-devkitc
+del IoT. :cite:`ESP32-DevKitC`
 
 La DevKitc V4 que se ha utilizado cuenta con los siguientes componentes:
 
@@ -93,7 +87,7 @@ La DevKitc V4 que se ha utilizado cuenta con los siguientes componentes:
 El ESP32-WROOM-32D es un módulo de microcontrolador genérico que se dirigen
 a una amplia gama variedad de aplicaciones, que van desde redes de sensores
 de baja potencia hasta otras tareas de mayor exigencia, como codificación
-de voz, transmisión de música y decodificación de MP3.
+de voz, transmisión de música y decodificación de MP3. 
 
 El núcleo de este módulo es el chip ESP32-D0WD. El chip está diseñado para
 ser escalable y adaptable. Existen dos núcleos de CPU que pueden ser
@@ -119,15 +113,13 @@ una potencia de salida de 20 dBm en la antena para garantizar el mayor
 alcance físico posible.
 
 El sistema operativo elegido para ESP32 es freeRTOS con LwIP,
-aunque también se ha incorporado TLS 1.2 con aceleración por hardware.
+aunque también se ha incorporado TLS 1.2 con aceleración por hardware. :cite:`ESP32_WROOM_32_Datasheet`
 
 .. figure:: Fotos/WROOM32D.jpg
     :width: 300px
     :align: center
     
     Módulo ESP32-WROOM-32D
-
-https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
 
 Computador
 ----------
