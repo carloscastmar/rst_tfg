@@ -516,7 +516,7 @@ Un sistema operativo de este tipo cuenta con las siguientes características:
 no utiliza gran cantidad de memoria, es susceptible de actuar tras eventos
 realizados en el soporte físico, un tiempo de respuesta predecible, fiabilidad
 y multi-arquitectura, esto es la posibilidad de portar el código a cualquier
-tipo de CPU. :cite:`sistema_operativo_tiempo_real`
+tipo de CPU. :cite:`sistema_operativo_de_tiempo_real`
 
 Los RTOS suelen utilizar capas de abstracción de hardware que facilitan
 el uso de recursos del hardware, como temporizadores y buses de comunicación,
