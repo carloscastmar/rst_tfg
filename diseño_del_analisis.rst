@@ -76,7 +76,7 @@ que se conectase a la IP de la red elegida, tras flashear el firmware
 en el dispositivo, el punto de acceso Wi-Fi no lo detectaba. Se utilizó
 entonces el siguiente comando para depurar el problema:
 
-::
+.. code-block:: bash
  
  ros2 run micro_ros_setup build_firmware.sh monitor
 
@@ -170,7 +170,7 @@ conectado a la red. Tras ejecutar el comando:
 
 Se obtuvo la siguiente salida.
 
-.. code-block:: console
+.. code-block:: bash
 
     carlos@carlos-UX430UA:~/microros_ws$ ros2 topic list
     /parameter_events
@@ -202,14 +202,14 @@ en un espacio que no fuera ROS 2.
 
 El siguiente comando ejecuta un agente en Docker.
 
-::
+.. code-block:: bash
 
     docker run -it --rm --net=host microros/micro-ros-agent:foxy udp4 --port 8888 -v6
 
 En otro terminal se ejecuta el siguiente comando para entrar en
 la imagen del Docker:
 
-::
+.. code-block:: bash
 
     docker run -it osrf/ros:eloquent-desktop
 
@@ -232,7 +232,7 @@ del agente de micro-ROS con el espacio de ROS 2. Se utilizó el siguiente
 comando para ejecutar un agente de micro-ROS que mostrara información sobre
 la conexión:
 
-::
+.. code-block:: bash
 
     ros2 run micro_ros_agent micro_ros_agent udp4 --port  8888 -v6
 
@@ -286,7 +286,7 @@ de código en el fichero .bashrc, se volvió a ejecutar todo el proceso
 el cliente con el agente ya era posible observar tanto los nodos como los
 topic a los que estaba conectada la placa.
 
-.. code-block:: console
+.. code-block:: bash
 
     carlos@carlos-UX430UA:~/microros_ws$ ros2 topic list
     /freertos_int32_publisher

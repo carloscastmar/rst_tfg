@@ -142,7 +142,7 @@ Por último, es importante añadir que cada vez que se vaya a utilizar ROS
 Se muestran a continuación los comandos necesarios para ejecutar dichas acciones.
 :cite:`ros_install_ubuntu`
 
-::
+.. code-block:: bash
    
  # Set locale
 
@@ -153,20 +153,17 @@ Se muestran a continuación los comandos necesarios para ejecutar dichas accione
  export LANG=en_US.UTF-8
  locale  # verify settings
 
-
  # Setup Sources
 
  sudo apt update && sudo apt install curl gnupg2 lsb-release
  sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
-
  # Install ROS 2 packages
 
  sudo apt update
  sudo apt install ros-foxy-desktop
  sudo apt install ros-foxy-ros-base
-
 
  #Environment setup
  
@@ -280,7 +277,7 @@ contiene las herramientas y los ficheros para instalar micro-ROS.
 Finalmente, se compilan todos los ficheros y se obtendrían las
 herramientas principales de micro-ROS. :cite:`first_application_linux`
 
-:: 
+.. code-block:: bash
  
  # Source the ROS 2 installation
 
