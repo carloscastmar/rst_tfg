@@ -101,9 +101,10 @@ Obteniendo la siguiente información relevante:
 
     Brownout detector was triggered
 
-Investigando el último mensaje de error “Brownout detector was triggered”
-(https://www.esp32.com/viewtopic.php?t=16299), se descubrió que la incidencia
-estaba relacionada con la falta de potencia en la alimentación de la placa.
+Investigando el último mensaje de error “Brownout detector was triggered”, 
+se descubrió que la incidencia estaba relacionada con la falta de potencia en 
+la alimentación de la placa. :footcite:`brownout_detector_was_triggered` 
+
 
 En una primera instancia se trató de modificar la fuente de alimentación,
 cambiando en primer lugar de puerto en el ordenador y, posteriormente,
@@ -185,9 +186,9 @@ En primer lugar se comprobó si la placa funcionaba correctamente.
 Para ello se siguieron los  siguientes tutoriales para el testeo de
 la placa en “Visual Studio Code”:
 
-https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/tutorial/install.md
+- https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/tutorial/install.md
 
-https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/tutorial/basic_use.md
+- https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/tutorial/basic_use.md
 
 Tras la instalación y la prueba de un proyecto básico en la placa,
 se confirmó el correcto funcionamiento de la misma.
@@ -272,7 +273,7 @@ establecen una conexión y, aun más importante, que el agente de micro-ROS
 publica los mensajes en el DDS. De este modo era complicado averiguar el hecho
 de que, publicándose mensajes en la red de ROS 2, estos no eran reconocidos
 desde la computadora. Se investigó este fallo a través de fuentes externas
-(https://github.com/micro-ROS/micro_ros_arduino/issues/7) y se averiguó que
+:footcite:`no_communication_micro_ROS_ROS2` y se averiguó que
 el problema residía en el dominio de ROS escogido previamente.
 
 Este se puede escoger a través de una variable del entorno denominada
@@ -294,3 +295,5 @@ topic a los que estaba conectada la placa.
     /rosout
     carlos@carlos-UX430UA:~/microros_ws$ ros2 node list
     /freertos_int32_publisher
+
+.. footbibliography::
