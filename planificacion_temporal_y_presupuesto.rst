@@ -9,7 +9,7 @@ llevadas a cabo durante la realización del trabajo. Las fechas
 tienen una fecha y duración aproximada.
 
 .. figure:: Fotos/Diagrama_de_Gantt.png
-    :width: 300px
+    :width: 600px
     :align: center
     
     Diagrama de Gantt
