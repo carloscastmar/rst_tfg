@@ -13,7 +13,7 @@ Desde la propia página de Espressif es posible encontrar un documento
 con todos los pasos detallados para iniciarse en la programación de la
 placa. :cite:`ESP32_get_started`
 
-En primer lugar es necesario instalar los requisítos de la aplicación en
+Al principio se necesita instalar los requisítos de la aplicación en
 función del sistema operativo en el que se opere. Después, hay que instalar
 una serie de librerías proporcionadas por Espressif denominadas ESP-IDF.
 Posteriormente se instalará una serie de herramientas y se configurarán las
@@ -36,7 +36,7 @@ Para ello hay que seguir un tutorial similar al anterior en el que se explica
 como realizar una primera aplicación de micro-ROS con conexión vía Wi-Fi. 
 :cite:`connect_esp32_to_ros2`
 
-En primer lugar hay que crear y configurar un nuevo firmware de trabajo.
+Inicialmente hay que crear y configurar un nuevo firmware de trabajo.
 En este momento hay que escoger el RTOS sobre el que se va a trabajar y
 descargar sus herramientas y librerías propias. Posteriormente es necesario
 configurar dicho firmware, especificando la aplciación que se quiere probar
@@ -55,8 +55,27 @@ comprobar que todo funciona correctamente. Mediante el comando "ros2 topic list"
 se mostrará el topic creado y con "ros2 topic echo /[project name]" podremos
 suscribirnos y observar los mensajes enviados por el cliente.
 
+Despues de realizar unas pruebas con las demos que proporciona el sistema
+operativo, es recomendable realizar una serie de tutoriales más avanzados
+que proporciona la propia página de micro-ROS (https://micro.ros.org/docs/tutorials/programming_rcl_rclc/overview/). En estos se enseña como
+diseñar tu propia aplicación, incluyendo como crear tu propio nodo,
+tus publishers y subscribers, un temporizador o incluso seleccionar
+la calidad del servicio de la aplicación.
+
+Cuando se ha logrado crear una aplicación que cumpla con los requisitos
+del análisis que se ha elegido, es imprescindible escoger y conocer
+una herramienta de medida. En este caso se va a utilizar cyclictest,
+una herramienta de benchmarking para sistemas en tiempo real. En concreto,
+sirve para medir la latencia del sistema.
+
+https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/cyclictest/start
+
 Estructura principal del análisis
 ---------------------------------
+
+
+
+
 
 Incidencias ocurridas
 ---------------------
