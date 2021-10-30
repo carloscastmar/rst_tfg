@@ -124,7 +124,8 @@ aunque también se ha incorporado TLS 1.2 con aceleración por hardware. :cite:`
 Computador
 ----------
 
-Todo el trabajo se ha realizado haciendo uso de un ordenador personal.
+Todo el trabajo se ha realizado haciendo uso de un ordenador personal,
+de unos 4 años de uso que se encuentra en perfecto estado.
 Este es un Asus UX340. 
 Este ordenador portátil cuenta con 16 GB de memoria RAM, 256 GB de
 almacenamiento SSD, arquitectura de 64 bits y un microprocesador Intel i5.
@@ -150,3 +151,20 @@ sustituyó por un cable de calidad superior.
     :align: center
     
     Cable micro-USB
+
+Router TP-Link
+--------------
+
+Para obtener unas medidas que no se vean alteradas por el tráfico
+que pueda existir en la red doméstica, se ha adquirido un router
+adicional. Este es un Archer 80 de la marca TP-Link.
+Cuenta con 1300 Mbps en la banda de 5 GHz y 600 Mbps en la banda
+de 2.4 GHz. Tiene una tecnología MIMO 3x3 con cobertura de Wi-Fi
+potenciada. Este se conectará por cable a una red doméstica de 1Gbps
+de descarga.
+
+.. figure:: Fotos/tp_link.jpg
+    :width: 150px
+    :align: center
+
+    Router TP-Link
