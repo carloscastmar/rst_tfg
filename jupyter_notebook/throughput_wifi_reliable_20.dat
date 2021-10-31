@@ -1,0 +1,1097 @@
+[35m[1635678963.911004][m info     | [34mUDPv4AgentLinux.cpp[m | [37minit                    [m | [32mrunning...[m             | port: 8888
+[35m[1635678963.911212][m info     | [34mRoot.cpp          [m | [37mset_verbose_level       [m | [32mlogger setup[m           | verbose_level: 5
+[35m[1635678970.233194][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x00000000, len: 24
+[35m[1635678970.233456][m info     | [34mRoot.cpp          [m | [37mcreate_client           [m | [32mcreate[m                 | client_key: 0x76C6E6A1, session_id: 0x81
+[35m[1635678970.233564][m info     | [34mSessionManager.hpp[m | [37mestablish_session       [m | [32msession established[m    | client_key: 0x76C6E6A1, address: 192.168.1.90:14057
+[35m[1635678970.233786][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 19
+[35m[1635678970.322005][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 52
+[35m[1635678970.334098][m info     | [34mProxyClient.cpp   [m | [37mcreate_participant      [m | [32mparticipant created[m    | client_key: 0x76C6E6A1, participant_id: 0x000(1)
+[35m[1635678970.334192][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 14
+[35m[1635678970.334211][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.345533][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.349415][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 88
+[35m[1635678970.349666][m info     | [34mProxyClient.cpp   [m | [37mcreate_topic            [m | [32mtopic created[m          | client_key: 0x76C6E6A1, topic_id: 0x000(2), participant_id: 0x000(1)
+[35m[1635678970.349837][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 14
+[35m[1635678970.349872][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.375236][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.383048][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 24
+[35m[1635678970.383391][m info     | [34mProxyClient.cpp   [m | [37mcreate_publisher        [m | [32mpublisher created[m      | client_key: 0x76C6E6A1, publisher_id: 0x000(3), participant_id: 0x000(1)
+[35m[1635678970.383621][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 14
+[35m[1635678970.383674][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.401530][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.416678][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 36
+[35m[1635678970.417529][m info     | [34mProxyClient.cpp   [m | [37mcreate_datawriter       [m | [32mdatawriter created[m     | client_key: 0x76C6E6A1, datawriter_id: 0x000(5), publisher_id: 0x000(3)
+[35m[1635678970.417699][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 14
+[35m[1635678970.417783][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.435722][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.488267][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.488604][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.489459][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.489525][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 48
+[35m[1635678970.489737][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1029
+[35m[1635678970.489774][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.489832][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.532180][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.532432][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.532982][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.533084][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678970.533270][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1038
+[35m[1635678970.533304][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.533341][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.587823][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.587896][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.587913][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678970.588043][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678970.588144][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.588199][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.588224][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.636757][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.636855][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.636874][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678970.636999][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678970.637098][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.637154][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.637180][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.681174][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.681453][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.685999][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.686069][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678970.686205][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678970.686309][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.686363][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.738601][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.738671][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.738689][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678970.738805][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678970.738896][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.738950][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.738975][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.785089][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.785159][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.785177][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 60
+[35m[1635678970.785306][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1042
+[35m[1635678970.785411][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.785469][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.785494][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.834490][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.834561][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.834579][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678970.834701][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678970.834798][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.834851][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.834876][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.881136][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.881424][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.882323][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.882604][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.889152][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678970.889341][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678970.889531][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.931044][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.931409][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.932955][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.933038][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678970.933175][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678970.933238][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.933292][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.981510][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.981641][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678970.981786][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.981842][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678970.983981][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678970.984125][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678970.984310][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.032284][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.032618][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.036086][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.036174][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678971.036261][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678971.036374][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.036434][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.084462][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.084572][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.084617][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678971.084707][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678971.084771][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.084826][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.084885][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.134502][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.134562][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.134586][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678971.134635][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678971.134700][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.134738][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.134754][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.184409][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.184523][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.184574][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678971.184664][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678971.184731][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.184786][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.184811][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.231452][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.231691][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.237538][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.237617][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678971.237720][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678971.237762][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.237819][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.281186][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.281293][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.281442][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.281505][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.286159][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678971.286314][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678971.286536][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.331297][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.331592][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.334005][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.334267][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.336913][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678971.337095][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678971.337242][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.381193][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.381490][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.390732][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.390803][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678971.391012][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678971.391066][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.391131][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.435792][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.435862][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.435880][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678971.436012][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678971.436051][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.436111][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.436141][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.480770][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.481006][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.482418][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.482611][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.494754][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678971.494893][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678971.495048][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.530768][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.530889][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.534384][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.534414][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678971.534472][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678971.534531][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.534551][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.581208][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.581445][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.583464][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.583505][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678971.583619][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678971.583684][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.583713][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.631127][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.631446][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.632452][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.632702][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.636563][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678971.636737][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678971.636941][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.681453][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.681787][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.685893][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.685958][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678971.686091][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678971.686191][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.686261][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.731489][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.731566][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.731820][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.731890][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.733749][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678971.733927][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678971.734107][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.783733][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.783804][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.783822][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678971.783948][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678971.784052][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.784106][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.784130][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.831491][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.831584][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.831875][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.831947][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.833915][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678971.834105][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678971.834304][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.881476][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.881836][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.884566][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.884862][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.893608][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678971.893801][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678971.893999][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.931386][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.931471][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.931748][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.931820][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.934230][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678971.934416][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678971.934605][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.981927][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.982229][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.988128][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678971.988197][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678971.988336][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678971.988409][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678971.988476][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.031509][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.031605][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.031780][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.031847][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.036912][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678972.037094][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678972.037270][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.081142][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.081467][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.086139][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.086203][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678972.086333][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678972.086425][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.086476][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.131368][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.131691][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.132604][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.132875][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.135968][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678972.136164][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678972.136360][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.183278][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.183351][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.183393][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678972.183505][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678972.183630][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.183683][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.183707][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.231337][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.231684][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.232920][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.233005][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678972.233135][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678972.233242][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.233298][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.283751][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.283824][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.283841][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678972.283969][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678972.284066][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.284120][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.284146][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.334078][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.334383][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.337029][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.337101][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678972.337240][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678972.337346][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.337403][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.403667][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.403736][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.403753][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678972.403884][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678972.403982][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.404038][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.404062][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.431335][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.431682][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.432664][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.432770][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678972.432868][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678972.432923][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.432979][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.482052][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.482129][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.482156][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678972.482231][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678972.482326][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.482393][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.482425][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.533336][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.533436][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.533463][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678972.533531][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678972.533633][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.533686][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.533711][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.581249][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.581307][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.581496][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.581541][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.584679][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678972.584847][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678972.585018][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.631048][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.631281][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.636087][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.636315][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.638579][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678972.638705][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678972.638856][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.682375][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.682688][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.683973][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.684027][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678972.684153][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678972.684242][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.684291][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.734871][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.734938][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.734954][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678972.735072][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678972.735164][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.735213][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.735236][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.781656][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.781726][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.781743][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678972.781873][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678972.781969][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.782022][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.782046][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.845657][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.845923][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.846158][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.846395][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.846514][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678972.846697][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678972.846831][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.895442][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.895506][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.895521][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678972.895642][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678972.895678][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.895730][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.895755][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.930875][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.930926][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.931040][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.931073][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.938737][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678972.938855][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678972.938927][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.981155][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.981215][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678972.981317][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678972.981349][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.012751][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.012896][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.013026][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.031240][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.031453][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.032710][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.032781][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678973.032876][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678973.032965][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.033016][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.082512][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.082758][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.084403][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.084675][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.086588][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.086732][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.086869][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.132165][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.132246][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.132279][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.132401][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.132436][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.132584][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.132660][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.181976][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.182054][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.182231][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.182310][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.186262][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.186411][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.186597][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.251079][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.251177][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.251208][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.251341][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.251384][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.251445][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.251476][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.284758][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.285022][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.286898][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.286967][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.287114][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.287160][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.287219][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.335959][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.336030][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.336049][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.336192][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.336237][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.336296][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.336325][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.383360][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.383437][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.383660][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.383746][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.386856][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.387049][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.387204][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.431398][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.431619][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.441811][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.441900][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.441991][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.442097][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.442151][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.489767][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.489856][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.489896][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.489986][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.490057][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.490111][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.490135][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.531276][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.531586][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.533108][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.533179][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.533317][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.533415][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.533495][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.581226][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.581328][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.581474][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.581532][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.584192][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.584344][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.584574][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.641577][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.641666][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.641708][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.641778][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.641862][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.641916][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.641941][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.681212][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.681507][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.685946][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.686035][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.686128][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.686238][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.686294][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.731252][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.731498][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.734914][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.735001][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.735098][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.735199][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.735253][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.781204][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.781291][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.781447][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.781506][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.786759][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.786912][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.787105][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.831217][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.831522][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.862000][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.862073][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.862155][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.862258][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.862309][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.882234][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.882616][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.883209][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.883277][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.883449][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.883567][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.883648][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.931737][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.931808][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.932039][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.932094][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.934488][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.934687][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.934889][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.984635][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.984707][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678973.984724][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678973.984855][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678973.984964][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.985020][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678973.985044][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.082944][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.083021][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.083039][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678974.083170][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678974.083278][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.083334][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.083359][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.096591][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.096902][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.101339][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.101415][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678974.101561][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678974.101672][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.101726][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.134957][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.135027][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.135045][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678974.135176][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678974.135283][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.135339][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.135364][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.183541][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.183623][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.183641][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678974.183774][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678974.183878][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.183933][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.183959][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.231651][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.231960][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.236326][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.236397][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678974.236566][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678974.236614][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.236703][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.286891][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.286961][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.286979][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678974.287103][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678974.287204][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.287258][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.287283][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.331198][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.331267][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.331286][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678974.331409][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678974.331515][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.331571][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.331596][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.381786][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.381855][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.382093][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.382159][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.384848][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678974.385033][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678974.385204][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.432259][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.432376][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.432569][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.432647][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.434813][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678974.434954][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678974.435146][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.506201][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.506280][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.506307][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678974.506385][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678974.506480][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.506536][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.506561][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.531124][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.531204][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.531389][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.531444][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.535089][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678974.535237][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678974.535427][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.581207][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.581469][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.582484][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.582568][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678974.582677][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678974.582770][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.582825][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.635068][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.635148][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.635174][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678974.635254][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678974.635350][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.635406][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.635431][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.681221][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.681492][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.682939][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.683022][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678974.683117][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678974.683214][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.683267][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.731802][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.731893][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.732089][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.732184][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.737124][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678974.737262][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678974.737447][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.781429][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.781517][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.781692][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.781747][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.785147][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678974.785297][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678974.785481][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.833676][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.833766][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.833947][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.834004][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.835110][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678974.835259][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678974.835452][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.880982][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.881233][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.883979][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.884243][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.886113][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678974.886258][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678974.886442][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.948089][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.948179][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.948221][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678974.948308][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678974.948372][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.948433][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.948460][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.982413][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.982505][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678974.982538][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678974.982698][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678974.982744][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.982807][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678974.982835][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.037932][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.038009][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.038026][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678975.038178][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678975.038222][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.038285][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.038315][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.081162][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.081440][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.083665][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.083734][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678975.083890][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678975.083942][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.084005][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.132476][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.132770][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.134314][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.134383][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678975.134532][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678975.134580][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.134644][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.181858][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.181944][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.182203][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.182287][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.184419][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678975.184615][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678975.184814][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.232462][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.232814][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.235171][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.235240][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678975.235383][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678975.235490][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.235545][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.281928][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.282019][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.282192][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.282300][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.291072][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678975.291221][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678975.291414][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.332797][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.333054][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.334571][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.334648][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678975.334741][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678975.334844][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.334897][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.390523][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.390615][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.390655][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678975.390746][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678975.390805][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.390859][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.390883][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.432794][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.433058][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.435822][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.436075][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.437189][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678975.437332][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678975.437539][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.486369][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.486456][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.486495][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678975.486567][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678975.486653][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.486709][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.486732][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.532397][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.532642][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.534191][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.534268][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678975.534365][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678975.534466][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.534521][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.581932][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.582018][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.582237][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.582339][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.586408][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678975.586562][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678975.586751][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.634475][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.634565][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.634643][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678975.634724][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678975.634769][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.634829][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.634853][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.682150][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.682229][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.682455][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.682514][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.685001][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678975.685192][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678975.685397][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.735606][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.735675][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.735691][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678975.735818][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678975.735915][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.735969][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.735994][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.782331][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.782396][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.782413][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678975.782547][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678975.782644][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.782726][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.782752][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.831342][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.831412][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.831621][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.831676][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.837049][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678975.837245][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678975.837447][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.883701][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.883771][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.883788][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678975.883925][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678975.884060][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.884113][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.884137][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.935268][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.935334][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.935351][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678975.935482][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678975.935583][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.935636][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.935660][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.981948][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.982220][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.988258][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678975.988326][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678975.988472][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678975.988600][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678975.988660][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.031209][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.031523][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.033136][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.033438][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.037596][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678976.037788][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678976.037986][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.081254][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.081561][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.083074][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.083140][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.083277][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.083375][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.083429][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.131422][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.131493][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.131656][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.131706][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.136037][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678976.136254][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678976.136458][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.181935][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.182207][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.183689][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.183756][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.183896][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.184027][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.184081][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.231326][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.231394][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.231626][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.231680][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.234434][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.234622][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.234812][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.281759][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.281844][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.282102][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.282189][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.284466][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.284679][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.284876][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.331470][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.331757][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.333755][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.333823][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.333955][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.334050][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.334104][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.381916][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.382183][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.385141][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.385210][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.385347][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.385444][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.385497][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.431406][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.431711][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.432841][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.433138][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.438720][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.438911][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.439111][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.485533][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.485835][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.490736][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.490803][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.490941][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.491036][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.491089][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.531675][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.531946][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.533269][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.533587][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.536618][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.536809][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.537004][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.582215][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.582528][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.583832][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.583898][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.584035][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.584137][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.584191][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.631446][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.631764][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.635352][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.635425][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678976.635564][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678976.635666][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.635720][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.682441][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.682511][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.682729][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.682783][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.685660][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.685843][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.686029][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.731712][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.731801][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.731967][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.732032][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.735163][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.735313][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.735506][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.781512][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.781594][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.781802][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.781900][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.786836][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.786979][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.787168][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.831477][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.831564][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.831726][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.831830][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.836716][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.836854][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.837027][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.882969][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.883065][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.883114][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.883213][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.883225][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.883326][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.883354][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.932215][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.932303][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.932342][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678976.932429][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678976.932487][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.932576][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.932639][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.981959][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.982270][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.985389][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678976.985459][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678976.985594][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678976.985687][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678976.985741][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.031455][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.031745][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.037111][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.037184][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.037342][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.037390][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.037454][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.083726][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.083998][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.089914][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.089986][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 56
+[35m[1635678977.090139][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1037
+[35m[1635678977.090186][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.090249][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.131873][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.131965][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.132134][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.132198][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.136883][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.137077][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.137281][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.197747][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.198050][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.202318][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.202413][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.202558][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.202665][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.202719][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.234338][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.234410][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.234429][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.234558][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.234655][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.234710][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.234734][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.292651][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.292722][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.292738][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.292869][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.292967][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.293020][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.293045][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.331623][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.331875][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.333219][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.333430][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.336659][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.336855][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.337074][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.383375][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.383692][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.385472][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.385574][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.385705][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.385806][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.385861][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.440058][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.440128][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.440145][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.440275][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.440369][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.440423][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.440448][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.484662][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.484976][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.487178][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.487247][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.487382][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.487484][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.487538][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.533681][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.533752][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.533800][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.533911][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.533954][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.533996][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.534018][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.591513][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.591584][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.591601][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.591736][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.591835][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.591888][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.591911][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.646852][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.646961][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.647013][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.647109][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.647120][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.647249][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.647280][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.682265][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.682337][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.682535][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.682596][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.686378][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.686599][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.686755][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.740903][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.740974][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.740991][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.741148][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.741190][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.741251][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.741281][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.781873][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.781972][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.782173][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.782236][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.785710][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.785903][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.786054][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.831736][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.832064][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.833520][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.833589][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.833722][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.833824][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.833876][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.915965][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.916030][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.916071][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.916175][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.916276][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.916327][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.916349][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.931682][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.931771][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.931940][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.932014][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.934659][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.934802][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.935002][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.984554][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.984633][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678977.984657][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678977.984735][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678977.984837][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.984891][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678977.984915][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678978.034457][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678978.034539][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678978.034563][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678978.034641][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678978.034741][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678978.034820][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678978.034847][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678978.087455][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678978.087564][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 508
+[35m[1635678978.087590][m debug    | [34mUDPv4AgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> UDP <<==][m        | client_key: 0x76C6E6A1, len: 64
+[35m[1635678978.087662][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1046
+[35m[1635678978.087752][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678978.087807][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
+[35m[1635678978.087831][m debug    | [34mUDPv4AgentLinux.cpp[m | [37msend_message            [m | [33m[** <<UDP>> **][m        | client_key: 0x76C6E6A1, len: 13
