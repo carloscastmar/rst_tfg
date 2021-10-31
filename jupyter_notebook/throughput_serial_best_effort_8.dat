@@ -1,0 +1,773 @@
+[35m[1635694420.056677][m info     | [34mTermiosAgentLinux.cpp[m | [37minit                    [m | [33mSerial port not found.[m | device: /dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_ee50dae40452ea11916172b77d77156c-if00-port0, error 2, waiting for connection...
+[35m[1635694421.066462][m info     | [34mTermiosAgentLinux.cpp[m | [37minit                    [m | [33mSerial port not found.[m | device: /dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_ee50dae40452ea11916172b77d77156c-if00-port0, error 2, waiting for connection...
+[35m[1635694422.076544][m info     | [34mTermiosAgentLinux.cpp[m | [37minit                    [m | [33mSerial port not found.[m | device: /dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_ee50dae40452ea11916172b77d77156c-if00-port0, error 2, waiting for connection...
+[35m[1635694423.076761][m info     | [34mTermiosAgentLinux.cpp[m | [37minit                    [m | [33mSerial port not found.[m | device: /dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_ee50dae40452ea11916172b77d77156c-if00-port0, error 2, waiting for connection...
+[35m[1635694424.076833][m info     | [34mTermiosAgentLinux.cpp[m | [37minit                    [m | [33mSerial port not found.[m | device: /dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_ee50dae40452ea11916172b77d77156c-if00-port0, error 2, waiting for connection...
+[35m[1635694425.087223][m info     | [34mTermiosAgentLinux.cpp[m | [37minit                    [m | [33mSerial port not found.[m | device: /dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_ee50dae40452ea11916172b77d77156c-if00-port0, error 2, waiting for connection...
+[35m[1635694425.399555][m info     | [34mTermiosAgentLinux.cpp[m | [37minit                    [m | [32mrunning...[m             | fd: 3
+[35m[1635694425.399783][m info     | [34mRoot.cpp          [m | [37mset_verbose_level       [m | [32mlogger setup[m           | verbose_level: 5
+[35m[1635694426.306370][m info     | [34mRoot.cpp          [m | [37mcreate_client           [m | [32mcreate[m                 | client_key: 0x24D80C23, session_id: 0x81
+[35m[1635694426.306507][m info     | [34mSessionManager.hpp[m | [37mestablish_session       [m | [32msession established[m    | client_key: 0x24D80C23, address: 0
+[35m[1635694426.306720][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 19
+[35m[1635694427.316845][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 52
+[35m[1635694427.329604][m info     | [34mProxyClient.cpp   [m | [37mcreate_participant      [m | [32mparticipant created[m    | client_key: 0x24D80C23, participant_id: 0x000(1)
+[35m[1635694427.329724][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 14
+[35m[1635694427.329739][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.342341][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.348677][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 88
+[35m[1635694427.348965][m info     | [34mProxyClient.cpp   [m | [37mcreate_topic            [m | [32mtopic created[m          | client_key: 0x24D80C23, topic_id: 0x000(2), participant_id: 0x000(1)
+[35m[1635694427.349109][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 14
+[35m[1635694427.349144][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.361334][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.361418][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 24
+[35m[1635694427.361689][m info     | [34mProxyClient.cpp   [m | [37mcreate_publisher        [m | [32mpublisher created[m      | client_key: 0x24D80C23, publisher_id: 0x000(3), participant_id: 0x000(1)
+[35m[1635694427.361822][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 14
+[35m[1635694427.361873][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.375082][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.375178][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 36
+[35m[1635694427.375918][m info     | [34mProxyClient.cpp   [m | [37mcreate_datawriter       [m | [32mdatawriter created[m     | client_key: 0x24D80C23, datawriter_id: 0x000(5), publisher_id: 0x000(3)
+[35m[1635694427.376073][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 14
+[35m[1635694427.376122][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.385471][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.558238][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694427.558513][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.603861][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694427.603945][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 45
+[35m[1635694427.604156][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1029
+[35m[1635694427.604158][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.604278][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.682831][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694427.683086][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.728656][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694427.728737][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694427.728886][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694427.728890][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.728975][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.807676][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694427.807950][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.853927][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694427.854011][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694427.854131][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694427.854188][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.854227][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.932876][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694427.933136][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.978622][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694427.978706][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694427.978830][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694427.978898][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694427.978936][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.058294][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.058567][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.104808][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.104930][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694428.105065][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.106432][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694428.106592][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.182510][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.182742][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.228509][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.228622][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694428.228750][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694428.228756][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.228909][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.308403][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.308576][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.354786][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.354880][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694428.354958][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694428.355021][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.355059][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.432720][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.432918][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.478575][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.478674][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694428.478748][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694428.478814][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.478851][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.559407][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.559621][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.605313][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.605405][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694428.605487][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694428.605551][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.605593][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.682699][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.682925][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.728426][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.728545][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694428.728643][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694428.728686][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.728736][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.808279][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.808533][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.854602][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.854686][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694428.854815][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694428.854893][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.854930][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.932644][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.932908][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.978356][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694428.978417][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694428.978493][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694428.978501][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694428.978539][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.059231][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.059462][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.105245][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.105332][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694429.105431][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694429.105433][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.105590][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.182545][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.182810][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.228302][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.228400][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694429.228484][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.228498][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694429.228696][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.307482][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.307714][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.353696][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.353788][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694429.353867][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694429.353930][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.353968][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.432579][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.432803][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.478412][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.478510][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694429.478624][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694429.478651][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.478707][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.558005][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.558228][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.604455][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.604548][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694429.604627][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694429.604691][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.604728][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.682494][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.682758][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.728341][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.728449][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694429.728561][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694429.728628][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.728711][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.808663][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.808929][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.855403][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.855492][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694429.855565][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694429.855631][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.855708][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.932556][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.932820][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.978146][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694429.978257][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694429.978375][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694429.978392][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694429.978512][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.059083][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.059469][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.105264][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.105348][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694430.105468][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694430.105541][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.105623][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.182393][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.182616][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.228140][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.228235][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694430.228301][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694430.228353][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.228423][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.308677][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.308913][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.355306][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.355373][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694430.355467][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694430.355467][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.355547][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.432438][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.432665][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.478172][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.478274][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694430.478388][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694430.478391][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.478512][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.559044][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.559311][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.604976][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.605059][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694430.605181][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694430.605238][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.605277][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.682234][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.682510][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.728269][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.728379][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694430.728480][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694430.728498][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.728692][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.807931][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.808199][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.854206][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.854291][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694430.854411][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694430.854472][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.854510][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.932326][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.932592][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.978091][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694430.978198][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694430.978305][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694430.978374][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694430.978411][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.058817][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.059096][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.104669][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.104753][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694431.104873][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694431.104937][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.104975][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.182284][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.182546][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.228075][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.228165][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694431.228241][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.228244][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694431.228450][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.307131][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.307390][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.353560][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.353643][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694431.353762][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694431.353826][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.353864][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.432262][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.432523][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.478048][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.478137][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694431.478265][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694431.478330][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.478385][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.557565][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.557840][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.604215][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.604299][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694431.604428][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694431.604497][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.604539][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.682015][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.682271][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.727990][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.728149][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694431.728232][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694431.728275][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.728336][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.807062][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.807277][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.853426][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.853515][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694431.853588][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694431.853654][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.853702][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.932207][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.932479][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.977961][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694431.978062][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694431.978177][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694431.978250][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694431.978306][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.058805][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.059162][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.104427][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.104511][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694432.104644][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694432.104646][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.104752][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.181945][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.182168][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.228058][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.228166][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694432.228257][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694432.228277][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.228419][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.307708][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.307946][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.353927][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.354020][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694432.354099][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694432.354161][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.354239][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.432125][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.432355][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.477865][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.477982][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694432.478108][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694432.478110][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.478240][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.558689][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.558940][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.603158][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.603253][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694432.603389][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694432.603465][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.603556][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.681854][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.682127][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.727702][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.727808][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694432.727890][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694432.727925][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.728047][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.808630][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.808825][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.854912][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.855007][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694432.855084][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694432.855148][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.855225][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.932068][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.932343][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.977853][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694432.977938][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694432.978068][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694432.978132][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694432.978216][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.058652][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.058865][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.104926][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.105022][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694433.105100][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694433.105175][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.105215][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.181766][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.181994][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.227931][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.228095][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694433.228177][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.228238][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694433.228463][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.308596][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.308850][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.354910][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.354973][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694433.355055][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694433.355101][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.355121][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.431968][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.432284][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.477664][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.477774][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694433.477886][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694433.477974][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.478011][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.558544][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.558836][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.604642][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.604734][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694433.604879][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694433.604880][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.605047][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.681681][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.681901][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.727676][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.727783][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694433.727917][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.727917][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694433.728182][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.806772][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.806994][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.852639][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.852745][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694433.852820][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694433.852879][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.852916][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.931828][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.932073][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.977723][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694433.977824][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694433.977926][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694433.977952][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694433.978087][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.058505][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.058716][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.104870][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.104964][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694434.105042][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694434.105111][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.105148][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.181590][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.181819][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.227741][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.227857][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694434.227983][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694434.227986][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.228137][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.308411][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.308645][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.354657][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.354739][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694434.354871][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694434.354874][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.354972][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.431821][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.432061][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.477679][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.477762][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694434.477895][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694434.477898][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.478002][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.556884][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.557093][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.603829][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.603934][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694434.604030][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694434.604072][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.604147][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.681599][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.681827][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.727686][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.727789][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694434.727889][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694434.727904][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.728093][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.806567][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.806827][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.852573][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.852654][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694434.852776][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694434.852833][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.852872][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.931481][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.931759][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.977548][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694434.977635][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694434.977773][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694434.977774][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694434.977881][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.058323][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.058588][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.104655][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.104740][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694435.104869][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694435.104941][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.104995][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.181669][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.181947][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.227451][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.227559][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694435.227677][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694435.227737][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.227776][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.308322][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.308579][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.354560][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.354651][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694435.354724][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694435.354799][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.354837][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.431756][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.431997][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.477482][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.477573][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694435.477707][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694435.477724][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.477795][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.558131][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.558370][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.604534][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.604641][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694435.604710][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694435.604774][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.604812][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.681388][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.681642][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.727520][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.727611][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694435.727715][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.727715][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694435.727902][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.808251][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.808568][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.854514][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.854595][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694435.854716][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694435.854778][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.854816][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.931578][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.931909][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.977446][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694435.977529][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694435.977648][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694435.977714][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694435.977751][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.056650][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.056909][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.103611][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.103693][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694436.103810][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694436.103880][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.103920][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.181460][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.181721][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.227410][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.227494][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694436.227618][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694436.227686][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.227724][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.307145][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.307414][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.353074][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.353157][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694436.353286][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694436.353352][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.353389][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.431576][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.431836][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.477373][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.477456][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694436.477580][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694436.477645][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.477682][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.558193][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.558485][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.604442][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.604526][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694436.604647][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694436.604710][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.604746][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.681133][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.681394][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.727321][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.727406][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694436.727536][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694436.727600][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.727639][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.808129][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.808338][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.854261][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.854353][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694436.854426][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694436.854496][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.854533][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.931411][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.931637][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.977251][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694436.977343][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694436.977414][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694436.977491][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694436.977530][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.058091][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.058294][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.104352][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.104444][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694437.104520][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694437.104597][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.104635][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.180906][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.181128][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.227328][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.227447][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694437.227570][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.227570][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694437.227729][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.308109][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.308396][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.354387][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.354472][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694437.354596][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694437.354681][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.354730][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.431461][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.431737][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.477071][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.477181][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694437.477302][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694437.477315][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.477490][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.556679][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.556903][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.603236][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.603328][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694437.603401][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694437.603467][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.603544][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.680912][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.681179][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.727267][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.727363][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694437.727466][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694437.727483][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.727599][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.808085][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.808343][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.854283][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.854367][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694437.854487][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694437.854551][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.854602][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.931432][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.931703][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.977073][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694437.977169][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694437.977289][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694437.977350][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694437.977401][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.058422][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.058682][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.104825][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.104919][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694438.104992][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694438.105058][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.105107][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.180795][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.181018][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.227114][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.227205][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694438.227283][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694438.227355][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.227409][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.307983][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.308207][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.354240][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.354333][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694438.354406][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694438.354474][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.354532][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.431359][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.431633][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.476933][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.477051][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694438.477149][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694438.477187][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.477272][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.557724][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.557930][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.604271][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.604356][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694438.604478][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694438.604512][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.604538][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.680730][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.680965][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.727060][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.727171][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694438.727272][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694438.727279][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.727422][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.806822][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.807057][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.852696][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.852793][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694438.852868][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694438.852935][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.853014][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.931289][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.931551][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.976924][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694438.977023][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694438.977100][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694438.977177][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694438.977257][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.057659][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.057865][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.104170][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.104277][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694439.104353][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694439.104417][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.104494][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.181174][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.181401][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.227024][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.227121][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694439.227214][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.227232][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694439.227331][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.307883][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.308177][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.354187][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.354273][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694439.354406][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694439.354477][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.354555][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.431254][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.431530][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.476769][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.476884][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694439.476996][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694439.477065][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.477103][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.557599][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.557859][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.604095][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.604179][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694439.604304][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694439.604366][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.604405][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.680487][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.680572][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.726925][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.727027][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694439.727113][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694439.727137][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.727229][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.807784][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.807989][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.854058][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.854141][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694439.854297][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694439.854362][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.854440][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.931192][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.931464][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.976877][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694439.976962][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694439.977089][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694439.977160][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694439.977244][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.056651][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694440.056878][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.103120][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694440.103215][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694440.103293][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694440.103367][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.103452][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.181128][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694440.181404][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.226760][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694440.226867][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694440.226994][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694440.227064][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.227101][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.307744][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694440.307946][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.353743][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694440.353840][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694440.353944][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694440.353985][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.354067][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.431110][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694440.431336][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.477097][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694440.477190][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694440.477260][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694440.477332][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.477411][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.557742][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694440.557944][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.603989][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694440.604100][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694440.604171][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694440.604246][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.604351][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.680692][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694440.680917][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.726675][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 508
+[35m[1635694440.726766][m debug    | [34mSerialAgentLinux.cpp[m | [37mrecv_message            [m | [33m[==>> SER <<==][m        | client_key: 0x24D80C23, len: 49
+[35m[1635694440.726839][m debug    | [34mDataWriter.cpp    [m | [37mwrite                   [m | [33m[** <<DDS>> **][m        | client_key: 0x00000000, len: 1033
+[35m[1635694440.726901][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
+[35m[1635694440.726982][m debug    | [34mSerialAgentLinux.cpp[m | [37msend_message            [m | [33m[** <<SER>> **][m        | client_key: 0x24D80C23, len: 13
