@@ -31,7 +31,7 @@ copyright = '2021, Carlos Castillo Martínez'
 author = 'Carlos Castillo Martínez'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0'
+release = ''
 
 
 # -- General configuration ---------------------------------------------------
@@ -108,10 +108,10 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     #
      'preamble': latex_custom,
+     'releasename': '',
 
     # Latex figure (float) alignment
     #
-    # 'figure_align': 'htbp',
 }
 
 latex_logo = 'Fotos/ets_industriales.png'
