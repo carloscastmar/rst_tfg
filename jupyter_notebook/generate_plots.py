@@ -5,17 +5,38 @@ import matplotlib.pyplot as plt
 
 sns.set_theme(style="darkgrid")
 
-df= pd.read_csv("latency_serial_best-effort.dat",skiprows=3,delimiter=r":\s+",header=None,usecols=[2],names=['latency'])
 
-latency_sbe= df.drop(df[df.latency < 4].index)
+def gen_plot_for_latency(data_file):
+    df = pd.read_csv(
+        data_file + ".dat",
+        skiprows=3,
+        delimiter=r":\s+",
+        header=None,
+        usecols=[2],
+        names=["latency"],
+        engine="python"
+    )
 
-latency_sbe.describe()
+    latency_df = df.drop(df[df.latency < 4].index)
 
-latency_sbe.value_counts()
+    print(data_file + ":")
+    print(latency_df.describe())
 
-sns.displot(data=latency_sbe,x="latency",kind="kde")
-plt.savefig('latency_sbe_kde.png', dpi=300)
+    print(latency_df.value_counts())
 
-sns.histplot(data=latency_sbe,x="latency",binwidth=1)
-plt.savefig('latency_sbe_hist.png', dpi=300)
+    sns.displot(data=latency_df, x="latency", kind="kde")
+    plt.savefig(data_file + "_dist_kde.png", dpi=300)
 
+    sns.histplot(data=latency_df, x="latency", binwidth=1)
+    plt.savefig(data_file + "_hist.png", dpi=300)
+
+
+data_files = [
+    "latency_serial_best-effort",
+    "latency_serial_reliable",
+    "latency_wifi_best-effort",
+    "latency_wifi_reliable",
+]
+
+for data_file in data_files:
+    gen_plot_for_latency(data_file)
