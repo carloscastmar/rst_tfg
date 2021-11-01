@@ -51,4 +51,23 @@ Resultados
     Latencia "WiFi Reliable" histograma
 
 
-                  
+latency_serial_best-effort:
+---------------------------
+
+.. table:: Valores estadísticos 
+   :widths: auto
+   :align: center
+
+   =====  ==========
+   Data    Value
+   =====  ==========
+   count  370.000000
+   mean     5.551351
+   std      2.950139
+   min      4.000000
+   25%      4.000000
+   50%      5.000000
+   75%      6.000000
+   max     31.000000
+   =====  ==========
+
