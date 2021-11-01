@@ -27,7 +27,7 @@ def gen_plot_for_latency(data_file):
     sns.displot(data=latency_df, x="latency", kind="kde")
     plt.savefig(data_file + "_dist_kde.png", dpi=300)
 
-    sns.histplot(data=latency_df, x="latency", binwidth=1)
+    sns.histplot(data=latency_df, x="latency", discrete=True)
     plt.savefig(data_file + "_hist.png", dpi=300)
 
 
