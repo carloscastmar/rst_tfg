@@ -21,7 +21,7 @@ variables de entorno. Una vez realizados estos pasos, ya será posible crear
 un proyecto para la placa para comprobar que funciona correctamente.
 
 Una vez comprobado el correcto funcionamiento de la placa, es necesario
-instalar el software de micro-ros y realizar una serie de pruebas. 
+instalar el software de micro-ROS y realizar una serie de pruebas. 
 Es posible realizar primero una serie de prácticas primero con clientes
 creados dentro del propio Linux. Para ello hay que instalar y compilar
 el firmware adecuado, crear un agente de micro-ROS y ejecutar la aplicación.
@@ -57,262 +57,360 @@ suscribirnos y observar los mensajes enviados por el cliente.
 
 Despues de realizar unas pruebas con las demos que proporciona el sistema
 operativo, es recomendable realizar una serie de tutoriales más avanzados
-que proporciona la propia página de micro-ROS (https://micro.ros.org/docs/tutorials/programming_rcl_rclc/overview/). En estos se enseña como
-diseñar tu propia aplicación, incluyendo como crear tu propio nodo,
-tus publishers y subscribers, un temporizador o incluso seleccionar
-la calidad del servicio de la aplicación.
-
-Cuando se ha logrado crear una aplicación que cumpla con los requisitos
-del análisis que se ha elegido, es imprescindible escoger y conocer
-una herramienta de medida. En este caso se va a utilizar cyclictest,
-una herramienta de benchmarking para sistemas en tiempo real. En concreto,
-sirve para medir la latencia del sistema.
-
-https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/cyclictest/start
+que proporciona la propia página de micro-ROS (https://micro.ros.org/docs/tutorials/programming_rcl_rclc/overview/).
+En estos se enseña como diseñar tu propia aplicación, incluyendo como
+crear tu propio nodo, tus publishers y subscribers, un temporizador o
+incluso seleccionar la calidad de la comunicación.
 
 Estructura principal del análisis
 ---------------------------------
 
+Lo primero que hay que hacer en el momento de diseñar un test de comportamiento
+de un software es definir los parámetros que se van a medir y en que condiciones.
+Existen multitud de variables que se ven afectadas a la hora de realizar una
+medición que aportan distintos tipos de información. Sin embargo, por distintas
+razones, no es posible analizar todas ellas y es recomendable centrarse en un
+número limitado de ellas para indagar más a fondo y obtener unas conclusiones
+más concisas.
+
+En este experimento se van a analizar la latencia global del sistema operativo
+en tiempo real, el 'throughput' o tasa de transferencia efectiva y el consumo
+de memoria del sistema.
+
+A continuación se explicará detalladamente en que consisten estos parámetros
+y de que manera pueden afectar a un sistema en tiempo real.
+
+La latencia es el retraso entre los eventos generados por un hardware y la
+transmisión efectiva de datos. En otras palabras, la latencia es el tiempo que
+tarda en ejecutarse una tarea desde el momento en el que es ordenada.
+Esto en un sistema en tiempo real es crucial, ya que es uno de los principales
+culpables de que se cumplan o no los tiempos que deben de cumplir los sistemas.
+
+https://en.wikipedia.org/wiki/Latency_(engineering)#:~:text=The%20latency%20is%20the%20delay,limitations%20which%20create%20additional%20latency.
+
+
+Generalmente, un evento en un sistema de este estilo está formado por distintos
+eventos más pequeños que dan lugar a la realización del evento principal. Por
+este motivo, la latencia general del evento se descompone en varias latencias
+más pequeñas que sumadas dan lugar a la latencia general del evento. En nuestro
+caso, el evento comprende desde el momento en el que la aplicación ordena el envío
+del mensaje hasta que este es publicado en el DDS, momento en el que este podrá
+ser enviado a otros clientes que estén suscritos al topic.
+Aquí se pueden encontrar distintas latencias. En primer lugar, el tiempo de respuesta
+que emplea el microcontrolador en reaccionar al envío del mensaje. Seguidamente,
+cabe recalcar el tiempo que tarda esta información en enviarse desde el cliente
+al agente al que está conectado. Finalmente, es importante el tiempo que emplea
+el agente en publicar los mensajes en el DDS.
+
+Este último es el parámetro que se ha escogido para representar en un anális, ya
+que el sistema operativo en el que se lanza el agente nos proporciona herramientas
+que nos indican las latencias que ocurren en el sistema con alta precisión.
+
+El throughput es el segundo parámetro que se va a medir en el test de comportamiento.
+Esta variable muestra la capacidad de transmisión del sistema. Esta puede verse
+limitada por distintos aspectos, tanto correspondientes al software tanto como
+al hardware. En este ámbito, el factor más limitante va a residir en el microcontrolador,
+ya que es una placa diseñada para operar con recursos muy limitados. En este
+sentido resultará muy interesante comprobar el momento en el que se produzca la
+saturación de la placa para determinar las limitaciones del sistema y para que aplicaciones
+podría emplearse el microcontrolador.
+
+Finalmente, se procederá a estudiar el consumo se memoria del sistema. En un principio,
+micro-ROS es un software diseñado para microcontroladores, por lo que el efecto
+de las acciones realizadas por este en el sistema global no deberían ser notables.
+En este sentido, será interesante comprobar si realmente se trata de un sistema que
+economiza los recursos y hasta que punto.
+
+
+Los parámetros previamente mencionados aportarán información de gran interés de
+cara a formalizar una idea general del rendimiento del software y del hardware
+en valores absolutos. Sin embargo, al no conocerse un estudio semejante, resulta
+difícil otorgarle un valor relativo a dichos resultados frente a otros sistemas.
+Es por ello por lo que se han escogido varios escenarios para la realización de
+pruebas. De este modo sera posible obtener unas conclusiones que expresen tanto
+un sentido absoluto como relativo.
+
+Se han diseñado cuatro escenarios para la obtención de datos. Como ya se ha comentado
+previamente, la placa ESP32 cuenta con la peculiaridad de ofrecer conexión vía Wi-Fi,
+algo poco habitual en placas de este estilo, además de una conexión en serie más
+convencional. De otro modo, ya se ha explicado en el apartado de "software" que
+micro-ROS cuenta con dos modos de comunicación para el envío de información.
+Estos son el modo reliable, que requiere de una señal de confirmación por parte
+del receptor, priorizando la fiabilidad de la comunicación; y el modo best-effort,
+que trata de enviar la mayor cantidad de mensajes a la mayor velocidad, aunque en
+redes poco robustas puede resultar poco fiable.
+
+De este modo, combinando los dos tipos de conexión y los dos tipos de comunicación
+se han formado cuatro situaciones que mostraran distintos resultados de los que
+extraer conclusiones tras ser comparados.
+
+Herramientas empleadas
+----------------------
+
+La herramienta principal de la que nos serviremos durante la totalidad de la
+evaluación será una aplicación que se ha diseñado con el propósito exclusivo
+de someter al sistema a distintas situaciones en las que, mediante otras
+herramientas, recopilar datos.
+
+La aplicación está programada en c e incluye las librerías de freeRTOS
+que proporcionan las funciones propias de micro-ROS así como los tipos de mensajes
+que se van a utilizar.
+
+Esta aplicación será añadida al firmware, compilada y enviada a la placa, donde
+se ejecutará periódicamente.
+
+A continuación se muestra el código de la aplicación y posteriormente se procederá
+a explicar los aspectos más reseñables del mismo.
+
+.. code:: c
+
+    #include <stdio.h>
+    #include <unistd.h>
+
+    #include <rcl/rcl.h>
+    #include <rcl/error_handling.h>
+    #include <std_msgs/msg/string.h>
+
+    #include <rclc/rclc.h>
+    #include <rclc/executor.h>
+
+    #define ARRAY_LEN 1024
+
+    #ifdef ESP_PLATFORM
+    #include "freertos/FreeRTOS.h"
+    #include "freertos/task.h"
+    #endif
+
+    #define RCCHECK(fn) { 
+        rcl_ret_t temp_rc = fn;
+        if((temp_rc != RCL_RET_OK)){
+            printf("Failed status on line %d: %d. Aborting.\n",__LINE__,(int)temp_rc);
+            vTaskDelete(NULL);
+        }
+    }
+    #define RCSOFTCHECK(fn) {
+        rcl_ret_t temp_rc = fn;
+        if((temp_rc != RCL_RET_OK)){
+            printf("Failed status on line %d: %d. Continuing.\n",__LINE__,(int)temp_rc);
+        }
+    }
+
+    rcl_publisher_t publisher;
+    std_msgs__msg__String msg;
+
+    void timer_callback(rcl_timer_t * timer, int64_t last_call_time)
+    {
+        RCLC_UNUSED(last_call_time);
+        if (timer != NULL) {
+            RCSOFTCHECK(rcl_publish(&publisher, &msg, NULL));
+        }
+    }
+
+    void appMain(void * arg)
+    {
+        rcl_allocator_t allocator = rcl_get_default_allocator();
+        rclc_support_t support;
+
+        // create init_options
+        RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
+
+        // create node
+        rcl_node_t node;
+        RCCHECK(rclc_node_init_default(&node, "my_test_app_publisher", "", &support));
+
+        // create publisher
+        RCCHECK(rclc_publisher_init_default(
+            &publisher,
+            &node,
+            ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, String),
+            "my_custom_publisher"));
+
+        // create timer,
+        rcl_timer_t timer;
+        const unsigned int timer_period = 1;
+        RCCHECK(rclc_timer_init_default(
+            &timer,
+            &support,
+            RCL_MS_TO_NS(timer_period),
+            timer_callback));
+
+        // create executor
+        rclc_executor_t executor;
+        RCCHECK(rclc_executor_init(&executor, &support.context, 1, &allocator));
+        RCCHECK(rclc_executor_add_timer(&executor, &timer));
+
+        msg.data.data = (char *) malloc (ARRAY_LEN * sizeof(char));
+        msg.data.size = 0;
+        msg.data.capacity = ARRAY_LEN;
+
+        memset(msg.data.data,'1',1024);
+        msg.data.size = 1024;
+
+        while(1){
+            rclc_executor_spin_some(&executor, RCL_MS_TO_NS(1000));
+        }
+
+        // free resources
+        RCCHECK(rcl_publisher_fini(&publisher, &node));
+        RCCHECK(rcl_node_fini(&node));
+
+        vTaskDelete(NULL);
+    }
+
+En primer lugar se añaden todas las librerías que se utilizarán y se definen
+las funciones "RCCHECK" y "RCSOFTCHECK". Estás serán de gran utilidad durante
+toda la ejecución, ya que se llamarán en el momento de utilizar cualquier otra
+función para asegurar su correcto funcionamiento en el un tiempo establecido.
+De no ser así se generarán distintos mensajes de error e incluso se forzará
+la detención de la aplicación en función de la gravedad del fallo. Esto resulta
+crucial en aplicaciones de este tipo, ya que un pequeño error en los tiempos
+puede resultar muy significativo en sistemas de tiempo real.
+
+Posteriormente se crea la función "timer_callback", que se ejecutará
+cada vez que el timer llegue a cero. En ella simplemente se publica un mensaje
+siempre que el timer siga contando.
+
+Seguidamente se crean el nodo y el publisher. En la creación del publisher es en
+la que se determina tanto la calidad de la comunicación como el tipo de mensaje
+que este enviará. En este caso se utiliza la función "rclc_publisher_init_default",
+lo que creará un publisher que actuará bajo el modo reliable. Para cambiar al
+modo best-effort, sería necesario sustituir esta función por "rclc_publisher_init_best_effort",
+manteniendo iguales los parámetros de la misma. Como se puede observar, el tipo
+de mensaje escogido ha sido una cadena de caracteres o "string". Esto es debido
+a la simplicidad que existe para modificar su tamaño y la facilidad de uso.
+
+A continuación se crean el timer y el executor. Al timer se le asigna el periodo
+en la variable "timer_period". Esta viene determinada en milisegundos, por lo que
+en este caso el periodo sería de 1 milisegundo y la frecuencia de 1000 Hz. El
+executor es el encargado de que cuando el temporizador baje a 0 se ejecute
+la función "timer callback".
+
+Consecutivamente se rellena la cadena de caracteres. Primero se reserva
+el espacio en memoria que se pretende utilizar y después se rellenan
+todos esos caracteres con la función memset. En este caso se han reservado
+y rellenado 1024 caracteres, lo que equivale a 1 kilobyte.
+
+Finalmente se lanza un bucle infinito en el que simplemente se llama a la función
+"rclc_spin_some", que llamará al executor cada vez que el contador del timer finalice.
+Se le ha asignado un "wake up time" de 1000 milisegundos para asegurarse que
+siempre se ejecute a pesar de que pueda existir un pequeño delay en el sistema.
 
 
 
+Esta aplicación será lanzada numerosas veces, asignando en cada ocasión los
+parámetros que se quieran analizar. Cada vez que se modifique la aplicación
+será necesario recompilar el firmware.
 
-Incidencias ocurridas
----------------------
+Una vez diseñada la aplicación es momento de configurar el firmware.
 
-Durante la preparación de los análisis, ha sido necesario realizar
-numerosas pruebas intermedias que asegurasen el correcto funcionamiento
-del hardware y de los middlewares. En la ejecución de estas pruebas,
-se han encontrado varias incidencias que han ralentizado la realización
-del ejercicio.
-
-Conexión Wi-Fi
-++++++++++++++
-
-En primer lugar, surgió un percance durante el intento de realizar
-una primera conexión vía Wi-Fi. Una vez configurado el firmware para
-que se conectase a la IP de la red elegida, tras flashear el firmware
-en el dispositivo, el punto de acceso Wi-Fi no lo detectaba. Se utilizó
-entonces el siguiente comando para depurar el problema:
+Para ello lo primero que hay que hacer es declarar el modo de conexión que
+se quiere establecer. Este se realiza mediante los siguientes comandos.
 
 .. code-block:: bash
- 
- ros2 run micro_ros_setup build_firmware.sh monitor
 
-Obteniendo la siguiente información relevante:
+    ros2 run micro_ros_setup configure_firmware.sh my_test_app -t serial
 
-.. code-block:: bash
+    ros2 run micro_ros_setup configure_firmware.sh my_test_app -t udp -i [IP] -p [port ID]
 
-    I (642) wifi station: ESP_WIFI_MODE_STA
-    I (662) wifi:wifi driver task: 3ffc4398, prio:23, stack:6656, core=0
-    I (662) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE
-    I (662) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE
-    I (692) wifi:wifi firmware version: 3ea4c76
-    I (692) wifi:config NVS flash: enabled
-    I (692) wifi:config nano formating: disabled
-    I (692) wifi:Init dynamic tx buffer num: 32
-    I (702) wifi:Init data frame dynamic rx buffer num: 32
-    I (702) wifi:Init management frame dynamic rx buffer num: 32
-    I (712) wifi:Init management short buffer num: 32
-    I (712) wifi:Init static rx buffer size: 1600
-    I (712) wifi:Init static rx buffer num: 10
-    I (722) wifi:Init dynamic rx buffer num: 32
+Mediante el primer comando se establecerá una conexión en serie. En el segundo
+comando se configura una conexión vía Wi-Fi, en el que será necesario añadir
+la ip de la conexión y el número de puerto que se pretende utilizar, normalmente
+el 8888.
 
-    Brownout detector was triggered
-
-Investigando el último mensaje de error “Brownout detector was triggered”, 
-se descubrió que la incidencia estaba relacionada con la falta de potencia en 
-la alimentación de la placa. :footcite:`brownout_detector_was_triggered` 
-
-
-En una primera instancia se trató de modificar la fuente de alimentación,
-cambiando en primer lugar de puerto en el ordenador y, posteriormente,
-conectando la placa directamente a la red de alimentación doméstica. En
-ambos casos no se consiguió establecer la conexión Wi-Fi, manteniéndose el
-mismo error en la salida del terminal. Posteriormente se detectó que la
-incidencia residía en el cable micro-USB escogido inicialmente. Este no
-conseguía aportar toda la potencia que requiere la placa para establecer
-una conexión Wi-Fi, ya que esta función demanda una mayor cantidad de energía
-frente a otras como puede ser la conexión en serie.
-
-Finalmente, se escogió un cable micro USB de calidad superior y se
-volvió a utilizar el mimo comando para comprobar la conexión, obteniendo
-la siguiente salida:
-
-.. code-block:: console
-
-    I (642) wifi station: ESP_WIFI_MODE_STA
-    I (662) wifi:wifi driver task: 3ffc4398, prio:23, stack:6656, core=0
-    I (662) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE
-    I (662) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE
-    I (692) wifi:wifi firmware version: 3ea4c76
-    I (692) wifi:config NVS flash: enabled
-    I (692) wifi:config nano formating: disabled
-    I (692) wifi:Init dynamic tx buffer num: 32
-    I (702) wifi:Init data frame dynamic rx buffer num: 32
-    I (702) wifi:Init management frame dynamic rx buffer num: 32
-    I (712) wifi:Init management short buffer num: 32
-    I (712) wifi:Init static rx buffer size: 1600
-    I (712) wifi:Init static rx buffer num: 10
-    I (722) wifi:Init dynamic rx buffer num: 32
-    I (822) phy: phy_version: 4180, cb3948e, Sep 12 2019, 16:39:13, 0, 0
-    I (822) wifi:mode : sta (e8:68:e7:30:2e:5c)
-    I (822) wifi station: wifi_init_sta finished.
-    I (942) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
-    I (952) wifi:state: init -> auth (b0)
-    I (952) wifi:state: auth -> assoc (0)
-    I (962) wifi:state: assoc -> run (10)
-    I (1002) wifi:connected with iPhone de Carlos, aid = 1, channel 6, BW20, bssid = 42:47:22:d6:7a:e9
-    I (1012) wifi:security: WPA2-PSK, phy: bgn, rssi: -43
-    I (1012) wifi:pm start, type: 1
-
-    I (1102) wifi:AP's beacon interval = 102400 us, DTIM period = 1
-    I (1642) esp_netif_handlers: sta ip: 172.20.10.12, mask: 255.255.255.240, gw: 172.20.10.1
-    I (1642) wifi station: got ip:172.20.10.12
-    I (1642) wifi station: connected to ap SSID:iPhone de Carlos
-
-Como se puede observar, la información del firmware nos confirma que
-el dispositivo se encuentra conectado al punto de acceso Wi-Fi
-“iPhone de Carlos”. Adicionalmente, desde el propio punto Wi-Fi se puede
-observar como en el momento de realizar el flash del firmware en el dispositivo,
-se aumenta el número de dispositivos conectados a la red en 1.
-
-Fallo en la conexión del agente de micro-ROS con ROS 2
-++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Una vez establecida la conexión Wi-Fi, se trató de suscribirse al
-topic en el que debía de estar publicando mensajes el cliente ya
-conectado a la red. Tras ejecutar el comando:
-
-::
- 
- ros2 topic list
-
-Se obtuvo la siguiente salida.
+Si se ha seleccionado la conexión inalámbrica se empleará el siguiente comando
+para añadir el SSID y la contraseña de nuestra red.
 
 .. code-block:: bash
 
-    carlos@carlos-UX430UA:~/microros_ws$ ros2 topic list
-    /parameter_events
-    /rosout
-    carlos@carlos-UX430UA:~/microros_ws$
-
-En el terminal solo se observan los topic de ROS 2 por defecto,
-y no se muestra el topic por el cual debería de estar publicando
-mensajes la placa.
-
-En primer lugar se comprobó si la placa funcionaba correctamente.
-Para ello se siguieron los  siguientes tutoriales para el testeo de
-la placa en “Visual Studio Code”:
-
-- https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/tutorial/install.md
-
-- https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/tutorial/basic_use.md
-
-Tras la instalación y la prueba de un proyecto básico en la placa,
-se confirmó el correcto funcionamiento de la misma.
-
-Una vez descartado el posible error de funcionamiento de la placa,
-se comprobó si el cliente establecía conexión  con el agente de mico-ROS
-y si existía intercambio de información. En primer lugar se utilizó un
-agente de Docker para depurar el problema. Esto es una capa de software
-de adicional que proporciona abstracción y la virtualización de
-aplicaciones. De este modo, era posible probar la aplicación del cliente
-en un espacio que no fuera ROS 2.
-
-El siguiente comando ejecuta un agente en Docker.
-
-.. code-block:: bash
-
-    docker run -it --rm --net=host microros/micro-ros-agent:foxy udp4 --port 8888 -v6
-
-En otro terminal se ejecuta el siguiente comando para entrar en
-la imagen del Docker:
-
-.. code-block:: bash
-
-    docker run -it osrf/ros:eloquent-desktop
-
-Se descargará una imagen más nueva del Docker. Una vez inicializada
-y con el agente Docker activo se comprueba si el topic es visible de
-nuevo con el comando “ros2 topic list”. Se observa la siguiente salida:
-
-.. code-block:: console
-
-    root@a4032df86129:/# ros2 topic list
-    /freertos_int32_publisher
-    /parameter_events
-    /rosout
-
-Como se puede observar, utilizando el Docker si que se reconoce el topic
-de la aplicación de FreeRTOS que se había instalado en la placa.
-
-De este modo, fue posible deducir que el problema residía en la conexión
-del agente de micro-ROS con el espacio de ROS 2. Se utilizó el siguiente
-comando para ejecutar un agente de micro-ROS que mostrara información sobre
-la conexión:
-
-.. code-block:: bash
-
-    ros2 run micro_ros_agent micro_ros_agent udp4 --port  8888 -v6
-
-En el agente se observa la siguiente salida:
-
-.. code-block:: console
-
-    carlos@carlos-UX430UA:~/microros_ws$ ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888 -v6
-
-    [1633603125.726950] info     | UDPv4AgentLinux.cpp | init                     | running...             | port: 8888
-
-    [1633603125.727267] info     | Root.cpp           | set_verbose_level        | logger setup           | verbose_level: 6
-
-    [1633603131.602949] debug    | UDPv4AgentLinux.cpp | recv_message             | [==>> UDP <<==]        | client_key: 0x00000000, len: 24, data: 
-    0000: 80 00 00 00 00 01 10 00 58 52 43 45 01 00 01 0F 1E A5 3D F9 81 00 FC 01
-
-    [1633603131.603248] info     | Root.cpp           | create_client            | create                 | client_key: 0x1EA53DF9, session_id: 0x81
-
-    [1633603131.603400] info     | SessionManager.hpp | establish_session        | session established    | client_key: 0x1EA53DF9, address: 172.20.10.12:26313
-
-    [1633603131.603645] debug    | UDPv4AgentLinux.cpp | send_message             | [** <<UDP>> **]        | client_key: 0x1EA53DF9, len: 19, data: 
-    0000: 81 00 00 00 04 01 0B 00 00 00 58 52 43 45 01 00 01 0F 00
-
-    [1633603131.934983] info     | ProxyClient.cpp    | create_participant       | participant created    | client_key: 0x1EA53DF9, participant_id: 0x000(1)
-    0000: 81 80 00 00 05 01 06 00 00 0A 00 01 00 00
-
-    [1633603132.191877] info     | ProxyClient.cpp    | create_topic             | topic created          | client_key: 0x1EA53DF9, topic_id: 0x000(2), participant_id: 0x000(1)
-
-    [1633603132.287776] info     | ProxyClient.cpp    | create_publisher         | publisher created      | client_key: 0x1EA53DF9, publisher_id: 0x000(3), participant_id: 0x000(1)
-
-    [1633603132.350367] info     | ProxyClient.cpp    | create_datawriter        | datawriter created     | client_key: 0x1EA53DF9, datawriter_id: 0x000(5), publisher_id: 0x000(3)
+    ros2 run micro_ros_setup build_firmware.sh menuconfig
     
-    [1633603133.465362] debug    | DataWriter.cpp     | write                    | [** <<DDS>> **]        | client_key: 0x00000000, len: 4, data: 0000: 00 00 00 00
-
-La información más relevante reside en comprobar que el agente y el cliente
-establecen una conexión y, aun más importante, que el agente de micro-ROS
-publica los mensajes en el DDS. De este modo era complicado averiguar el hecho
-de que, publicándose mensajes en la red de ROS 2, estos no eran reconocidos
-desde la computadora. Se investigó este fallo a través de fuentes externas
-:footcite:`no_communication_micro_ROS_ROS2` y se averiguó que
-el problema residía en el dominio de ROS escogido previamente.
-
-Este se puede escoger a través de una variable del entorno denominada
-“ROS_DOMAIN_ID”. En uno de los tutoriales realizados para el aprendizaje
-del manejo de ROS 2, era necesario establecer esta variable en el
-fichero .bashrc. Sin embargo, en las aplicaciones que ofrecen los RTOS,
-este no es el dominio empleado, por lo cuál no es posible observar los
-mensajes que se publican en el espacio DDS. Una vez suprimida esta línea
-de código en el fichero .bashrc, se volvió a ejecutar todo el proceso
-(flasheo del firmware y creación del agente). Finalmente, tras conectar
-el cliente con el agente ya era posible observar tanto los nodos como los
-topic a los que estaba conectada la placa.
+Finalmente se compilará el firmware completo y se enviará a la placa con los
+dos siguientes comandos.
 
 .. code-block:: bash
 
-    carlos@carlos-UX430UA:~/microros_ws$ ros2 topic list
-    /freertos_int32_publisher
-    /parameter_events
-    /rosout
-    carlos@carlos-UX430UA:~/microros_ws$ ros2 node list
-    /freertos_int32_publisher
+    ros2 run micro_ros_setup build_firmware.sh
 
-.. footbibliography::
+    ros2 run micro_ros_setup flash_firmware.sh
+
+En este momento será necesario lanzar el agente de micro-ROS desde
+nuestra máquina. En función de si hemos optado por una conexión en serie
+o inalámbrica emplearemos uno de los dos siguientes comandos:
+
+.. code-block:: bash
+
+    ros2 run micro_ros_agent micro_ros_agent serial --dev [device ID]
+
+    ros2 run micro_ros_agent micro_ros_agent udp --port [port ID]
+
+El devide ID es la identifiación de nuestro dispositivo, la cual
+se podrá averiguar escribiendo "ls /dev/serial/by-id/*" en la línea de
+comandos, y el port ID deberá ser el mismo que el seleccionado en
+la configuración del hardware.
+
+De este modo ya se ejecutará la aplicación y se enviarán los datos
+al espacio DDS.
+
+
+Para medir la latencia es imprescindible escoger y conoceruna herramienta
+muy precisa. En este caso se va a utilizar cyclictest, una herramienta de
+benchmarking para sistemas en tiempo real. En concreto, sirve para medir la
+latencia del sistema.
+
+https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/cyclictest/start
+
+Un análisis de la latencia puede ser muy distinto de otro dependiendo
+de varios factores y las condiciones en las que se quiera realizar
+el test. Es por ello por lo que es fundamental configurar bien la herramienta
+antes de ser utilizada para obtener unos datos fiables.
+
+En este caso se ha utilizado la siguiente configuración:
+
+.. code-block:: bash
+
+    cyclictest -D 1 --verbose -i 100 -p 95
+
+El parámetro D indica la duración del test, en este caso de un segundo.
+"Verbose" expresa que se produzca una salida detallada de la latencia.
+La opción i muestra el tamaño del intervalo entre medidas, en este caso
+de 100 micro segundos, por lo que se realizarán un total de 10000 medidas.
+Finalmente, p indica la prioridad porcentual de los procesos que ocurran
+en tiempo real, en este caso de máxima prioridad.
+
+Estos resultados han sido volcados a un fichero para analizarlos posteriormente.
+
+Se ha lanzado un análisis por cada escenario, estableciendo la frecuencia
+en 1000 Hz y el tamaño del mensaje en 1 kilobyte. De este modo, la placa trabajará
+bajo una gran demanda, sometiendola a una situación límitie. De esta forma
+podremos observar la evolución de la latencia cuando la placa utiliza
+todos sus recursos.
+
+
+
+Para medir el throughput se ha utilizado el propio agente de micro-ROS.
+Añadiendo la opcion -v5 después de ejecutar el agente, se muestra por pantalla
+los mensajes publicados en el DDS. Se ha decidido volcar la salida por pantalla
+en un fichero.
+
+En este ámbito se han realizado 24 mediciones, 6 por cada escenario. En
+ellas se ha modificado la frecuencia del envío de mensajes manteniendo
+el tamaño del mismo.
+
+La recopilación de cada análisis, ha sido de unos 15 segundos, tiempo
+más que suficiente para generar una muestra amplia del número de mensajes
+que se ha llegado a publicar en ese tiempo en concreto. En la salida
+del agente también se muestra el tiempo exacto de la publicación de los
+mensajes por lo que simplemente ha sido necesario realizar una media
+del número de mensajes publicados por segundo y multiplicarlos por
+el tamaño del mensaje.
+
+
+
+Por último, la medición de la memoria empleada se ha producido utilizando
+el comando "htop" de Ubuntu, en el que se muestra el consumo de la memoria
+de cada tarea llevada acabo en cada momento.
+
+
+
+Finalmente cabe destacar que se ha utilizado Jupyter Notebook para
+realizar las gráficas y los análisis estadísticos.

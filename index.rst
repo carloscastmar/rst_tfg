@@ -26,8 +26,9 @@ TFG microprocessor benchmark
 
    planificacion_temporal_y_presupuesto.rst
 
+   incidencias_ocurridas.rst
+
 .. raw:: latex
   
   \renewcommand{\listtablename}{Índice de tablas}
   \listoffigures
-  \listoftables
