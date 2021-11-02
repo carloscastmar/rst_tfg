@@ -1,18 +1,12 @@
 Resultados
 ==========
 
+A continuación se muestran los resultados de los análisis y una
+discusión de estos, además de las conclusiones obtenidas teniendo
+en cuenta difrentes factoes.
 
-.. figure:: jupyter_notebook/latency_serial_best-effort_dist_kde.png
-    :width: 300px
-    :align: center
-    
-    Latencia "Serial Best Effort" distribución
-
-.. figure:: jupyter_notebook/latency_serial_best-effort_hist.png 
-    :width: 300px
-    :align: center
-    
-    Latencia "Serial Best Effort" histograma
+Latencia
+--------
 
 .. figure:: jupyter_notebook/latency_serial_reliable_dist_kde.png 
     :width: 300px
@@ -20,23 +14,11 @@ Resultados
     
     Latencia "Serial Reliable" distribución
 
-.. figure:: jupyter_notebook/latency_serial_reliable_hist.png
+.. figure:: jupyter_notebook/latency_serial_best-effort_dist_kde.png
     :width: 300px
     :align: center
     
-    Latencia "Serial Reliable" histograma
-
-.. figure:: jupyter_notebook/latency_wifi_best-effort_dist_kde.png 
-    :width: 300px
-    :align: center
-    
-    Latencia "WiFi Best Effort" distribución
-
-.. figure:: jupyter_notebook/latency_wifi_best-effort_hist.png
-    :width: 300px
-    :align: center
-    
-    Latencia "WiFi Best Effort" histograma
+    Latencia "Serial Best Effort" distribución
 
 .. figure:: jupyter_notebook/latency_wifi_reliable_dist_kde.png
     :width: 300px
@@ -44,38 +26,35 @@ Resultados
     
     Latencia "WiFi Reliable" distribución
 
+.. figure:: jupyter_notebook/latency_wifi_best-effort_dist_kde.png 
+    :width: 300px
+    :align: center
+    
+    Latencia "WiFi Best Effort" distribución
+
+.. figure:: jupyter_notebook/latency_serial_reliable_hist.png
+    :width: 300px
+    :align: center
+    
+    Latencia "Serial Reliable" histograma
+
+.. figure:: jupyter_notebook/latency_serial_best-effort_hist.png 
+    :width: 300px
+    :align: center
+    
+    Latencia "Serial Best Effort" histograma
+
 .. figure:: jupyter_notebook/latency_wifi_reliable_hist.png
     :width: 300px
     :align: center
     
     Latencia "WiFi Reliable" histograma
 
-.. figure:: jupyter_notebook/throughput_serial_best_effort.png
-    :width: 300px
-    :align: center
-   
-    Throughput "Serial Best Effort"
-    
-.. figure:: jupyter_notebook/throughput_serial_reliable.png
+.. figure:: jupyter_notebook/latency_wifi_best-effort_hist.png
     :width: 300px
     :align: center
     
-    Throughput "Serial Reliable"
-
-.. figure:: jupyter_notebook/throughput_wifi_best_effort.png
-    :width: 300px
-    :align: center
-
-    Throughput "WiFi Best Effort"
-
-.. figure:: jupyter_notebook/throughput_wifi_reliable.png
-    :width: 300px
-    :align: center
-
-    Throughput "WiFi Reliable"
-
-latency_serial_best-effort:
----------------------------
+    Latencia "WiFi Best Effort" histograma
 
 .. table:: Valores estadísticos 
    :widths: auto
@@ -94,3 +73,29 @@ latency_serial_best-effort:
    max     31.000000
    =====  ==========
 
+Throughput
+----------
+
+.. figure:: jupyter_notebook/throughput_serial_reliable.png
+    :width: 300px
+    :align: center
+    
+    Throughput "Serial Reliable"
+    
+.. figure:: jupyter_notebook/throughput_serial_best_effort.png
+    :width: 300px
+    :align: center
+   
+    Throughput "Serial Best Effort"
+
+.. figure:: jupyter_notebook/throughput_wifi_reliable.png
+    :width: 300px
+    :align: center
+
+    Throughput "WiFi Reliable"
+
+.. figure:: jupyter_notebook/throughput_wifi_best_effort.png
+    :width: 300px
+    :align: center
+
+    Throughput "WiFi Best Effort"

@@ -88,6 +88,11 @@ culpables de que se cumplan o no los tiempos que deben de cumplir los sistemas.
 
 https://en.wikipedia.org/wiki/Latency_(engineering)#:~:text=The%20latency%20is%20the%20delay,limitations%20which%20create%20additional%20latency.
 
+.. figure:: Fotos/latency.png
+    :width: 200px
+    :align: center
+    
+    Latencia
 
 Generalmente, un evento en un sistema de este estilo está formado por distintos
 eventos más pequeños que dan lugar a la realización del evento principal. Por
@@ -114,6 +119,12 @@ ya que es una placa diseñada para operar con recursos muy limitados. En este
 sentido resultará muy interesante comprobar el momento en el que se produzca la
 saturación de la placa para determinar las limitaciones del sistema y para que aplicaciones
 podría emplearse el microcontrolador.
+
+.. figure:: Fotos/throughput.jpeg
+    :width: 200px
+    :align: center
+    
+    Throughput
 
 Finalmente, se procederá a estudiar el consumo se memoria del sistema. En un principio,
 micro-ROS es un software diseñado para microcontroladores, por lo que el efecto
@@ -257,6 +268,8 @@ a explicar los aspectos más reseñables del mismo.
         vTaskDelete(NULL);
     }
 
+|
+    
 En primer lugar se añaden todas las librerías que se utilizarán y se definen
 las funciones "RCCHECK" y "RCSOFTCHECK". Estás serán de gran utilidad durante
 toda la ejecución, ya que se llamarán en el momento de utilizar cualquier otra
@@ -351,6 +364,7 @@ la configuración del hardware.
 De este modo ya se ejecutará la aplicación y se enviarán los datos
 al espacio DDS.
 
+|
 
 Para medir la latencia es imprescindible escoger y conoceruna herramienta
 muy precisa. En este caso se va a utilizar cyclictest, una herramienta de
@@ -385,8 +399,6 @@ bajo una gran demanda, sometiendola a una situación límitie. De esta forma
 podremos observar la evolución de la latencia cuando la placa utiliza
 todos sus recursos.
 
-
-
 Para medir el throughput se ha utilizado el propio agente de micro-ROS.
 Añadiendo la opcion -v5 después de ejecutar el agente, se muestra por pantalla
 los mensajes publicados en el DDS. Se ha decidido volcar la salida por pantalla
@@ -404,13 +416,15 @@ mensajes por lo que simplemente ha sido necesario realizar una media
 del número de mensajes publicados por segundo y multiplicarlos por
 el tamaño del mensaje.
 
-
-
 Por último, la medición de la memoria empleada se ha producido utilizando
 el comando "htop" de Ubuntu, en el que se muestra el consumo de la memoria
 de cada tarea llevada acabo en cada momento.
 
-
-
 Finalmente cabe destacar que se ha utilizado Jupyter Notebook para
 realizar las gráficas y los análisis estadísticos.
+
+.. figure:: Fotos/jupyter_notebook.png
+    :width: 150px
+    :align: center
+    
+    Logotipo de Jupyter notebook

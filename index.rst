@@ -24,9 +24,9 @@ TFG microprocessor benchmark
 
    conclusiones_y_lineas_futuras.rst
 
-   planificacion_temporal_y_presupuesto.rst
-
    incidencias_ocurridas.rst
+
+   planificacion_temporal_y_presupuesto.rst
 
 .. raw:: latex
   
