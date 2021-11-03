@@ -74,6 +74,12 @@ html_static_path = ['_static']
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_custom = r'''
+\usepackage{pdfpages}
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \newpage}
 \makeatletter
 
    \fancypagestyle{normal}{
@@ -95,7 +101,39 @@ latex_custom = r'''
     }
 \makeatother
 '''
+latex_maketitle = r'''
+\newpage
+\thispagestyle{empty}
+\includepdf{Portada_TFG.pdf}
 
+\pagenumbering{roman}
+
+\newpage
+\thispagestyle{plain}
+
+\chapter*{AGRADECIMIENTOS} % Se añade un asterisco a \section para que el título no esté numerado.
+\setcounter{page}{3}
+\addcontentsline{toc}{chapter}{AGRADECIMIENTOS} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
+
+Agradezco a \dots
+
+Gracias a \dots
+
+A \dots \ por \dots
+
+\afterpage{\blankpage}
+
+\pagenumbering{roman}
+\newpage
+\chapter*{RESUMEN EJECUTIVO} % Se añade un asterisco a \section para que el título no esté numerado.
+\setcounter{page}{5}
+\markright{RESUMEN EJECUTIVO} % Al utilizar \section* se ha de añadir manualmente el título del apartado al encabezado.
+\addcontentsline{toc}{chapter}{RESUMEN EJECUTIVO} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
+
+Este documento constituye una guía (que sirve a su vez de plantilla) para la elaboración de informes de TFG o TFM
+
+\afterpage{\blankpage}
+'''
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
@@ -111,6 +149,7 @@ latex_elements = {
      'releasename': '',
 
     # Latex figure (float) alignment
+    'maketitle': latex_maketitle
     #
 }
 
