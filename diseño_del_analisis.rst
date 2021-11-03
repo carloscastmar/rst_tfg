@@ -267,8 +267,6 @@ a explicar los aspectos más reseñables del mismo.
 
         vTaskDelete(NULL);
     }
-
-|
     
 En primer lugar se añaden todas las librerías que se utilizarán y se definen
 las funciones "RCCHECK" y "RCSOFTCHECK". Estás serán de gran utilidad durante
