@@ -354,9 +354,9 @@ o inalámbrica emplearemos uno de los dos siguientes comandos:
 
     ros2 run micro_ros_agent micro_ros_agent udp --port [port ID]
 
-El devide ID es la identifiación de nuestro dispositivo, la cual
-se podrá averiguar escribiendo "ls /dev/serial/by-id/*" en la línea de
-comandos, y el port ID deberá ser el mismo que el seleccionado en
+El device ID es la identificación de nuestro dispositivo, la cual
+se puede averiguar escribiendo "ls /dev/serial/by-id/*" en la línea de
+comandos, y el port ID debe ser el mismo que el seleccionado en
 la configuración del hardware.
 
 De este modo ya se ejecutará la aplicación y se enviarán los datos
@@ -364,7 +364,7 @@ al espacio DDS.
 
 |
 
-Para medir la latencia es imprescindible escoger y conoceruna herramienta
+Para medir la latencia es imprescindible escoger y conocer una herramienta
 muy precisa. En este caso se va a utilizar cyclictest, una herramienta de
 benchmarking para sistemas en tiempo real. En concreto, sirve para medir la
 latencia del sistema.
@@ -408,7 +408,7 @@ el tamaño del mismo.
 
 La recopilación de cada análisis, ha sido de unos 15 segundos, tiempo
 más que suficiente para generar una muestra amplia del número de mensajes
-que se ha llegado a publicar en ese tiempo en concreto. En la salida
+que se ha llegado a publicar por segundo. En la salida
 del agente también se muestra el tiempo exacto de la publicación de los
 mensajes por lo que simplemente ha sido necesario realizar una media
 del número de mensajes publicados por segundo y multiplicarlos por
