@@ -104,16 +104,15 @@ latex_custom = r'''
 latex_maketitle = r'''
 \newpage
 \thispagestyle{empty}
-\includepdf{Portada_TFG.pdf}
+\includepdf{Portada_TFG_CCM2.pdf}
 
 \pagenumbering{roman}
 
 \newpage
 \thispagestyle{plain}
 
-\chapter*{AGRADECIMIENTOS} % Se añade un asterisco a \section para que el título no esté numerado.
-\setcounter{page}{3}
-\addcontentsline{toc}{chapter}{AGRADECIMIENTOS} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
+\chapter*{Agradecimientos} % Se añade un asterisco a \section para que el título no esté numerado.
+\addcontentsline{toc}{chapter}{Agradecimientos} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
 Agradezco a \dots
 
@@ -123,12 +122,10 @@ A \dots \ por \dots
 
 \afterpage{\blankpage}
 
-\pagenumbering{roman}
 \newpage
-\chapter*{RESUMEN EJECUTIVO} % Se añade un asterisco a \section para que el título no esté numerado.
-\setcounter{page}{5}
-\markright{RESUMEN EJECUTIVO} % Al utilizar \section* se ha de añadir manualmente el título del apartado al encabezado.
-\addcontentsline{toc}{chapter}{RESUMEN EJECUTIVO} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
+\chapter*{Resumen Ejecutivo} % Se añade un asterisco a \section para que el título no esté numerado.
+%\markright{Resumen Ejecutivo} % Al utilizar \section* se ha de añadir manualmente el título del apartado al encabezado.
+\addcontentsline{toc}{chapter}{Resumen Ejecutivo} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
 Este documento constituye una guía (que sirve a su vez de plantilla) para la elaboración de informes de TFG o TFM
 
