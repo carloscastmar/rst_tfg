@@ -79,6 +79,7 @@ latex_custom = r'''
 \newcommand\blankpage{%
     \null
     \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
     \newpage}
 \makeatletter
 
@@ -106,9 +107,10 @@ latex_maketitle = r'''
 \thispagestyle{empty}
 \includepdf{Portada_TFG_CCM2.pdf}
 
+\afterpage{\blankpage}
+
 \pagenumbering{roman}
 
-\newpage
 \thispagestyle{plain}
 
 \chapter*{Agradecimientos} % Se añade un asterisco a \section para que el título no esté numerado.
@@ -120,16 +122,13 @@ Gracias a \dots
 
 A \dots \ por \dots
 
-\afterpage{\blankpage}
 
-\newpage
 \chapter*{Resumen Ejecutivo} % Se añade un asterisco a \section para que el título no esté numerado.
 %\markright{Resumen Ejecutivo} % Al utilizar \section* se ha de añadir manualmente el título del apartado al encabezado.
 \addcontentsline{toc}{chapter}{Resumen Ejecutivo} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
 Este documento constituye una guía (que sirve a su vez de plantilla) para la elaboración de informes de TFG o TFM
 
-\afterpage{\blankpage}
 '''
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
