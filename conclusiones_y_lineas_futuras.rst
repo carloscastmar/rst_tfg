@@ -27,7 +27,7 @@ en el desarrollo de aplicaciones.
 Por otro lado es reseñable la evolución que ha experimentado este
 sector en los últimos años. Su comienzo se dio hace poco más de
 una década y durante este tiempo se han realizado numerosos proyectos y
-se ha locgrado desarrollar una segunda versión que incorpora una
+se ha logrado desarrollar una segunda versión que incorpora una
 gran cantidad de mejoras y que se actualiza constantemente con
 nuevas distribuciones.
 
