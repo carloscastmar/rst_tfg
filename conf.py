@@ -137,6 +137,7 @@ Gracias a \dots
 
 A \dots \ por \dots
 
+\afterpage{\blankpage}
 
 \newpage
 \section*{Resumen Ejecutivo} % Se añade un asterisco a \section para que el título no esté numerado.
