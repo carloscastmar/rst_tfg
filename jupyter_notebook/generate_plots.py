@@ -1,3 +1,4 @@
+from gc import collect
 import seaborn as sns
 import pandas as pd
 import numpy as np
@@ -30,13 +31,14 @@ def gen_plot_for_latency(data_file):
     sns.histplot(data=latency_df, x="latency", discrete=True)
     plt.savefig(data_file + "_hist.png", dpi=300)
 
-def gen_plot_for_tp(data_info):
-    data_file, description = data_info
+def gen_plot_for_tp(data_info,axes):
+    data_file, description,fil,col = data_info
     df = pd.read_csv(data_file+'.dat', delimiter=r'\s+')
-    rel = sns.relplot(x="Frequency", y="Throughput", data=df, kind="line",marker='o')
+    rel = sns.relplot(ax=axes[fil,col],x="Frequency", y="Throughput", data=df, kind="line",marker='o')
+#    rel.set(xscale='log')
 #    rel.figure.suptitle(description)
 #    plt.title(description)
-    plt.xscale('log')
+    plt.xscale('log', base=2)
     plt.savefig(data_file + ".png", dpi=300)
 
 data_files = [
@@ -51,12 +53,13 @@ for data_file in data_files:
     gen_plot_for_latency(data_file)
 
 data_infos= [
-    ("throughput_serial_best_effort",'Conexión en serie, modo best-effort'),
-    ("throughput_serial_reliable",'Conexión en serie, modo reliable'),
-    ("throughput_wifi_best_effort",'Conexión Wi-Fi, modo best-effort'),
-    ("throughput_wifi_reliable", 'Conexión Wi-Fi, modo reliable'),
+    ("throughput_serial_best_effort",'Conexión en serie, modo best-effort',0,0),
+    ("throughput_serial_reliable",'Conexión en serie, modo reliable',0,1),
+    ("throughput_wifi_best_effort",'Conexión Wi-Fi, modo best-effort',1,0),
+    ("throughput_wifi_reliable", 'Conexión Wi-Fi, modo reliable',1,1),
 ]
 
 
 for data_info in data_infos:
-    gen_plot_for_tp(data_info)
+    fig, axes = plt.subplots(2,2)
+    gen_plot_for_tp(data_info, axes)
