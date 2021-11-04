@@ -57,7 +57,7 @@ suscribirnos y observar los mensajes enviados por el cliente.
 
 Despues de realizar unas pruebas con las demos que proporciona el sistema
 operativo, es recomendable realizar una serie de tutoriales más avanzados
-que proporciona la propia página de micro-ROS (https://micro.ros.org/docs/tutorials/programming_rcl_rclc/overview/).
+que proporciona la propia página de micro-ROS. :footcite:`micro_ros_programming_tutorial` 
 En estos se enseña como diseñar tu propia aplicación, incluyendo como
 crear tu propio nodo, tus publishers y subscribers, un temporizador o
 incluso seleccionar la calidad de la comunicación.
@@ -85,8 +85,7 @@ transmisión efectiva de datos. En otras palabras, la latencia es el tiempo que
 tarda en ejecutarse una tarea desde el momento en el que es ordenada.
 Esto en un sistema en tiempo real es crucial, ya que es uno de los principales
 culpables de que se cumplan o no los tiempos que deben de cumplir los sistemas.
-
-https://en.wikipedia.org/wiki/Latency_(engineering)#:~:text=The%20latency%20is%20the%20delay,limitations%20which%20create%20additional%20latency.
+:cite:`latency`
 
 .. figure:: Fotos/latency.png
     :width: 200px
@@ -367,9 +366,7 @@ al espacio DDS.
 Para medir la latencia es imprescindible escoger y conocer una herramienta
 muy precisa. En este caso se va a utilizar cyclictest, una herramienta de
 benchmarking para sistemas en tiempo real. En concreto, sirve para medir la
-latencia del sistema.
-
-https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/cyclictest/start
+latencia del sistema. :cite:`cyclictest`
 
 Un análisis de la latencia puede ser muy distinto de otro dependiendo
 de varios factores y las condiciones en las que se quiera realizar
@@ -426,3 +423,5 @@ realizar las gráficas y los análisis estadísticos.
     :align: center
     
     Logotipo de Jupyter notebook
+
+.. footbibliography::
