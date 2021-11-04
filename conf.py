@@ -106,13 +106,30 @@ latex_maketitle = r'''
 \thispagestyle{empty}
 \includepdf{Portada_TFG_CCM2.pdf}
 
-\pagenumbering{roman}
 
 \newpage
-\thispagestyle{plain}
+\thispagestyle{empty}
 
-\chapter*{Agradecimientos} % Se añade un asterisco a \section para que el título no esté numerado.
-\addcontentsline{toc}{chapter}{Agradecimientos} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
+
+\begin{flushright} % Se alinea el texto en el lado derecho de la página.
+\vspace*{5cm} % Se añade un espacio vertical de 5cm para situar la cita en ~1/3 de la página.
+
+\textit{“If I have seen further it is by standing on the shoulders of Giants”} 
+
+\medskip % Salto a la línea de tamaño medio (existen \smallskip, \medskip y \bigskip)
+- Sir Isaac Newtoon
+
+\end{flushright}
+
+\afterpage{\blankpage} % Se añade una página en blanco después de la cita.
+
+\pagenumbering{roman}
+
+% Se comienza una página nueva con formato plano (sin encabezado/pie de página pero con número de página):
+\newpage
+
+\section*{Agradecimientos} % Se añade un asterisco a \section para que el título no esté numerado.
+%\addcontentsline{toc}{chapter}{Agradecimientos} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
 Agradezco a \dots
 
@@ -123,8 +140,8 @@ A \dots \ por \dots
 \afterpage{\blankpage}
 
 \newpage
-\chapter*{Resumen Ejecutivo} % Se añade un asterisco a \section para que el título no esté numerado.
-%\markright{Resumen Ejecutivo} % Al utilizar \section* se ha de añadir manualmente el título del apartado al encabezado.
+\section*{Resumen Ejecutivo} % Se añade un asterisco a \section para que el título no esté numerado.
+\markright{Resumen Ejecutivo} % Al utilizar \section* se ha de añadir manualmente el título del apartado al encabezado.
 \addcontentsline{toc}{chapter}{Resumen Ejecutivo} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
 Este documento constituye una guía (que sirve a su vez de plantilla) para la elaboración de informes de TFG o TFM
