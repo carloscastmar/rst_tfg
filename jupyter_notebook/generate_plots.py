@@ -46,6 +46,8 @@ data_files = [
     "latency_serial_reliable",
     "latency_wifi_best-effort",
     "latency_wifi_reliable",
+    "latency_best_effort_Wi-Fi_interference",
+    "latency_reliable_Wi-Fi_interference"
 ]
 
 
