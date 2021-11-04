@@ -71,9 +71,7 @@ siguientes:
 -  Concurrencia: El sistema tiene que ser capaz de cooperar con otros
    sistemas que estén operando en el mismo entorno y, en determinadas
    ocasiones, incluso utilizar el hardware o software de dichos
-   sistemas.
-
-[1] Libro: Distributed real-time systems. Theory and practice
+   sistemas. :cite:`2019:erciyes`
 
 Sistemas embebidos
 ++++++++++++++++++
