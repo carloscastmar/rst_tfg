@@ -428,7 +428,7 @@ Finalmente cabe destacar que se ha utilizado Jupyter Notebook para
 realizar las gráficas y los análisis estadísticos.
 
 .. figure:: Fotos/jupyter_notebook.png
-    :width: 150px
+    :width: 100px
     :align: center
     
     Logotipo de Jupyter notebook

@@ -243,6 +243,12 @@ realiza el ordenador empleado.
 Influencia de interferencias
 ----------------------------
 
+.. figure:: Fotos/interferencias.png
+    :width: 650px
+    :align: center
+    
+    Influencia de las interferencias
+
 Lo primero que hay que tener en cuenta es el factor de que en una aplicación
 real, es muy probable que existan perturbaciones en la red que alteren el
 comportamiento de nuestro sistema, por lo que es importante que el diseño de este
