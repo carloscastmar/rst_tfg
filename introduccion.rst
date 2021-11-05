@@ -5,7 +5,7 @@ Motivación
 ----------
 
 El motivo que ha predominado en la elección de este tema ha sido la
-relación que mantiene con la tecnología del futuro. Restultaba muy interesante
+relación que mantiene con la tecnología del futuro. Resultaba muy interesante
 el hecho adentrarse y contribuir en una tecnología en auge que puede marcar la diferencia
 en los años venideros.
 
@@ -22,7 +22,7 @@ que los soporta, hasta los análisis de comportamiento que presentan dichos
 softwares frente a aplicaciones que simulan situaciones que se puedan dar en la vida real.
 
 La idea del proyecto es iniciarse en una tecnología avanzada que se emplea
-en ámbitos profesionalse de la que se parte sin ningun conocimiento ni experiencia,
+en ámbitos profesionales de la que se parte sin ningún conocimiento ni experiencia,
 para que al final de este sea posible diseñar un experimento que muestre su comportamiento
 frente a aplicaciones semejantes a las que se podrían dar en el mundo real. El motivo
 de este estudio intensivo de dicha tecnología es ser capaces de indicar, no solo como

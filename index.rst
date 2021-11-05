@@ -28,6 +28,8 @@ ESTUDIO DEL COMPORTAMIENTO DE MICRO-ROS. UN ANÁLISIS TEÓRICO Y PRÁCTICO.
 
    planificacion_temporal_y_presupuesto.rst
 
+   Anexos.rst
+
 .. raw:: latex
   
   \renewcommand{\listtablename}{Índice de tablas}
