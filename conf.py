@@ -117,7 +117,7 @@ latex_maketitle = r'''
 \textit{“If I have seen further it is by standing on the shoulders of Giants”} 
 
 \medskip % Salto a la línea de tamaño medio (existen \smallskip, \medskip y \bigskip)
-- Sir Isaac Newtoon
+- Sir Isaac Newton
 
 \end{flushright}
 
