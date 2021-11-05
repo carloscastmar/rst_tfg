@@ -79,7 +79,6 @@ latex_custom = r'''
 \newcommand\blankpage{%
     \null
     \thispagestyle{empty}%
-    \addtocounter{page}{-1}%
     \newpage}
 \makeatletter
 
@@ -106,6 +105,7 @@ latex_maketitle = r'''
 \newpage
 \thispagestyle{empty}
 \includepdf{Portada_TFG_CCM2.pdf}
+\pagenumbering{roman}
 
 \newpage
 \thispagestyle{empty}
@@ -117,19 +117,18 @@ latex_maketitle = r'''
 \textit{“If I have seen further it is by standing on the shoulders of Giants”} 
 
 \medskip % Salto a la línea de tamaño medio (existen \smallskip, \medskip y \bigskip)
-- Sir Isaac Newton
+- Sir Isaac Newtoon
 
 \end{flushright}
 
 \afterpage{\blankpage} % Se añade una página en blanco después de la cita.
 
-\pagenumbering{roman}
-
 % Se comienza una página nueva con formato plano (sin encabezado/pie de página pero con número de página):
 \newpage
+\thispagestyle{plain}
 
 \section*{Agradecimientos} % Se añade un asterisco a \section para que el título no esté numerado.
-%\addcontentsline{toc}{chapter}{Agradecimientos} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
+%\addcontentsline{toc}{section}{Agradecimientos} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
 Agradezco a \dots
 
@@ -142,11 +141,11 @@ A \dots \ por \dots
 \newpage
 \section*{Resumen Ejecutivo} % Se añade un asterisco a \section para que el título no esté numerado.
 \markright{Resumen Ejecutivo} % Al utilizar \section* se ha de añadir manualmente el título del apartado al encabezado.
-
-\addcontentsline{toc}{chapter}{Resumen Ejecutivo} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
+\addcontentsline{toc}{section}{Resumen Ejecutivo} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
 Este documento constituye una guía (que sirve a su vez de plantilla) para la elaboración de informes de TFG o TFM
 
+\afterpage{\blankpage}
 '''
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').

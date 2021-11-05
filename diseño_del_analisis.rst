@@ -13,7 +13,7 @@ Desde la propia página de Espressif es posible encontrar un documento
 con todos los pasos detallados para iniciarse en la programación de la
 placa. :cite:`ESP32_get_started`
 
-Al principio se necesita instalar los requisítos de la aplicación en
+Al principio se necesita instalar los requisitos de la aplicación en
 función del sistema operativo en el que se opere. Después, hay que instalar
 una serie de librerías proporcionadas por Espressif denominadas ESP-IDF.
 Posteriormente se instalará una serie de herramientas y se configurarán las
@@ -29,7 +29,7 @@ Si todo funciona correctamente, será posible observar una serie de mensajes
 publicados en el topic en cuestión. :cite:`first_micro_ros_linux_app`
 
 Después de realizar unas primeras prácticas tanto con el software como con
-el hardware que se quiere probar, es el momento de juntarlos y realizar
+el hardware que se quiere probar, es el momento de unir ambas partes y realizar
 las primeras pruebas de micro-ROS en la placa esp32.
 
 Para ello hay que seguir un tutorial similar al anterior en el que se explica
@@ -39,9 +39,9 @@ como realizar una primera aplicación de micro-ROS con conexión vía Wi-Fi.
 Inicialmente hay que crear y configurar un nuevo firmware de trabajo.
 En este momento hay que escoger el RTOS sobre el que se va a trabajar y
 descargar sus herramientas y librerías propias. Posteriormente es necesario
-configurar dicho firmware, especificando la aplciación que se quiere probar
+configurar dicho firmware, especificando la aplicación que se quiere probar
 y el tipo de conexión que se quiere establecer con la placa. Además, es necesario
-operar sobre un menu de la propia placa en el que se pueden modificar numerosos
+operar sobre un menú de la propia placa en el que se pueden modificar numerosos
 aspectos de la misma, como las variables de entorno o las especificaciones
 de la conexión (p.e. SSID y contraseña Wi-Fi).
 
@@ -55,7 +55,7 @@ comprobar que todo funciona correctamente. Mediante el comando "ros2 topic list"
 se mostrará el topic creado y con "ros2 topic echo /[project name]" podremos
 suscribirnos y observar los mensajes enviados por el cliente.
 
-Despues de realizar unas pruebas con las demos que proporciona el sistema
+Después de realizar unas pruebas con las demos que proporciona el sistema
 operativo, es recomendable realizar una serie de tutoriales más avanzados
 que proporciona la propia página de micro-ROS. :footcite:`micro_ros_programming_tutorial` 
 En estos se enseña como diseñar tu propia aplicación, incluyendo como
@@ -74,8 +74,8 @@ número limitado de ellas para indagar más a fondo y obtener unas conclusiones
 más concisas.
 
 En este experimento se van a analizar la latencia global del sistema operativo
-en tiempo real, el 'throughput' o tasa de transferencia efectiva y el consumo
-de memoria del sistema.
+en tiempo real, el 'throughput' o tasa de transferencia efectiva, el consumo
+de memoria del sistema y la influencia de una interferencia externa en la red de ROS.
 
 A continuación se explicará detalladamente en que consisten estos parámetros
 y de que manera pueden afectar a un sistema en tiempo real.
@@ -106,7 +106,7 @@ cabe recalcar el tiempo que tarda esta información en enviarse desde el cliente
 al agente al que está conectado. Finalmente, es importante el tiempo que emplea
 el agente en publicar los mensajes en el DDS.
 
-Este último es el parámetro que se ha escogido para representar en un anális, ya
+Este último es el parámetro que se ha escogido para representar en un análisis, ya
 que el sistema operativo en el que se lanza el agente nos proporciona herramientas
 que nos indican las latencias que ocurren en el sistema con alta precisión.
 
@@ -125,11 +125,19 @@ podría emplearse el microcontrolador.
     
     Throughput
 
-Finalmente, se procederá a estudiar el consumo se memoria del sistema. En un principio,
+Seguidamente, se procederá a estudiar el consumo se memoria del sistema. En un principio,
 micro-ROS es un software diseñado para microcontroladores, por lo que el efecto
 de las acciones realizadas por este en el sistema global no deberían ser notables.
 En este sentido, será interesante comprobar si realmente se trata de un sistema que
 economiza los recursos y hasta que punto.
+
+Por último, se va a someter al sistema a una perturbación externa. Se creará
+un topic adicional y será el propio ordenador el que actue como cliente. Se ha decidido
+escoger la demo "ping_pong" para este propósito, ya que es una de las demos que trae
+micro-ROS más completa, ya que crea dos nodos, un publisher y un subscriber y crea
+una conexión constante entre ellos dos. Una vez añadida esta interferencia en la red,
+se repetirán las mediciones de la latencia para comprobar si esta se ve afectada y
+en que manera.
 
 
 Los parámetros previamente mencionados aportarán información de gran interés de
@@ -305,8 +313,6 @@ Finalmente se lanza un bucle infinito en el que simplemente se llama a la funci�
 Se le ha asignado un "wake up time" de 1000 milisegundos para asegurarse que
 siempre se ejecute a pesar de que pueda existir un pequeño delay en el sistema.
 
-
-
 Esta aplicación será lanzada numerosas veces, asignando en cada ocasión los
 parámetros que se quieran analizar. Cada vez que se modifique la aplicación
 será necesario recompilar el firmware.
@@ -361,8 +367,6 @@ la configuración del hardware.
 De este modo ya se ejecutará la aplicación y se enviarán los datos
 al espacio DDS.
 
-|
-
 Para medir la latencia es imprescindible escoger y conocer una herramienta
 muy precisa. En este caso se va a utilizar cyclictest, una herramienta de
 benchmarking para sistemas en tiempo real. En concreto, sirve para medir la
@@ -390,12 +394,12 @@ Estos resultados han sido volcados a un fichero para analizarlos posteriormente.
 
 Se ha lanzado un análisis por cada escenario, estableciendo la frecuencia
 en 1000 Hz y el tamaño del mensaje en 1 kilobyte. De este modo, la placa trabajará
-bajo una gran demanda, sometiendola a una situación límitie. De esta forma
+bajo una gran demanda, sometiéndola a una situación límite. De esta forma
 podremos observar la evolución de la latencia cuando la placa utiliza
 todos sus recursos.
 
 Para medir el throughput se ha utilizado el propio agente de micro-ROS.
-Añadiendo la opcion -v5 después de ejecutar el agente, se muestra por pantalla
+Añadiendo la opción -v5 después de ejecutar el agente, se muestra por pantalla
 los mensajes publicados en el DDS. Se ha decidido volcar la salida por pantalla
 en un fichero.
 
@@ -411,15 +415,20 @@ mensajes por lo que simplemente ha sido necesario realizar una media
 del número de mensajes publicados por segundo y multiplicarlos por
 el tamaño del mensaje.
 
-Por último, la medición de la memoria empleada se ha producido utilizando
+Seguidamente, la medición de la memoria empleada se ha producido utilizando
 el comando "htop" de Ubuntu, en el que se muestra el consumo de la memoria
 de cada tarea llevada acabo en cada momento.
+
+La influencia de la perturbación en la red se medirá del mismo modo en el que
+se ha medido la latencia, pero en este caso solo se utilizaran los escenarios
+en los que se emplea la conexión Wi-Fi, ya que el ordenador empleado solo puede
+conectarse al agente creado con un puerto.
 
 Finalmente cabe destacar que se ha utilizado Jupyter Notebook para
 realizar las gráficas y los análisis estadísticos.
 
 .. figure:: Fotos/jupyter_notebook.png
-    :width: 150px
+    :width: 100px
     :align: center
     
     Logotipo de Jupyter notebook

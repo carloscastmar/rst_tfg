@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-TFG microprocessor benchmark
-============================
+ESTUDIO DEL COMPORTAMIENTO DE MICRO-ROS. UN ANÁLISIS TEÓRICO Y PRÁCTICO.
+========================================================================
 
 .. toctree::
    :maxdepth: 3
@@ -27,6 +27,8 @@ TFG microprocessor benchmark
    incidencias_ocurridas.rst
 
    planificacion_temporal_y_presupuesto.rst
+
+   Anexos.rst
 
 .. raw:: latex
   
