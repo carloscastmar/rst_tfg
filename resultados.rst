@@ -239,3 +239,34 @@ en los cuatro escenarios el consumo de la memoria apenas se ha notado.
 En todos las pruebas hemos obtenido un consumo de la memoria de tan solo un 2%, algo
 que se considera despreciable frente al consumo de memoria de la mayoría de procesos que
 realiza el ordenador empleado.
+
+Influencia de interferencias
+----------------------------
+
+Lo primero que hay que tener en cuenta es el factor de que en una aplicación
+real, es muy probable que existan perturbaciones en la red que alteren el
+comportamiento de nuestro sistema, por lo que es importante que el diseño de este
+tenga en cuenta dichos escenarios.
+
+Lo primero que llama la atención al observar las gráficas es que estas forman
+un pico bastante más ancho que las obtenidas previamente. Esto es un resultado
+esperado ya que es lógico deducir que al añadirle carga al sistema este tarde más
+en realizar todo tipo de tareas.
+
+Seguidamente, lo que vemos es que las gráficas de ambos modos tienen una irregularidad
+similar al experimento realizado sin interferencias, pero aún más pronunciada.
+Al estar corriendo otro proceso en paralelo es entendible que ambos procesos no esten
+sincronizados y se prolongue la irregularidad que ya presentaba la conexión vía Wi-Fi.
+
+Resulta interesante el hecho de que la morfología de las gráficas sea muy parecida a las obtenidas
+en el experimento sin perturbaciones. Esto dota al análisis de una mayor fiabilidad y permite
+realizar predicciones de como el sistema podría responder en otras situaciones.
+
+Por último, es preciso señalar que, a pesar que no se vea reflejado en las gráficas, la cantidad
+de veces que la latencia ha resultado 3 en este último experimento (tomada como latencia
+referencia del sistema) ha resultado superior en ambos casos frente a las gráficas
+sin perturbaciones, un dato que nos confirma la mayor demanda de recursos que se
+prevía.
+
+De todos modos, la latencia resultante sigue siendo poco significativa en el sistema,
+teniendo aún un margen bastante amplio para añadir clientes al mismo agente.

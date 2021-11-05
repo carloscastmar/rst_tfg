@@ -74,8 +74,8 @@ número limitado de ellas para indagar más a fondo y obtener unas conclusiones
 más concisas.
 
 En este experimento se van a analizar la latencia global del sistema operativo
-en tiempo real, el 'throughput' o tasa de transferencia efectiva y el consumo
-de memoria del sistema.
+en tiempo real, el 'throughput' o tasa de transferencia efectiva, el consumo
+de memoria del sistema y la influencia de una interferencia externa en la red de ROS.
 
 A continuación se explicará detalladamente en que consisten estos parámetros
 y de que manera pueden afectar a un sistema en tiempo real.
@@ -125,11 +125,19 @@ podría emplearse el microcontrolador.
     
     Throughput
 
-Finalmente, se procederá a estudiar el consumo se memoria del sistema. En un principio,
+Seguidamente, se procederá a estudiar el consumo se memoria del sistema. En un principio,
 micro-ROS es un software diseñado para microcontroladores, por lo que el efecto
 de las acciones realizadas por este en el sistema global no deberían ser notables.
 En este sentido, será interesante comprobar si realmente se trata de un sistema que
 economiza los recursos y hasta que punto.
+
+Por último, se va a someter al sistema a una perturbación externa. Se creará
+un topic adicional y será el propio ordenador el que actue como cliente. Se ha decidido
+escoger la demo "ping_pong" para este propósito, ya que es una de las demos que trae
+micro-ROS más completa, ya que crea dos nodos, un publisher y un subscriber y crea
+una conexión constante entre ellos dos. Una vez añadida esta interferencia en la red,
+se repetirán las mediciones de la latencia para comprobar si esta se ve afectada y
+en que manera.
 
 
 Los parámetros previamente mencionados aportarán información de gran interés de
@@ -407,9 +415,14 @@ mensajes por lo que simplemente ha sido necesario realizar una media
 del número de mensajes publicados por segundo y multiplicarlos por
 el tamaño del mensaje.
 
-Por último, la medición de la memoria empleada se ha producido utilizando
+Seguidamente, la medición de la memoria empleada se ha producido utilizando
 el comando "htop" de Ubuntu, en el que se muestra el consumo de la memoria
 de cada tarea llevada acabo en cada momento.
+
+La influencia de la perturbación en la red se medirá del mismo modo en el que
+se ha medido la latencia, pero en este caso solo se utilizaran los escenarios
+en los que se emplea la conexión Wi-Fi, ya que el ordenador empleado solo puede
+conectarse al agente creado con un puerto.
 
 Finalmente cabe destacar que se ha utilizado Jupyter Notebook para
 realizar las gráficas y los análisis estadísticos.
