@@ -154,3 +154,40 @@ Anexo 2: Script de python para la generación de gráficas
 Anexo 3: Glosario y abreviaturas
 --------------------------------
 
+- ROS: Sistema operativo de robots
+
+- IoT: Internet de las cosas
+
+- RTOS: Sistema operativo en tiemo real
+
+- Framework: Entorno de trabajo
+
+- Firmware: Programa que controla los circuitos electrónicos de un dispositivo
+
+- Middleware: Software intermedio entre dispositivos y plataformas de software
+
+- Throughput: Tasa de transferencia efectiva
+
+- Topic: Tópico del mensaje
+
+- Publisher: Editor de un topic
+
+- Subscriber: Suscriptor de un topic
+
+- API: Interfaz de programación de aplicaciones
+
+- DDS: Servicio de distribución de datos
+
+- XCDR: Dispositivos de recursos extremadamente limitados
+
+- UDP: Protocolo de datagrama de usuario
+
+- TCP: Protocolo de control de transmisión
+
+- POSIX: Interfaz de sistema operativo portable
+
+- OTT: Servicios de libre transmisión
+
+- UART: Transmisor-Receptor Asíncrono Universal
+
+- MIMO: Múltiple entrada, múltiple salida

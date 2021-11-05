@@ -73,7 +73,7 @@ reliable tienen el 40% de las latencias obtenidas entre los 4 y 5 microsegundos.
 
 Sin embargo, la distribución de las latencias resultantes de las pruebas realizadas
 en modo best-effort es mucho más homogénea, teniendo estas su máximo en torno al
-27& y el 32%. Además, la anchura del pico de las bajas latencias es notablemente
+27% y el 32%. Además, la anchura del pico de las bajas latencias es notablemente
 superior, finalizando este prácticamente en los 10 microsegundos, frente a los
 7 microsegundos que presentan las gráficas de modo reliable.
 
