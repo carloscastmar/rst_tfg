@@ -11,14 +11,14 @@ que facilitan la comunicación con el mundo real.
 En este capitulo se va a explicar el software empleado para
 la realización del trabajo y la instalación del mismo.
 
-La estructura de software que más se asemeja a la empleada en el
+La estructura del software empleada en el
 análisis es la siguiente.
 
 .. figure:: Fotos/estructura_software_editada.png
     :width: 600px
     :align: center
     
-    Comparación de la estructura de ROS 2 y micro-ROS
+    Comparación de la estructura de ROS 2 y micro-ROS (Fuente: freertos.org)
 
 ROS 2
 -----
@@ -77,7 +77,7 @@ suscriptores son los que reciben esos mensajes del topic.
     :width: 400px
     :align: center
     
-    Funcionamiento de un topic
+    Funcionamiento de un topic (Fuente: ros.org)
 
 Otra forma de comunicación entre nodos es mediante servicios. Estos
 están basados en un modelo de solicitud y servicio. En este caso existe
@@ -91,11 +91,11 @@ cuando esta ha sido pedida por otro nodo o cliente.
     :width: 400px
     :align: center
     
-    Funcionamiento de un servicio
+    Funcionamiento de un servicio (Fuente: ros.org)
 
 Finalmente, los nodos también pueden comunicarse mediante acciones.
 Estas están constituidas por topics y servicios. El modelo de
-comunicación es similar a la de los servicios, con la peculiaridad de
+comunicación es similar al de los servicios, con la peculiaridad de
 que cuentan con un tópico que actúa de feedback entre el servidor y el
 cliente, y dos servicios, uno para el objetivo que quiere cumplir el
 cliente (goal service) y otro para los resultados obtenidos (result
@@ -105,7 +105,7 @@ service).
     :width: 400px
     :align: center
     
-    Funcionamiento de una acción
+    Funcionamiento de una acción (Fuente: ros.org)
 
 Por otro lado, también es posible modificar el estado de un nodo
 mediante parámetros. Estos son características propias del nodo que
@@ -125,9 +125,8 @@ Se ha escogido la instalación con los paquetes Debian, debido a su
 sencillez y rapidez. En primer lugar es necesario asegurarse que nuestro
 local soporta el formato de codificación UTF-8.
 
-En segundo lugar es necesario añadir la herramienta avanzada de paquetes
-(APT) de ROS 2 a nuestro sistema. A continuación hay que añadir el
-repositorio a nuestra lista fuente.
+En segundo lugar es necesario descargar la herramienta avanzada de paquetes
+(APT) de ROS 2.
 
 Finalmente, se instalan los paquetes de ROS 2. Para ello hay que
 actualizar la caché del repositorio de la herramienta de paquetes y ya
@@ -136,7 +135,7 @@ contiene el ROS, demos, y tutoriales; y la instalación básica que
 proporciona al sistema las librerías, los paquetes con los mensajes y
 las herramientas de la linea de comandos.
 
-Por último, es importante añadir que cada vez que se vaya a utilizar ROS
+Por último, es importante advertir que cada vez que se vaya a utilizar ROS
 2 es necesario añadir el fichero “setup.bash” a la lista fuente.
 
 Se muestran a continuación los comandos necesarios para ejecutar dichas acciones.
@@ -172,33 +171,6 @@ Se muestran a continuación los comandos necesarios para ejecutar dichas accione
 Micro-ROS
 ---------
 
-Micro-ROS es un framework que acerca las aplicaciones robóticas
-diseñadas para infraestructuras de gran tamaño a dispositivos con
-recursos limitados como son los microcontroladores. Este software lleva
-la interfaz de programación de ROS a estos dispositivos y permite
-integrarlos en los sistemas basados en ROS 2. La combinación entre ROS 2
-y micro-ROS da como resultado un marco robótico que reduce las barreras
-de entrada al mercado, reduciendo costes y acelerando el desarrollo de
-robots.
-
-.. figure:: Fotos/micro_ros.jpeg
-    :width: 200px
-    :align: center
-    
-    Logotipo de micro-ROS
-
-La contribución de micro-ROS al mundo de la robótica va más allá. El
-poder adaptar el sistema operativo de robots a sistemas embebidos
-permite la interoperabilidad que exigen los sistemas robóticos
-distribuidos para explotar la creciente superposición entre la robótica,
-los dispositivos integrados y el IoT. De este modo, se simplifica la
-construcción y el diseño de aplicaciones para sistemas robóticos de gran
-tamaño, pudiendo dividirse estos en sistemas aislados más pequeños y
-sencillos capaces de conectarse entre si, dotando al sistema general de
-más información acerca del entorno, permitiendo que los sistemas
-robóticos verdaderamente distribuidos interactúen de forma aún más
-inteligente con el mundo que les rodea. :cite:`micro_ros_video`
-
 Características principales
 +++++++++++++++++++++++++++
 
@@ -206,7 +178,7 @@ Micro-ROS posee siete características claves que lo convierten en un
 software optimizado para microcontroladores: :cite:`micro_ros_features`
 
 -  Una API adaptada para microcontroladores que incluye todos los
-   conceptos principales de ROS: este framework adaptado cuenta con las
+   conceptos principales de ROS: Este *framework* adaptado cuenta con las
    mismas prestaciones principales que ROS 2, como son la publicación y
    suscripción a mensajes de un tópico por parte de nodos, la mecánica
    de cliente/servicio, el ciclo de vida y el gráfico de nodos. Esta API
@@ -221,7 +193,7 @@ software optimizado para microcontroladores: :cite:`micro_ros_features`
    suyos.
 
 -  Un middleware con recursos muy limitados pero de gran flexibilidad:
-   Micro-ROS utiliza Micro XRCDE-DDS de eProsima como middleware para
+   Micro-ROS utiliza Micro XRCE-DDS de eProsima como middleware para
    sistemas embebidos. Este software es el nuevo estándar de DDS para
    entornos con recursos limitados, el cual se explicará en el siguiente
    capítulo. Para la integración con la interfaz del middleware de ROS
@@ -251,7 +223,7 @@ software optimizado para microcontroladores: :cite:`micro_ros_features`
    por una comunidad auto-organizada y en constante crecimiento,
    respaldada por el “Embedded Working Group”, un grupo serio de trabajo
    de ROS 2. Esta comunidad proporciona apoyo a través de GitHub y
-   comparte tutoriales de nivel básico. A parte de eso, también crea
+   comparte tutoriales de nivel básico. Aparte de eso, también crea
    herramientas en torno a micro-ROS para optimizar las aplicaciones ya
    creadas al hardware del microcontrolador. Estas permiten comprobar el
    uso de la memoria, el consumo de tiempo de la CPU y el rendimiento
@@ -319,7 +291,7 @@ de Linux.
     :width: 500px
     :align: center
     
-    Estructura de micro-ROS
+    Estructura de micro-ROS (Fuente: micro-ROS.org)
 
 A continuación se procederá a explicar los componentes que forman la
 arquitectura de Micro-ROS divididos en tres grupos: librería del
@@ -340,10 +312,10 @@ preocupación por la dudosa aplicabilidad de las capas existentes de ROS
 ejecución, la portabilidad a diferentes RTOS, la gestión de memoria
 dinámica, etc.
 
-C es el lenguaje de programación dominante en los microcontroladores,
-sin embargo, existe una clara tendencia a utilizar lenguajes de alto
+C es el lenguaje de programación dominante en los microcontroladores.
+Sin embargo, existe una clara tendencia a utilizar lenguajes de alto
 nivel, especialmente C++, debido a que los microcontroladores más
-modernos ya cuentan hasta con algunos megabytes de RAM. Es por ello por
+modernos ya cuentan hasta con una mayor memoria RAM. Es por ello por
 lo que micro-ROS pretende ofrecer y soportar dos APIs.
 
 -  La API en C basada en la librería de soporte de ROS 2 (rcl): Esta API
@@ -378,7 +350,7 @@ siguientes: :cite:`ros_client_library`
 -  Ciclo de vida y modos del sistema: En micro-ROS se ha detectado que
    el entrelazamiento de la gestión de tareas, la gestión de imprevistos
    y la gestión de errores del sistema, que se manejan en la capa de
-   deliberación generalmente conduce a la alta complejidad del flujo de
+   deliberación, generalmente conduce a la alta complejidad del flujo de
    control, algo que podría reducirse introduciendo abstracciones
    adecuadas para las llamadas y notificaciones orientadas al sistema.
    El objetivo de esta funcionalidad reside en proporcionar
@@ -398,7 +370,7 @@ siguientes: :cite:`ros_client_library`
     :width: 500px
     :align: center
     
-    Arquitectura de la librería del cliente
+    Arquitectura de la librería del cliente (Fuente: fiware.com)
 
 Middleware
 ++++++++++
@@ -416,7 +388,7 @@ ya existente y bien desarrollada. :cite:`ros_middleware_interface`
     :width: 500px
     :align: center
     
-    Arquitectura del middleware
+    Arquitectura del middleware (Fuente: fiware.com)
 
 DDS son las siglas de Data Distribution Service. Es un servicio de
 distribución de datos que sirve como estándar de comunicación de
@@ -435,7 +407,8 @@ define la API entre la librería del cliente de ROS y cualquier
 implementación específica.
 
 Como ya se ha comentado en el anterior párrafo, ROS 2 da soporte a
-varias DDS. La más utilizada y considerada la DDS por defecto es la
+varias DDS. La más utilizada y considerada la DDS por defecto en la
+distribución "Foxy fitzroy" es la
 “Fast DDS” de eProsima. :cite:`eprosima_fast_dds`
 Esta implementación está diseñada en C++ e
 implementa el protocolo RTPS (Real Time Publish Subscribe), el cual
@@ -457,22 +430,22 @@ publicadores y suscriptores o como clientes y servidores.
     :width: 500px
     :align: center
     
-    Arquitectura de Micro XRCDE-DDS
+    Arquitectura de Micro XRCE-DDS (Fuente: freertos.org)
 
-Dentro de las características principales de Micro XCRE-DDS, caben
+Dentro de las características principales de Micro XRCE-DDS, cabe
 destacar las siguientes: 
       
 -  Alto rendimiento: El cliente utiliza una librería de serialización
    de bajo nivel que codifica en XCDR.
       
--  Bajo consumo de recursos: La librería del cliente está libre de memoria
-   XRCDE-DDS dinámica y estática, por lo que la única huella de memoria se
+-  Bajo consumo de recursos: El cliente de la librería XRCE está libre de memoria
+   dinámica y estática, por lo que la única huella de memoria se
    debe al crecimiento de la pila. Puede gestionar un emisor/suscriptor simple
    con menos de 2 kB de RAM. Además el cliente está construido según un
    concepto de perfiles, lo que permite añadir o eliminar funcionalidades a la
    librería al mismo tiempo que modifica su tamaño.
       
-   Multiplataforma: Las dependencias del sistema operativo son módulos aditivos,
+-  Multiplataforma: Las dependencias del sistema operativo son módulos aditivos,
    por lo que los usuarios pueden implementar los módulos específicos de cada
    plataforma a la librería del cliente. Por defecto, el sistema permite
    trabajar con los sistemas operativos estándar Windows y Linux, y con los
@@ -488,8 +461,8 @@ destacar las siguientes:
    código abierto.
 
 -  Dos modos de funcionamiento: Micro XRCE-DDS soporta dos modos de 
-   funcionamiento. El modo “best-effort” implementa una comunicación
-   rápida y ligera, mientras que el modo “reliable” asegura la fiabilidad
+   funcionamiento. El modo *best-effort* implementa una comunicación
+   rápida y ligera, mientras que el modo *reliable* asegura la fiabilidad
    independientemente de la capa de transporte utilizada.
 
 RTOS
@@ -507,13 +480,13 @@ determinado, y no necesariamente lo más rápido posible. :cite:`real_time_os_ap
     :width: 500px
     :align: center
     
-    Arquitectura del RTOS
+    Arquitectura del RTOS (Fuente: fiware.com)
 
 Un sistema operativo de este tipo cuenta con las siguientes características:
 no utiliza gran cantidad de memoria, es susceptible de actuar tras eventos
 realizados en el soporte físico, un tiempo de respuesta predecible, fiabilidad
-y multi-arquitectura, esto es la posibilidad de portar el código a cualquier
-tipo de CPU. :cite:`sistema_operativo_de_tiempo_real`
+y multi-arquitectura (esto es la posibilidad de portar el código a cualquier
+tipo de CPU). :cite:`sistema_operativo_de_tiempo_real`
 
 Los RTOS suelen utilizar capas de abstracción de hardware que facilitan
 el uso de recursos del hardware, como temporizadores y buses de comunicación,
@@ -543,7 +516,7 @@ A pesar de que todos utilizan el mismo código base de micro-ROS y que
 sus herramientas han sido integradas en el sistema de compilación de ROS 2,
 existen notables diferencias en sus características. :cite:`first_application_rtos`
 
-A la hora de escoger un RTOS aparecen varios factores a tener en cuenta.
+A la hora de escoger un RTOS aparecen varios factores a tener en cuenta:
 La responsabilidad y exposición legal, el rendimiento, las características
 técnicas, el coste, el ecosistema, el middleware a emplear, el proveedor
 y la preferencia de ingeniería. :cite:`select_rtos_micro_for_iot`

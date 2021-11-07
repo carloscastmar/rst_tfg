@@ -4,7 +4,7 @@ Marco teórico y estado del arte
 Sistemas en tiempo real
 -----------------------
 
-Se dice que un sistema opera en tiempo real cuándo el tiempo que tarda
+Se dice que un sistema opera en tiempo real cuando el tiempo que tarda
 en efectuarse la salida es significativo. El tiempo de respuesta puede
 ser relativamente flexible (tiempo real suave) o más estricto (tiempo
 real duro), lo que se denomina software crítico. :cite:`tiempo_real`
@@ -39,7 +39,7 @@ sistema:
 
 -  Una red en tiempo real: Un sistema en tiempo real necesita una red
    que sea puntual y fiable en la transferencia de mensajes, para ello
-   cuentan con un protocolo específico para trabajar en tiempo real
+   cuentan con un protocolo específico para trabajar en tiempo real que
    proporciona una entrega puntual y garantizada de los mensajes a
    través de la red.
 
@@ -48,10 +48,6 @@ siguientes:
 
 -  Cumplimiento en los plazos de ejecución: Es lo que distingue a este
    tipo de sistemas respecto al resto de sistemas informáticos.
-
--  Gran tamaño: Suelen ocupar mucho espacio tanto hablando de hardware
-   como de software, cuyas librerías suelen estar formadas por una gran
-   cantidad de lineas de código.
 
 -  Previsibilidad: Han de ser capaces de prever cualquier tipo de orden
    que pueda ocurrir posteriormente para estar preparado y que no haya
@@ -115,15 +111,15 @@ mejora el rendimiento del mismo.
 
 Existen varios tipos de sistemas en tiempo real distribuido, sin
 embargo, la arquitectura general de todos ellos es similar a la
-siguiente:
+figura que aparece a continuación.
 
 .. figure:: Fotos/distributed_real-time_system_structure.png
     :width: 450px
     :align: center
     
-    Arquitectura general de un sistema en tiempo real distribuido
+    Arquitectura general de un sistema en tiempo real distribuido (Fuente: Distributed Real-Time Systems, 2019)
 
-En la anterior figura se observa como todos los nodos están conectados
+En la figura se observa cómo todos los nodos están conectados
 entre sí a través de la red de tiempo real, y a su vez, cada uno está en
 contacto con distintas funciones propias que interactúan directamente
 con el sistema.
@@ -135,8 +131,8 @@ Definición
 ++++++++++
 
 El ROS o Robot Operating System (sistema operativo de robots), es una
-colección de frameworks para el desarrollo de software de robots. Un
-framework es un entorno de trabajo tecnológico que se basa en módulos
+colección de *frameworks* para el desarrollo de software de robots. Un
+*framework* es un entorno de trabajo tecnológico que se basa en módulos
 concretos que sirve de base para la organización y el desarrollo de
 software. :cite:`robot_operating_system`
 
@@ -162,7 +158,7 @@ periféricos, etc.
 La librería está pensada y diseñada para ser utilizada en un sistema
 operativo UNIX (base del actual Linux), sin embargo, también se están
 lanzando versiones experimentales para otros sistemas operativos muy
-comunes como Mac OS X, Debian o Microsoft Windows.
+comunes como Mac OS X o Microsoft Windows.
 
 ROS se divide en dos partes básicas. Por un lado, actúa como nexo entre
 el usuario y el hardware (más similar a un sistema operativo
@@ -184,7 +180,7 @@ internos de sistemas de software destinados a la robótica. :cite:`ros_history`
     :width: 150px
     :align: center
     
-    Robot con Inteligencia Artificial de Stanford (STAIR)
+    Robot con Inteligencia Artificial de Stanford (Fuente: Stanford University)
 
 Desde 2008, el proyecto continuó principalmente en Willow Garage, un
 instituto de investigación con más de veinte instituciones colaborando
@@ -213,20 +209,20 @@ recibir el reconocimiento y el crédito que merecen por sus logros. De
 esta forma también se fomenta la mejora del software ya existente con la
 aportación de otros profesionales del sector.
 
-Actualmente, el ecosistema de ROS cuenta con decenas de mies de usuarios
+Actualmente, el ecosistema de ROS cuenta con decenas de miles de usuarios
 en todo el mundo, que trabajan en ámbitos que van desde proyectos
 personales hasta grandes sistemas de automatización industrial.
 
 Algunos de los robots que a día de hoy utilizan ROS son el robot
 personal de Ken Salisbury en Stanford (PR1), el robot personal de Willow
-Garage (PR2), el Baxter de Rethink Robotics, el Robot de Shadow en el
-cual participan universidades españolas o el robot limpiador HERB de
+Garage (PR2), el Baxter de Rethink Robotics, el Robot de Shadow, en el
+cual participan universidades españolas, o el robot limpiador HERB de
 Intel.
 
 Proyección futura
 +++++++++++++++++
 
-El sistema operativo de robots ya cuenta hoy en día con una estructura
+ROS ya cuenta hoy en día con una estructura
 muy completa que proporciona al usuario múltiples posibilidades. Algunas
 de las funcionalidades que engloba este software a día de hoy son la
 creación, destrucción y correcta distribución de nodos en la red, la
@@ -241,11 +237,102 @@ de objetos, reconocimiento facial y de gestos, la comprensión del
 movimiento, el agarre y la egomoción, entre muchas otras.
 
 Como se ha podido comprobar, esta tecnología ha avanzado enormemente
-durante los últimos años, y se prevé que este auge se maximice en los
-próximos años, desempeñando un papel fundamental en la revolución de la
+durante los últimos años, y se prevé que este auge se maximice en el futuro próximo,
+desempeñando un papel fundamental en la revolución de la
 industria 4.0 y el fenómeno conocido como “el internet de las cosas”.
 :cite:`ros_rolling`
 
 .. bibliography::
    :style: plain
 
+Micro-ROS
+---------
+
+Definición
+++++++++++
+
+Micro-ROS es un *framework* que acerca las aplicaciones robóticas
+diseñadas para infraestructuras de gran tamaño a dispositivos con
+recursos limitados como son los microcontroladores. Este software lleva
+la interfaz de programación de ROS a estos dispositivos y permite
+integrarlos en los sistemas basados en ROS 2. La combinación entre ROS 2
+y micro-ROS da como resultado un marco robótico que reduce las barreras
+de entrada al mercado, reduciendo costes y acelerando el desarrollo de
+robots.
+
+.. figure:: Fotos/micro_ros.jpeg
+    :width: 200px
+    :align: center
+    
+    Logotipo de micro-ROS
+
+La contribución de micro-ROS al mundo de la robótica va más allá. El
+poder adaptar el sistema operativo de robots a sistemas embebidos
+permite la interoperabilidad que exigen los sistemas robóticos
+distribuidos para explotar la creciente superposición entre la robótica,
+los dispositivos integrados y el IoT. De este modo, se simplifica la
+construcción y el diseño de aplicaciones para sistemas robóticos de gran
+tamaño, pudiendo dividirse estos en sistemas aislados más pequeños y
+sencillos capaces de conectarse entre si, dotando al sistema general de
+más información acerca del entorno, permitiendo que los sistemas
+robóticos verdaderamente distribuidos interactúen de forma aún más
+inteligente con el mundo que les rodea. :cite:`micro_ros_video`
+
+Historia
+++++++++
+
+Micro-ROS surgió a finales del año 2018, durante la celebración de
+la "ROSCon", el evento más importante para la comunidad de ROS. Durante la conferencia
+se habló sobre los beneficios que podría suponer la integración de ROS2 en los
+microcontroladores. :cite:`ROSCon2018`
+
+Durante 2019, micro-ROS comenzó a utilizarse en los primeros RTOS. El primero
+en incorporarlo en sus librerías fue NuttX, el cual desarrolló una serie de
+aplicaciones de prueba en mayo de ese mismo año. :cite:`NuttX_demos`
+
+En 2020, micro-ROS continuó creciendo y realizando proyectos en común con
+otros RTOS como FreeRTOS o Zephyr. Sin embargo, el mayor avance realizado
+en ese año fue el desarrollo de nuevas versiones de Micro XRCE-DDS, el agente de
+micro-ROS encargado de conectar el mundo de los microcontroladores con el espacio
+de datos de ROS. :cite:`XRCE_DDS_120_release`
+
+Ese mismo año se incluyó micro-ROS en la IDE de Arduino, un avance muy notable
+ya que se trata de uno de los entornos de desarrollo más utilizados en lo que
+a microcontroladores se refiere. :cite:`micro-ROS_arduino`
+
+Durante este año se ha hecho realidad la noticia que afirma que micro-ROS se integrará
+en el sistema operativo de Microsoft, el Microsoft Azure RTOS. El hecho de que micro-ROS
+se haya incorporado en un software soportado por Microsoft le otorga una estabilidad
+y un renombre que impulsará todavía más el desarrollo de esta tecnología. :cite:`MicrosoftAzureRTOS`
+
+.. figure:: Fotos/microsoft_logo.png
+    :width: 200px
+    :align: center
+    
+    Logotipo de microsoft
+
+
+Proyección futura
++++++++++++++++++
+
+Recientemente ha tenido lugar la conferencia de "ROS World 2021". En ella se han mostrado
+los nuevos avances que tendrán lugar en el futuro cercano del universo de ROS. :cite:`ROSWorld2021`
+
+.. figure:: Fotos/rosworld2021.png
+    :width: 200px
+    :align: center
+    
+    Logotipo de ROS World 2021
+
+En lo referido a micro-ROS, se ha anunciado una nueva librería del cliente y nuevas
+funciones del middleware. En particular, se ha revelado el uso de la interfaz de Micro XRCE-DDS
+para transportes personalizados, el paquete de diagnósticos de micro-ROS y el concepto de
+trabajador para la gestión de la ejecución en la librería del cliente en C, rclc.
+
+Además, se ha confirmado la posibilidad del desarrollo de aplicaciones profesionales
+utilizando IDEs basados en Eclipse.
+
+Estas noticias son muestras de que micro-ROS tiene un futuro muy prometedor por delante,
+apoyado por una comunidad y un entorno muy favorables. La clave de esta previsión de
+futuro es el esfuerzo que está realizando el mundo de ROS por acercar esta tecnología
+a programadores inexpertos para ampliar en gran medida el alcance de la robótica.

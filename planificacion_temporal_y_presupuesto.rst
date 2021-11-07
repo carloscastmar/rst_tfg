@@ -24,7 +24,7 @@ Presupuesto
 -----------
 
 En la siguiente tabla se muestra una estimación del coste total
-que ha supuesto el trabajo. En el se ha estimado que cada hora
+que ha supuesto el trabajo. En él se ha estimado que cada hora
 empleada por el tutor se valora en 40 euros y cada hora empleada
 por el alumno tiene un valor de 15 euros. Además se ha incluido
 un coste de los equipos informáticos utilizados, puesto que aunque
@@ -38,7 +38,7 @@ se han utilizado.
     
     Presupuesto
 
-En este sentido el valor total que se le asigna a la realizacion
-del trabajo es de 5471 euros. Esta cifra es un valor aproximado
+En este sentido, el valor total que se le asigna a la realizacion
+del trabajo es de 5.471 euros. Esta cifra es un valor aproximado
 pero que muestra una buena representación de lo que podría
 equivaler en relación con una investigación profesional.

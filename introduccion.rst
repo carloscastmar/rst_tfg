@@ -25,7 +25,7 @@ La idea del proyecto es iniciarse en una tecnología avanzada que se emplea
 en ámbitos profesionales de la que se parte sin ningún conocimiento ni experiencia,
 para que al final de este sea posible diseñar un experimento que muestre su comportamiento
 frente a aplicaciones semejantes a las que se podrían dar en el mundo real. El motivo
-de este estudio intensivo de dicha tecnología es ser capaces de indicar, no solo como
+de este estudio intensivo de dicha tecnología es ser capaces de indicar, no solo cómo
 responde frente a distintas cargas de trabajo, sino también explicar el porqué de
 dicho comportamiento desde un fundamento teórico que permita identificar
 las posibles debilidades y puntos de mejora.
@@ -41,16 +41,16 @@ En el primer capítulo se exponen conceptos generales relacionados con
 la comunicación de sistemas en tiempo real y se narran brevemente los inicios
 de la tecnología que es sujeto de este estudio.
 
-Una vez expuestos dichos conceptos, se explica con un detalle superior
+Una vez expuestos dichos conceptos, se explica con detalle
 el software medido. Primero se desarrolla la base del funcionamiento de
-ROS, lo cuál se aplica tanto a ROS2 como a micro-ROS. Seguidamente, se
-explican las especificaciones de ambos frameworks, incluyendo los conceptos
+ROS. Seguidamente, se
+explican las especificaciones de ambos *frameworks*, incluyendo los conceptos
 generales, la instalación, el requerimiento de otros tipos de software para
 su uso y la arquitectura que los soporta.
 
 Para concluir esta fase del trabajo, se finaliza explicando con gran
 detalle todo el hardware que se ha empleado durante el proyecto, incluyendo
-todas las especificaciones de estos que puedan afectar a los resultados
+todas las especificaciones que puedan afectar a los resultados
 del análisis.
 
 La segunda parte está ligada con la práctica que se ha llevado a cabo.
@@ -64,7 +64,7 @@ Seguidamente se exponen en el capítulo posterior todos los resultados
 que se han obtenido y una discusión de estos junto a las conclusiones
 recogidas.
 
-Después de discutir los resultados se ha resumido en poco más de una cara
+Después de discutir los resultados se han recogido en poco más de una cara
 todas las conclusiones adquiridas durante todo el desarrollo del trabajo,
 tanto relacionadas con la investigación llevada a cabo como con los resultados
 de los análisis prácticos.
@@ -80,7 +80,7 @@ La metodología empleada se caracteriza por ser principalmente autodidacta.
 La tecnología que se ha analizado está sufriendo un desarrollo constante
 en los últimos años, por lo que a día de hoy no existe la cantidad suficiente
 de información para resolver todas las complicaciones que pueden emerger
-al utilizarlo, sobretodo para un usuario no experimentado.
+al utilizarlo, sobre todo para un usuario no experimentado.
 
 Esto se traduce en un trabajo en el que en algunos momentos ha sido necesario
 recurrir y preguntar directamente a desarrolladores y consultar foros que

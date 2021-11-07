@@ -23,7 +23,7 @@ ESP-32
 
 La placa que se ha utilizado para la medición de los tiempos de
 respuesta ha sido la “Espressif ESP32”. Esta posee numerosas cualidades
-positivas que se explicarán a continuación, sin embargo, las razones
+positivas que se explicarán a continuación. Sin embargo, las razones
 principales de esta elección han sido su bajo consumo, la posibilidad
 de conexión vía WIFI y la activa comunidad y soporte que ofrece micro-ROS
 a Espressif.
@@ -82,7 +82,7 @@ La DevKitc V4 que se ha utilizado cuenta con los siguientes componentes:
     :width: 500px
     :align: center
     
-    Componentes de la placa ESP32
+    Componentes de la placa ESP32 (Fuente: Espressif)
 
 El ESP32-WROOM-32D es un módulo de microcontrolador genérico que se dirigen
 a una amplia gama variedad de aplicaciones, que van desde redes de sensores
@@ -106,8 +106,8 @@ a Internet a través de un router, mientras que el uso de Bluetooth
 permite al usuario conectarse cómodamente al teléfono o emitir balizas
 de baja energía para su detección.
 
-La corriente de reposo del chip ESP32 es inferior a 5 uA, lo que lo
-hace adecuado para aplicaciones alimentadas por batería y de electrónica
+La corriente de reposo del chip ESP32 es inferior a 5 uA, hecho que lo
+convierte adecuado para aplicaciones alimentadas por batería y de electrónica
 portátil. El módulo admite una velocidad de datos de hasta 150 Mbps y
 una potencia de salida de 20 dBm en la antena para garantizar el mayor
 alcance físico posible.

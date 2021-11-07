@@ -1,9 +1,9 @@
 Inciencias ocurridas
 ====================
 
-Durante la preparación de los análisis, ha sido necesario realizar
+Durante la preparación de los análisis ha sido necesario realizar
 numerosas pruebas intermedias que asegurasen el correcto funcionamiento
-del hardware y de los middlewares. En la ejecución de estas pruebas,
+del hardware y de los middlewares. En la ejecución de estas pruebas
 se han encontrado varias incidencias que han ralentizado la realización
 del ejercicio.
 
@@ -122,7 +122,7 @@ En el terminal solo se observan los topic de ROS 2 por defecto,
 y no se muestra el topic por el cual debería de estar publicando
 mensajes la placa.
 
-En primer lugar se comprobó si la placa funcionaba correctamente.
+En primer lugar, se comprobó si la placa funcionaba correctamente.
 Para ello se siguieron los  siguientes tutoriales para el testeo de
 la placa en “Visual Studio Code”:
 
@@ -135,7 +135,7 @@ se confirmó el correcto funcionamiento de la misma.
 
 Una vez descartado el posible error de funcionamiento de la placa,
 se comprobó si el cliente establecía conexión  con el agente de mico-ROS
-y si existía intercambio de información. En primer lugar se utilizó un
+y si existía intercambio de información. En primer lugar, se utilizó un
 agente de Docker para depurar el problema. Esto es una capa de software
 de adicional que proporciona abstracción y la virtualización de
 aplicaciones. De este modo, era posible probar la aplicación del cliente
@@ -165,7 +165,7 @@ nuevo con el comando “ros2 topic list”. Se observa la siguiente salida:
     /parameter_events
     /rosout
 
-Como se puede observar, utilizando el Docker si que se reconoce el topic
+Como se puede observar, utilizando el Docker sí que se reconoce el topic
 de la aplicación de FreeRTOS que se había instalado en la placa.
 
 De este modo, fue posible deducir que el problema residía en la conexión

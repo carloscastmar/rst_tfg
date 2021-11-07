@@ -24,9 +24,9 @@ ESTUDIO DEL COMPORTAMIENTO DE MICRO-ROS. UN ANÁLISIS TEÓRICO Y PRÁCTICO.
 
    conclusiones_y_lineas_futuras.rst
 
-   incidencias_ocurridas.rst
-
    planificacion_temporal_y_presupuesto.rst
+
+   impacto_social_y_medioambiental.rst
 
    Anexos.rst
 

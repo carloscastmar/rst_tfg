@@ -16,13 +16,13 @@ placa. :cite:`ESP32_get_started`
 Al principio se necesita instalar los requisitos de la aplicación en
 función del sistema operativo en el que se opere. Después, hay que instalar
 una serie de librerías proporcionadas por Espressif denominadas ESP-IDF.
-Posteriormente se instalará una serie de herramientas y se configurarán las
+Posteriormente, se instalará una serie de herramientas y se configurarán las
 variables de entorno. Una vez realizados estos pasos, ya será posible crear
 un proyecto para la placa para comprobar que funciona correctamente.
 
 Una vez comprobado el correcto funcionamiento de la placa, es necesario
 instalar el software de micro-ROS y realizar una serie de pruebas. 
-Es posible realizar primero una serie de prácticas primero con clientes
+Es posible realizar primero una serie de prácticas con clientes
 creados dentro del propio Linux. Para ello hay que instalar y compilar
 el firmware adecuado, crear un agente de micro-ROS y ejecutar la aplicación.
 Si todo funciona correctamente, será posible observar una serie de mensajes
@@ -30,13 +30,13 @@ publicados en el topic en cuestión. :cite:`first_micro_ros_linux_app`
 
 Después de realizar unas primeras prácticas tanto con el software como con
 el hardware que se quiere probar, es el momento de unir ambas partes y realizar
-las primeras pruebas de micro-ROS en la placa esp32.
+las primeras pruebas de micro-ROS en la placa.
 
 Para ello hay que seguir un tutorial similar al anterior en el que se explica
 como realizar una primera aplicación de micro-ROS con conexión vía Wi-Fi. 
 :cite:`connect_esp32_to_ros2`
 
-Inicialmente hay que crear y configurar un nuevo firmware de trabajo.
+Inicialmente, hay que crear y configurar un nuevo firmware de trabajo.
 En este momento hay que escoger el RTOS sobre el que se va a trabajar y
 descargar sus herramientas y librerías propias. Posteriormente es necesario
 configurar dicho firmware, especificando la aplicación que se quiere probar
@@ -52,13 +52,13 @@ espacio de datos y publicar los mensajes. Tras realizar dicha acción, podrá
 observarse cierta información en el agente creado, confirmando el establecimiento
 de conexión entre el agente y el cliente. Este será el momento en el que podremos
 comprobar que todo funciona correctamente. Mediante el comando "ros2 topic list"
-se mostrará el topic creado y con "ros2 topic echo /[project name]" podremos
+se mostrará el topic creado y con ``ros2 topic echo /[project name]`` podremos
 suscribirnos y observar los mensajes enviados por el cliente.
 
 Después de realizar unas pruebas con las demos que proporciona el sistema
 operativo, es recomendable realizar una serie de tutoriales más avanzados
 que proporciona la propia página de micro-ROS. :footcite:`micro_ros_programming_tutorial` 
-En estos se enseña como diseñar tu propia aplicación, incluyendo como
+En estos se enseña cómo diseñar tu propia aplicación, incluyendo cómo
 crear tu propio nodo, tus publishers y subscribers, un temporizador o
 incluso seleccionar la calidad de la comunicación.
 
@@ -66,7 +66,7 @@ Estructura principal del análisis
 ---------------------------------
 
 Lo primero que hay que hacer en el momento de diseñar un test de comportamiento
-de un software es definir los parámetros que se van a medir y en que condiciones.
+de un software es definir los parámetros que se van a medir y en qué condiciones.
 Existen multitud de variables que se ven afectadas a la hora de realizar una
 medición que aportan distintos tipos de información. Sin embargo, por distintas
 razones, no es posible analizar todas ellas y es recomendable centrarse en un
@@ -84,14 +84,14 @@ La latencia es el retraso entre los eventos generados por un hardware y la
 transmisión efectiva de datos. En otras palabras, la latencia es el tiempo que
 tarda en ejecutarse una tarea desde el momento en el que es ordenada.
 Esto en un sistema en tiempo real es crucial, ya que es uno de los principales
-culpables de que se cumplan o no los tiempos que deben de cumplir los sistemas.
+responsables de que se cumplan o no los tiempos que deben de cumplir los sistemas.
 :cite:`latency`
 
 .. figure:: Fotos/latency.png
     :width: 200px
     :align: center
     
-    Latencia
+    Latencia (Fuente: Inube)
 
 Generalmente, un evento en un sistema de este estilo está formado por distintos
 eventos más pequeños que dan lugar a la realización del evento principal. Por
@@ -116,20 +116,20 @@ limitada por distintos aspectos, tanto correspondientes al software tanto como
 al hardware. En este ámbito, el factor más limitante va a residir en el microcontrolador,
 ya que es una placa diseñada para operar con recursos muy limitados. En este
 sentido resultará muy interesante comprobar el momento en el que se produzca la
-saturación de la placa para determinar las limitaciones del sistema y para que aplicaciones
+saturación de la placa para determinar las limitaciones del sistema y para qué aplicaciones
 podría emplearse el microcontrolador.
 
 .. figure:: Fotos/throughput.jpeg
     :width: 200px
     :align: center
     
-    Throughput
+    Throughput (Fuente: Corporate Finance Institute)
 
 Seguidamente, se procederá a estudiar el consumo se memoria del sistema. En un principio,
 micro-ROS es un software diseñado para microcontroladores, por lo que el efecto
 de las acciones realizadas por este en el sistema global no deberían ser notables.
 En este sentido, será interesante comprobar si realmente se trata de un sistema que
-economiza los recursos y hasta que punto.
+economiza los recursos y hasta qué punto.
 
 Por último, se va a someter al sistema a una perturbación externa. Se creará
 un topic adicional y será el propio ordenador el que actue como cliente. Se ha decidido
@@ -137,7 +137,7 @@ escoger la demo "ping_pong" para este propósito, ya que es una de las demos que
 micro-ROS más completa, ya que crea dos nodos, un publisher y un subscriber y crea
 una conexión constante entre ellos dos. Una vez añadida esta interferencia en la red,
 se repetirán las mediciones de la latencia para comprobar si esta se ve afectada y
-en que manera.
+en qué manera.
 
 
 Los parámetros previamente mencionados aportarán información de gran interés de
@@ -153,8 +153,8 @@ previamente, la placa ESP32 cuenta con la peculiaridad de ofrecer conexión vía
 algo poco habitual en placas de este estilo, además de una conexión en serie más
 convencional. De otro modo, ya se ha explicado en el apartado de "software" que
 micro-ROS cuenta con dos modos de comunicación para el envío de información.
-Estos son el modo reliable, que requiere de una señal de confirmación por parte
-del receptor, priorizando la fiabilidad de la comunicación; y el modo best-effort,
+Estos son el modo *reliable*, que requiere de una señal de confirmación por parte
+del receptor, priorizando la fiabilidad de la comunicación; y el modo *best-effort*,
 que trata de enviar la mayor cantidad de mensajes a la mayor velocidad, aunque en
 redes poco robustas puede resultar poco fiable.
 
@@ -170,7 +170,7 @@ evaluación será una aplicación que se ha diseñado con el propósito exclusiv
 de someter al sistema a distintas situaciones en las que, mediante otras
 herramientas, recopilar datos.
 
-La aplicación está programada en c e incluye las librerías de freeRTOS
+La aplicación está programada en C e incluye las librerías de freeRTOS
 que proporcionan las funciones propias de micro-ROS así como los tipos de mensajes
 que se van a utilizar.
 
@@ -275,40 +275,40 @@ a explicar los aspectos más reseñables del mismo.
         vTaskDelete(NULL);
     }
     
-En primer lugar se añaden todas las librerías que se utilizarán y se definen
-las funciones "RCCHECK" y "RCSOFTCHECK". Estás serán de gran utilidad durante
+En primer lugar, se añaden todas las librerías que se utilizarán y se definen
+las funciones "RCCHECK" y "RCSOFTCHECK". Estas serán de gran utilidad durante
 toda la ejecución, ya que se llamarán en el momento de utilizar cualquier otra
-función para asegurar su correcto funcionamiento en el un tiempo establecido.
+función para asegurar su correcto funcionamiento en un tiempo establecido.
 De no ser así se generarán distintos mensajes de error e incluso se forzará
 la detención de la aplicación en función de la gravedad del fallo. Esto resulta
 crucial en aplicaciones de este tipo, ya que un pequeño error en los tiempos
 puede resultar muy significativo en sistemas de tiempo real.
 
-Posteriormente se crea la función "timer_callback", que se ejecutará
+Posteriormente, se crea la función "timer_callback", que se ejecutará
 cada vez que el timer llegue a cero. En ella simplemente se publica un mensaje
 siempre que el timer siga contando.
 
-Seguidamente se crean el nodo y el publisher. En la creación del publisher es en
+Seguidamente, se crean el nodo y el publisher. En la creación del publisher es en
 la que se determina tanto la calidad de la comunicación como el tipo de mensaje
 que este enviará. En este caso se utiliza la función "rclc_publisher_init_default",
-lo que creará un publisher que actuará bajo el modo reliable. Para cambiar al
-modo best-effort, sería necesario sustituir esta función por "rclc_publisher_init_best_effort",
+lo que creará un publisher que actuará bajo el modo *reliable*. Para cambiar al
+modo *best-effort*, sería necesario sustituir esta función por "rclc_publisher_init_best_effort",
 manteniendo iguales los parámetros de la misma. Como se puede observar, el tipo
 de mensaje escogido ha sido una cadena de caracteres o "string". Esto es debido
 a la simplicidad que existe para modificar su tamaño y la facilidad de uso.
 
-A continuación se crean el timer y el executor. Al timer se le asigna el periodo
+A continuación, se crean el timer y el executor. Al timer se le asigna el periodo
 en la variable "timer_period". Esta viene determinada en milisegundos, por lo que
 en este caso el periodo sería de 1 milisegundo y la frecuencia de 1000 Hz. El
 executor es el encargado de que cuando el temporizador baje a 0 se ejecute
 la función "timer callback".
 
-Consecutivamente se rellena la cadena de caracteres. Primero se reserva
+Consecutivamente se completa la cadena de caracteres. Primero se reserva
 el espacio en memoria que se pretende utilizar y después se rellenan
 todos esos caracteres con la función memset. En este caso se han reservado
 y rellenado 1024 caracteres, lo que equivale a 1 kilobyte.
 
-Finalmente se lanza un bucle infinito en el que simplemente se llama a la función
+Finalmente, se lanza un bucle infinito en el que simplemente se llama a la función
 "rclc_spin_some", que llamará al executor cada vez que el contador del timer finalice.
 Se le ha asignado un "wake up time" de 1000 milisegundos para asegurarse que
 siempre se ejecute a pesar de que pueda existir un pequeño delay en el sistema.
@@ -360,7 +360,7 @@ o inalámbrica emplearemos uno de los dos siguientes comandos:
     ros2 run micro_ros_agent micro_ros_agent udp --port [port ID]
 
 El device ID es la identificación de nuestro dispositivo, la cual
-se puede averiguar escribiendo "ls /dev/serial/by-id/*" en la línea de
+se puede averiguar escribiendo ``ls /dev/serial/by-id/*`` en la línea de
 comandos, y el port ID debe ser el mismo que el seleccionado en
 la configuración del hardware.
 
@@ -368,7 +368,7 @@ De este modo ya se ejecutará la aplicación y se enviarán los datos
 al espacio DDS.
 
 Para medir la latencia es imprescindible escoger y conocer una herramienta
-muy precisa. En este caso se va a utilizar cyclictest, una herramienta de
+muy precisa. En este caso se va a utilizar Cyclictest, una herramienta de
 benchmarking para sistemas en tiempo real. En concreto, sirve para medir la
 latencia del sistema. :cite:`cyclictest`
 
@@ -394,7 +394,7 @@ Estos resultados han sido volcados a un fichero para analizarlos posteriormente.
 
 Se ha lanzado un análisis por cada escenario, estableciendo la frecuencia
 en 1000 Hz y el tamaño del mensaje en 1 kilobyte. De este modo, la placa trabajará
-bajo una gran demanda, sometiéndola a una situación límite. De esta forma
+bajo una gran demanda, sometiéndola a una situación límite. De esta forma,
 podremos observar la evolución de la latencia cuando la placa utiliza
 todos sus recursos.
 
@@ -416,7 +416,7 @@ del número de mensajes publicados por segundo y multiplicarlos por
 el tamaño del mensaje.
 
 Seguidamente, la medición de la memoria empleada se ha producido utilizando
-el comando "htop" de Ubuntu, en el que se muestra el consumo de la memoria
+el comando ``htop`` de Ubuntu, en el que se muestra el consumo de la memoria
 de cada tarea llevada acabo en cada momento.
 
 La influencia de la perturbación en la red se medirá del mismo modo en el que
@@ -424,7 +424,7 @@ se ha medido la latencia, pero en este caso solo se utilizaran los escenarios
 en los que se emplea la conexión Wi-Fi, ya que el ordenador empleado solo puede
 conectarse al agente creado con un puerto.
 
-Finalmente cabe destacar que se ha utilizado Jupyter Notebook para
+Finalmente, cabe destacar que se ha utilizado Jupyter Notebook para
 realizar las gráficas y los análisis estadísticos.
 
 .. figure:: Fotos/jupyter_notebook.png

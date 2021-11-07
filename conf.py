@@ -26,7 +26,7 @@ PygmentsBridge.latex_formatter = CustomLatexFormatter
 # -- Project information -----------------------------------------------------
 master_doc = 'index'
 
-project = 'Estudio del comportamiento de micro-ROS. Un análisis teórico y práctico.'
+project = 'Estudio del comportamiento de micro-ROS. Un análisis teórico y práctico'
 copyright = '2021, Carlos Castillo Martínez'
 author = 'Carlos Castillo Martínez'
 
@@ -131,13 +131,13 @@ latex_maketitle = r'''
 \section*{Agradecimientos} % Se añade un asterisco a \section para que el título no esté numerado.
 %\addcontentsline{toc}{chapter}{Agradecimientos} % Al utilizar \section* se ha de añadir manualmente el apartado al índice (Table Of Contents, TOC).
 
-En primer lugar quería agradecerle a mi familia el haber sido un apoyo incondicional para mi en todo momento, por celebrar mis éxitos como si de los suyos se tratara y por evitar que me hundiese en los momentos más difíciles.
+En primer lugar quería agradecer a mi familia el haber sido un apoyo incondicional para mí en todo momento por celebrar mis éxitos como si de los suyos se tratara y por evitar que me hundiese en los momentos más difíciles.
 
-Le doy las gracias a mi tutor, Ricardo Sanz, por haberme brindado la oportunidad de realizar este proyecto y aprender de él. También quería agradecérselo a la doctoranda Esther Aguado, por su disponibilidad y ayuda durante todo el trabajo, fundamentales para el desarrollo del mismo. 
+Le doy las gracias a mi tutor, Ricardo Sanz, por haberme brindado la oportunidad de realizar este proyecto y aprender de él. También quería agradecer a la doctoranda Esther Aguado su disponibilidad y ayuda durante todo el trabajo, fundamentales para el desarrollo del mismo. 
 
-Por último, quería recordar a todos mis amigos y compañeros que me han acompañado en este largo viaje los últimos años. Sin ellos hubiera sido imposible llegar hasta este punto.
+Por último, quisiera recordar a todos mis amigos y compañeros que me han acompañado en este largo viaje los últimos años. Sin ellos hubiera sido imposible llegar hasta este punto.
 
-Quiero dedicarles este trabajo especialmente a mis padres, por ser mis principales referentes en todo aquello que quiero llegar a ser en mi vida, tanto personal como profesionalmente.
+Quiero dedicar este trabajo especialmente a mis padres, por ser mis principales referentes en todo aquello que quiero llegar a ser en mi vida, tanto personal como profesionalmente.
 
 \afterpage{\blankpage}
 
@@ -149,11 +149,11 @@ Quiero dedicarles este trabajo especialmente a mis padres, por ser mis principal
 
 Durante los últimos años, la tecnología ha ido creciendo a una velocidad exponencial en relación a etapas anteriores. Este hecho se traduce en la irrupción de la ya actual cuarta revolución industrial, también denominada industria 4.0.
 
-Este fenómeno viene marcado por la aparición de nuevas tecnologías que están relacionadas con el tratamiento masivo de datos o “big data” y el internet de las cosas (IoT).
+Este fenómeno viene marcado por la aparición de nuevas tecnologías que están relacionadas con el tratamiento masivo de datos o “big data” y el Internet de las cosas (IoT).
 
-Este último concepto se refiere a una interconexión digital de objetos cotidianos con internet, lo cual genera un ecosistema de dispositivos inteligentes habilitados para recoger, enviar y actuar sobre los datos que adquieren de sus entornos.
+Este último concepto se refiere a una interconexión digital de objetos cotidianos con Internet, lo cual genera un ecosistema de dispositivos inteligentes habilitados para recoger, enviar y actuar sobre los datos que adquieren de sus entornos.
 
-En este sentido, la robótica constituye un sector fundamental en esta novedosa tecnología, que aprovecha y potencia las posibilidades que los robots ofrecen. Así mismo, los sistemas embebidos juegan un papel clave en la creación de estos ecosistemas, ya que permiten implementarse de manera sencilla en una gran cantidad de objetos cotidianos a un reducido coste, manteniendo unas prestaciones más que suficientes para las tareas que van a acometer.
+En este sentido, la robótica constituye un sector fundamental en esta novedosa tecnología, que aprovecha y potencia las posibilidades que los robots ofrecen. Asimismo, los sistemas embebidos juegan un papel clave en la creación de estos ecosistemas, ya que permiten implementarse de manera sencilla en una gran cantidad de objetos cotidianos a un reducido coste, manteniendo unas prestaciones más que suficientes para las tareas que van a acometer.
 
 Esto ha producido que el mundo de la robótica acelere su desarrollo a pasos agigantados en la última década, tanto a nivel de hardware como de software.
 
@@ -167,7 +167,7 @@ Finalmente se plantearán una serie de análisis que simulen aplicaciones que se
 
 Todo esto se realizará de manera autónoma sin ninguna experiencia previa en el sector, por lo que el trabajo resultante servirá también como guía de iniciación para la introducción a la programación del sistema operativo de robots.\\
 
-Codigos unesco:
+\textbf{Codigos Unesco:}
 
 120317 Informática
 
